@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Logo — op donker</title>
+<link rel="stylesheet" href="card.css">
+<style>
+  body { background: #1A2E4A; }
+  .logo-panel {
+    display: flex; align-items: center; justify-content: center;
+    min-height: 140px; padding: 24px;
+  }
+  .logo-panel img { max-width: 80%; height: auto; max-height: 80px;
+    filter: brightness(0) invert(1); opacity: 0.95; }
+  .tag { font-size: 12px; color: rgba(255,255,255,0.5); text-align: center;
+    letter-spacing: 0.12em; text-transform: uppercase; margin-top: 8px;
+    font-family: var(--font-mono); }
+</style>
+</head>
+<body>
+<div class="card" style="background: transparent">
+  <div class="logo-panel"><img src="../assets/logo-wordmark.png" alt="STROOMLIJN"></div>
+  <div class="tag">Wordmark op donkerblauw · filter: invert voor contrast</div>
+</div>
+</body>
+</html>

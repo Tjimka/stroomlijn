@@ -1,0 +1,254 @@
+/* ============================================================
+   STROOMLIJN — Colors & Typography Foundations
+   ============================================================ */
+
+/* Fonts: Inter (primary) — loaded via Google Fonts in HTML files.
+   Fallback stack matches semibold heading weight used in brand. */
+
+:root {
+  /* ---------- BRAND CORE ---------- */
+  --brand-teal:        #4899A7;   /* Primary — logo, CTAs, links */
+  --brand-teal-deep:   #347684;   /* Hover / pressed teal */
+  --brand-teal-soft:   #7FB6C0;   /* Subtle teal highlights */
+  --brand-gold:        #BD9766;   /* Accent — warm gold, highlights */
+  --brand-gold-deep:   #9A7A4E;   /* Gold hover */
+  --brand-sand:        #F0EDE4;   /* Canvas — warm neutral background */
+  --brand-sand-deep:   #E3DECE;   /* Card surface on sand */
+  --brand-navy:        #1A2E4A;   /* Deep ink — text, dark surfaces */
+  --brand-navy-soft:   #2C4566;   /* Secondary dark */
+
+  /* ---------- NEUTRALS (warm, tuned to sand) ---------- */
+  --n-0:   #FFFFFF;
+  --n-50:  #FAF8F2;   /* Near-white with sand warmth */
+  --n-100: #F0EDE4;   /* = brand-sand */
+  --n-200: #E3DECE;
+  --n-300: #CFC9B8;
+  --n-400: #A8A294;
+  --n-500: #7A7567;
+  --n-600: #55513F;   /* Tuned warm */
+  --n-700: #3C3A2E;
+  --n-800: #26241C;
+  --n-900: #1A2E4A;   /* = brand-navy for body ink */
+
+  /* ---------- SEMANTIC COLORS ---------- */
+  --fg-1:            var(--brand-navy);     /* Primary text */
+  --fg-2:            #45556A;               /* Secondary text */
+  --fg-3:            #6B7A8C;               /* Tertiary / meta */
+  --fg-muted:        #8A96A5;               /* Disabled, placeholders */
+  --fg-on-brand:     #FFFFFF;               /* Text on teal/navy surfaces */
+
+  --bg-canvas:       var(--brand-sand);     /* Page background */
+  --bg-surface:      #FFFFFF;               /* Cards, inputs */
+  --bg-surface-alt:  #FAF8F2;               /* Subtle raised surface */
+  --bg-sunken:       #E3DECE;               /* Inset wells */
+  --bg-inverse:      var(--brand-navy);     /* Dark sections */
+
+  --border-1:        #E1DED1;               /* Default hairline */
+  --border-2:        #CFC9B8;               /* Stronger border */
+  --border-focus:    var(--brand-teal);
+
+  --accent:          var(--brand-teal);
+  --accent-soft:     #E4F0F2;               /* Teal wash for highlights */
+  --accent-gold:     var(--brand-gold);
+  --accent-gold-soft:#F2EADB;               /* Gold wash */
+
+  /* ---------- STATUS ---------- */
+  --success:     #4A8F5F;
+  --success-soft:#E4F0E8;
+  --warning:     #C89A3C;
+  --warning-soft:#F7EFD9;
+  --danger:      #B8574D;
+  --danger-soft: #F5E3DF;
+  --info:        var(--brand-teal);
+  --info-soft:   var(--accent-soft);
+
+  /* ---------- TYPOGRAPHY ---------- */
+  --font-sans:   "Inter", "Open Sans", -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-display:"Inter", "Open Sans", sans-serif;
+  --font-mono:   "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace;
+
+  /* Type scale — calm, generous */
+  --fs-display: 64px;
+  --fs-h1:      48px;
+  --fs-h2:      36px;
+  --fs-h3:      28px;
+  --fs-h4:      22px;
+  --fs-lead:    20px;
+  --fs-body:    16px;
+  --fs-small:   14px;
+  --fs-caption: 13px;
+  --fs-micro:   12px;
+
+  /* Weights — semibold for headings (per brief) */
+  --fw-regular:  400;
+  --fw-medium:   500;
+  --fw-semibold: 600;
+  --fw-bold:     700;
+
+  /* Line heights */
+  --lh-tight:   1.1;
+  --lh-snug:    1.25;
+  --lh-normal:  1.5;
+  --lh-relaxed: 1.65;
+
+  /* Letter spacing — the logo uses tight wide-set caps; body stays neutral */
+  --ls-tight:   -0.02em;
+  --ls-normal:  0;
+  --ls-wide:    0.04em;
+  --ls-eyebrow: 0.12em;
+
+  /* ---------- SPACING (4pt grid) ---------- */
+  --s-0:   0;
+  --s-1:   4px;
+  --s-2:   8px;
+  --s-3:   12px;
+  --s-4:   16px;
+  --s-5:   24px;
+  --s-6:   32px;
+  --s-7:   48px;
+  --s-8:   64px;
+  --s-9:   96px;
+  --s-10: 128px;
+
+  /* ---------- RADII — soft, not pill-like ---------- */
+  --r-xs:  4px;
+  --r-sm:  6px;
+  --r-md:  10px;
+  --r-lg:  16px;
+  --r-xl:  24px;
+  --r-full:9999px;
+
+  /* ---------- SHADOWS — subtle, warm-toned ---------- */
+  --shadow-xs: 0 1px 2px rgba(26, 46, 74, 0.04);
+  --shadow-sm: 0 2px 6px rgba(26, 46, 74, 0.05), 0 1px 2px rgba(26, 46, 74, 0.04);
+  --shadow-md: 0 6px 16px rgba(26, 46, 74, 0.06), 0 2px 4px rgba(26, 46, 74, 0.04);
+  --shadow-lg: 0 14px 32px rgba(26, 46, 74, 0.08), 0 4px 8px rgba(26, 46, 74, 0.04);
+  --shadow-xl: 0 24px 56px rgba(26, 46, 74, 0.10);
+  --shadow-focus: 0 0 0 3px rgba(72, 153, 167, 0.25);
+
+  /* ---------- MOTION ---------- */
+  --ease-out:    cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-fast:    120ms;
+  --dur-base:    200ms;
+  --dur-slow:    320ms;
+
+  /* ---------- LAYOUT ---------- */
+  --container-sm: 640px;
+  --container-md: 880px;
+  --container-lg: 1120px;
+  --container-xl: 1280px;
+}
+
+/* ============================================================
+   SEMANTIC TYPE STYLES
+   ============================================================ */
+
+html, body {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: var(--lh-normal);
+  color: var(--fg-1);
+  background: var(--bg-canvas);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.display, h1.display {
+  font-family: var(--font-display);
+  font-size: var(--fs-display);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-tight);
+  color: var(--fg-1);
+}
+
+h1 {
+  font-family: var(--font-display);
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-tight);
+  color: var(--fg-1);
+  margin: 0;
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-snug);
+  letter-spacing: -0.01em;
+  color: var(--fg-1);
+  margin: 0;
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-snug);
+  color: var(--fg-1);
+  margin: 0;
+}
+
+h4 {
+  font-size: var(--fs-h4);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-snug);
+  color: var(--fg-1);
+  margin: 0;
+}
+
+.lead, p.lead {
+  font-size: var(--fs-lead);
+  line-height: var(--lh-relaxed);
+  color: var(--fg-2);
+}
+
+p {
+  font-size: var(--fs-body);
+  line-height: var(--lh-relaxed);
+  color: var(--fg-1);
+  margin: 0;
+}
+
+small, .small {
+  font-size: var(--fs-small);
+  line-height: var(--lh-normal);
+  color: var(--fg-2);
+}
+
+.caption {
+  font-size: var(--fs-caption);
+  line-height: var(--lh-normal);
+  color: var(--fg-3);
+}
+
+.eyebrow {
+  font-size: var(--fs-caption);
+  font-weight: var(--fw-semibold);
+  letter-spacing: var(--ls-eyebrow);
+  text-transform: uppercase;
+  color: var(--brand-teal);
+}
+
+code, .mono {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  background: var(--bg-sunken);
+  padding: 2px 6px;
+  border-radius: var(--r-xs);
+  color: var(--fg-1);
+}
+
+a {
+  color: var(--brand-teal);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--dur-fast) var(--ease-out),
+              color var(--dur-fast) var(--ease-out);
+}
+a:hover { color: var(--brand-teal-deep); border-bottom-color: currentColor; }
+
+::selection { background: var(--accent-soft); color: var(--brand-navy); }

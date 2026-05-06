@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Semantic Colors</title>
+<link rel="stylesheet" href="card.css">
+<style>
+  .sem { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .sem-item {
+    border-radius: 10px;
+    padding: 14px;
+    border: 1px solid transparent;
+    display: flex; flex-direction: column; gap: 6px;
+  }
+  .sem-dot { width: 20px; height: 20px; border-radius: 50%; }
+  .sem-name { font-weight: 600; font-size: 14px; }
+  .sem-hex { font-family: var(--font-mono); font-size: 11px; color: var(--fg-3); }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="label">Semantic — status</div>
+  <div class="sem">
+    <div class="sem-item" style="background: #E4F0F2; border-color: #B8D4DA">
+      <div class="sem-dot" style="background: #4899A7"></div>
+      <div class="sem-name">Info</div>
+      <div class="sem-hex">#4899A7</div>
+    </div>
+    <div class="sem-item" style="background: #E4F0E8; border-color: #B8D4C1">
+      <div class="sem-dot" style="background: #4A8F5F"></div>
+      <div class="sem-name">Success</div>
+      <div class="sem-hex">#4A8F5F</div>
+    </div>
+    <div class="sem-item" style="background: #F7EFD9; border-color: #E3D4A8">
+      <div class="sem-dot" style="background: #C89A3C"></div>
+      <div class="sem-name">Warning</div>
+      <div class="sem-hex">#C89A3C</div>
+    </div>
+    <div class="sem-item" style="background: #F5E3DF; border-color: #E3BFB8">
+      <div class="sem-dot" style="background: #B8574D"></div>
+      <div class="sem-name">Danger</div>
+      <div class="sem-hex">#B8574D</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

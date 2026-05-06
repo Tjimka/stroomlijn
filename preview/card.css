@@ -1,0 +1,61 @@
+/* Shared styles for Design System preview cards.
+   Each card is designed to fit ~700px wide with flexible height. */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("../colors_and_type.css");
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-canvas);
+  font-family: var(--font-sans);
+  color: var(--fg-1);
+}
+
+.card {
+  box-sizing: border-box;
+  padding: 28px 32px;
+  background: var(--bg-surface);
+  width: 100%;
+  min-height: 100%;
+}
+
+.card--sand { background: var(--brand-sand); }
+.card--navy { background: var(--brand-navy); color: #fff; }
+
+.row { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+.col { display: flex; flex-direction: column; gap: 8px; }
+.grid { display: grid; gap: 16px; }
+
+.swatch {
+  border-radius: var(--r-md);
+  border: 1px solid rgba(26, 46, 74, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 12px;
+  box-sizing: border-box;
+}
+.swatch__name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--fg-on-brand);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+.swatch__hex {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: rgba(255,255,255,0.85);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+.swatch--light .swatch__name { color: var(--fg-1); text-shadow: none; }
+.swatch--light .swatch__hex { color: var(--fg-3); text-shadow: none; }
+
+.label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--fg-3);
+  margin-bottom: 10px;
+}
