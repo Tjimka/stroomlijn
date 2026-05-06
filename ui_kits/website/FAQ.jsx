@@ -3,7 +3,7 @@ function FAQ() {
   const items = [
     {
       q: "Hoe snel kan ik AI in mijn bedrijf gebruiken?",
-      a: "Sneller dan je denkt. Een eerste werkende oplossing — bijvoorbeeld een AI-assistent voor klantvragen of interne kennis — staat vaak binnen twee tot vier weken. Een gratis kennismaking duurt 30 minuten."
+      a: "Sneller dan je denkt. Een eerste werkende oplossing, bijvoorbeeld een AI-assistent voor klantvragen of interne kennis. — staat vaak binnen twee tot vier weken. Een gratis kennismaking duurt 30 minuten."
     },
     {
       q: "Wat kost het om te starten?",
