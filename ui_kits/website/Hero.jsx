@@ -32,9 +32,13 @@ function Hero({ onNav }) {
           Ik kijk mee naar jouw werkzaamheden en zorg dat het gewoon werkt.
         </p>
         <div className="hero-ctas">
-          <button className="btn btn-primary btn-lg" onClick={() => onNav("contact")}>
-            Plan een vrijblijvend gesprek <Icon.ArrowRight width={17} height={17} />
-          </button>
+         href="https://calendly.com/afspraak-met-tjimka/stroomlijn"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn btn-primary btn-lg"
+>
+  Plan een vrijblijvend gesprek <Icon.ArrowRight width={17} height={17} />
+</a>
           <button className="btn btn-secondary btn-lg" onClick={() => onNav("werkwijze")}>
             Zo werk ik
           </button>
