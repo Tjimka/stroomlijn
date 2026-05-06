@@ -15,7 +15,7 @@ function AIAct() {
             <div className="aiact-eu">EU AI-Act · 2026</div>
             <h3 style={{ marginTop: 4 }}>AI implementeren binnen de regels</h3>
             <p>
-              De EU AI-Act stelt eisen aan hoe je AI inzet in je bedrijf — denk aan
+              De EU AI-Act stelt eisen aan hoe je AI inzet in je bedrijf. Denk aan
               transparantie, risico-classificatie en datagebruik. Ik help je
               compliant te werken zonder dat het bureaucratie wordt. Onderdeel van
               elk advies- en implementatietraject.
