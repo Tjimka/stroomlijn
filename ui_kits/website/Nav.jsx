@@ -23,10 +23,15 @@ function Nav({ current, onNav }) {
           ))}
         </div>
         <div className="nav-cta">
-          <button className="nav-link" onClick={() => onNav("contact")}>Contact</button>
-          <button className="btn btn-primary btn-sm" onClick={() => onNav("contact")}>
-            Plan een gesprek <Icon.ArrowRight width={15} height={15} />
-          </button>
+  <button className="nav-link" onClick={() => onNav("contact")}>Contact</button>
+  
+    href="https://calendly.com/afspraak-met-tjimka/stroomlijn"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="btn btn-primary btn-sm"
+  >
+    Plan een gesprek <Icon.ArrowRight width={15} height={15} />
+  </a>
         </div>
       </div>
     </nav>
