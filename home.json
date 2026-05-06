@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "lang": "nl",
+    "title": "Stroomlijn — AI zonder gedoe, gewoon doen.",
+    "description": "AI-strategie, training en implementatie voor MKB en teams. Menselijk, praktisch, op maat. Vanuit Lemmer, voor heel Nederland.",
+    "favicon": "/favicon.ico",
+    "logo": "/logo-wordmark.png"
+  },
+  "nav": {
+    "logo": { "src": "/logo-wordmark.png", "alt": "Stroomlijn" },
+    "links": [
+      { "id": "werkwijze", "label": "Werkwijze" },
+      { "id": "aanbod", "label": "Aanbod" },
+      { "id": "platform", "label": "Platform" },
+      { "id": "over", "label": "Over Tjimka" },
+      { "id": "reviews", "label": "Klanten" },
+      { "id": "media", "label": "Blog & media" }
+    ],
+    "cta": { "label": "Plan een gesprek", "href": "#contact", "variant": "primary", "icon": "ArrowRight" },
+    "secondary": { "label": "Contact", "href": "#contact" }
+  },
+  "hero": {
+    "id": "home",
+    "eyebrow": "AI-strategie · Training · Implementatie",
+    "title": { "lead": "AI zonder gedoe,", "accent": "gewoon doen." },
+    "lead": "We helpen MKB-ondernemers en teams in Noord-Nederland AI werkend krijgen in hun bedrijf. Praktisch, op maat, met een mens aan het roer.",
+    "ctas": [
+      { "label": "Plan een gratis gesprek", "href": "#contact", "variant": "primary", "icon": "ArrowRight" },
+      { "label": "Zo werken we", "href": "#werkwijze", "variant": "secondary" }
+    ],
+    "trust": [
+      { "icon": "MapPin", "label": "Lemmer · Friesland" },
+      { "icon": "Check", "label": "Eerste gesprek kosteloos" },
+      { "icon": "Shield", "label": "EU AI-Act conform" }
+    ],
+    "slides": ["/photos/hero-slider-1.png", "/photos/hero-slider-2.png"],
+    "slideInterval": 6500
+  },
+  "trustBar": {
+    "label": "Eerder gewerkt met",
+    "clients": [
+      { "src": "/clients/klm.png", "alt": "KLM", "height": 38 },
+      { "src": "/clients/koga.png", "alt": "Koga", "height": 26 },
+      { "src": "/clients/whisperpower.png", "alt": "WhisperPower", "height": 50 },
+      { "src": "/clients/sportvisserij.jpeg", "alt": "Sportvisserij Nederland", "height": 46 },
+      { "src": "/clients/icd.png", "alt": "Innovatiecluster Drachten", "height": 40 },
+      { "src": "/clients/dehaan.png", "alt": "DeHaan Advocaten", "height": 32 },
+      { "src": "/clients/nefitbosch.png", "alt": "Nefit Bosch", "height": 44 },
+      { "src": "/clients/mediahuis.png", "alt": "Mediahuis Noord", "height": 36 }
+    ],
+    "footnote": "Van luchtvaart en superjachten tot MKB in Friesland — 30+ jaar marketingervaring, nu ingezet voor AI die past bij <em>jouw</em> werk."
+  },
+  "werkwijze": {
+    "id": "werkwijze",
+    "eyebrow": "Werkwijze",
+    "title": "Drie stappen, één doel: AI werkend krijgen",
+    "lead": "Geen lange trajecten zonder einde. We beginnen klein, leveren snel resultaat, en bouwen verder vanaf wat werkt.",
+    "steps": [
+      { "n": 1, "icon": "Phone", "title": "Gratis kennismaking", "desc": "We bellen of zien elkaar — fysiek of online. We luisteren naar je situatie. Geen pitch, geen verplichtingen.", "meta": "30 minuten · kosteloos" },
+      { "n": 2, "icon": "Compass", "title": "Stroomlijn Sessie", "desc": "Een werksessie waarin we samen kijken waar AI rust en winst oplevert in jouw bedrijf. Helder, concreet, praktisch.", "meta": "Halve of hele dag" },
+      { "n": 3, "icon": "Waves", "title": "Plan van aanpak", "desc": "Een helder plan met keuzes, prioriteiten en kosten. Inclusief wat je zelf doet en waar we je bij helpen.", "meta": "Schriftelijk uitgewerkt" }
+    ],
+    "cta": { "label": "Start met stap 1", "href": "#contact", "variant": "primary", "icon": "ArrowRight" }
+  },
+  "services": {
+    "id": "aanbod",
+    "eyebrow": "Aanbod",
+    "title": "Van eerste vraag tot werkend systeem",
+    "lead": "We begeleiden je in drie vormen. Soms is één genoeg. Soms loopt het een natuurlijke route: eerst advies, dan training, dan implementatie. Wat past, past.",
+    "cards": [
+      { "tone": "teal", "icon": "Building2", "title": "Advies & strategie", "desc": "Wat heeft jouw bedrijf nodig, en wat juist niet. Heldere keuzes, zonder technologische push.", "bullets": ["AI-scan van je processen", "Strategie & roadmap", "Risico's & EU AI-Act"], "cta": { "label": "Lees meer over advies", "href": "#advies" } },
+      { "tone": "gold", "icon": "GraduationCap", "title": "Training & kennissessies", "desc": "Voor jou alleen of met je team. Praktisch, rustig en direct toepasbaar — geen drie-dagen-cursus.", "bullets": ["Stroomlijn Sessie (1-op-1)", "Team workshops", "Kennissessies op maat"], "cta": { "label": "Bekijk trainingen", "href": "#training" } },
+      { "tone": "navy", "icon": "Settings2", "title": "Implementatie", "desc": "AI-assistenten, chatbots, kennisbanken en geautomatiseerde workflows die jouw werkdag dragen.", "bullets": ["AI-agents & chatbots", "Kennisbanken & knowhow", "Workflow-automatisering"], "cta": { "label": "Zie implementaties", "href": "#implementatie" } }
+    ]
+  },
+  "ctaBand": {
+    "title": "AI werkend krijgen in jouw bedrijf. Met een mens aan het roer.",
+    "lead": "30 minuten, kosteloos en vrijblijvend. We kijken samen of het klikt.",
+    "actions": [
+      { "label": "Plan een gratis gesprek", "href": "#contact", "variant": "on-dark", "icon": "ArrowRight" },
+      { "label": "Bekijk het aanbod", "href": "#aanbod", "variant": "outline-dark" }
+    ]
+  },
+  "faq": {
+    "id": "faq",
+    "eyebrow": "Veelgestelde vragen",
+    "title": "Goede vragen, eerlijke antwoorden.",
+    "lead": "Staat jouw vraag er niet bij? Stel hem in een gratis kennismaking — dan kijken we er samen naar.",
+    "cta": { "label": "Stel je vraag", "href": "#contact", "variant": "secondary", "icon": "Mail" },
+    "items": [
+      { "q": "Hoe snel kan ik AI in mijn bedrijf gebruiken?", "a": "Sneller dan je denkt. Een eerste werkende oplossing staat vaak binnen twee tot vier weken." },
+      { "q": "Wat kost het om te starten?", "a": "Het eerste gesprek is gratis. Implementatieprojecten begroten we vooraf — geen open eindes." },
+      { "q": "Wat als ik geen technische kennis heb?", "a": "Dan ben je bij ons aan het juiste adres. We leggen AI uit in normale taal." },
+      { "q": "Waar is Stroomlijn gevestigd?", "a": "In Lemmer, Friesland. We werken in heel Noord-Nederland en online door heel Nederland." },
+      { "q": "Hoe zit het met de EU AI-Act?", "a": "Compliance is geen extraatje maar een vast onderdeel van elk traject." }
+    ]
+  },
+  "footer": {
+    "logo": { "src": "/logo-wordmark.png", "alt": "Stroomlijn" },
+    "tagline": "AI-strategie, training en implementatie. Menselijk, praktisch, op maat.",
+    "social": [
+      { "platform": "linkedin", "icon": "Linkedin", "href": "https://linkedin.com/", "label": "LinkedIn" },
+      { "platform": "email", "icon": "Mail", "href": "mailto:hallo@stroomlijn.nu", "label": "E-mail" },
+      { "platform": "phone", "icon": "Phone", "href": "tel:+31000000000", "label": "Telefoon" }
+    ],
+    "columns": [
+      { "title": "Aanbod", "links": [{ "label": "Advies & strategie", "href": "#advies" }, { "label": "Training & sessies", "href": "#training" }, { "label": "Implementatie", "href": "#implementatie" }] },
+      { "title": "Werkwijze", "links": [{ "label": "Kennismaking", "href": "#contact" }, { "label": "Stroomlijn Sessie", "href": "#werkwijze" }, { "label": "EU AI-Act", "href": "#aiact" }] },
+      { "title": "Stroomlijn", "links": [{ "label": "Over Tjimka", "href": "#over" }, { "label": "Klantverhalen", "href": "#reviews" }, { "label": "Contact", "href": "#contact" }] }
+    ],
+    "copyright": "© 2026 Stroomlijn — Tjimka Bakker · KvK 00000000",
+    "legal": [
+      { "label": "Privacy", "href": "#privacy" },
+      { "label": "Algemene voorwaarden", "href": "#terms" },
+      { "label": "Cookies", "href": "#cookies" }
+    ]
+  }
+}
