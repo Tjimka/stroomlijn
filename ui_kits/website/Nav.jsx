@@ -31,7 +31,7 @@ function Nav({ current, onNav }) {
     className="btn btn-primary btn-sm"
   >
     Plan een gesprek <Icon.ArrowRight width={15} height={15} />
-  </a>
+  </a></div>
         </div>
       </div>
     </nav>
