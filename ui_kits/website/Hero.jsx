@@ -38,7 +38,7 @@ function Hero({ onNav }) {
   className="btn btn-primary btn-lg"
 >
   Plan een vrijblijvend gesprek <Icon.ArrowRight width={17} height={17} />
-</a>
+</a></div> 
           <button className="btn btn-secondary btn-lg" onClick={() => onNav("werkwijze")}>
             Zo werk ik
           </button>
