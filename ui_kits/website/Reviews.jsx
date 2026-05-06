@@ -2,24 +2,24 @@ function Reviews() {
   const reviews = [
     {
       stars: 5,
-      quote: "Tjimka heeft ons in één werkdag inzicht gegeven waar we maanden over zouden hebben gepraat. Geen hype, geen jargon — gewoon helder.",
+      quote: "Tjimka heeft ons in één werkdag inzicht gegeven waar we maanden over zouden hebben gepraat. Gewoon helder, ik ben direct aan de slag gegaan.",
       name: "Marleen de Vries",
       role: "Eigenaar · MKB-onderneming Friesland",
       initials: "MV",
     },
     {
       stars: 5,
-      quote: "We dachten dat we een chatbot nodig hadden. Tjimka liet zien dat we eerst onze processen moesten stroomlijnen. Eerlijk advies dat ons veel kostte aan haar — en veel opleverde.",
+      quote: "We dachten dat we een chatbot nodig hadden. Tjimka liet zien dat we eerst onze processen moesten stroomlijnen. Eerlijk advies dat veel opleverde.",
       name: "Pieter Visser",
       role: "Directeur · Servicebedrijf",
       initials: "PV",
     },
     {
       stars: 5,
-      quote: "De Stroomlijn Sessie was eye-opening. Eindelijk iemand die het uitlegt zonder neer te kijken. Mijn team kon de volgende dag al aan de slag.",
-      name: "Saskia Bakker",
-      role: "Teamlead · Zorgorganisatie",
-      initials: "SB",
+      quote: "De Stroomlijn Sessie was eye-opening. Eindelijk begreep ik waar iedereen het over heeft. Mijn team kon de volgende dag al aan de slag.",
+      name: "Otto",
+      role: "FSH",
+      initials: "FSH",
     },
   ];
   return (
