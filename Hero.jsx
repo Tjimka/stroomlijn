@@ -27,16 +27,16 @@ function Hero({ onNav }) {
       <div className="container-wide hero-content">
         <span className="eyebrow">AI-strategie · Training · Implementatie</span>
         <h1 className="hero-title">
-          AI zonder gedoe,<br />
-          <em>gewoon doen.</em>
+          Slimmer werken.<br />
+          <em>Zonder gedoe.</em>
         </h1>
         <p className="hero-lead">
-          Ik help MKB-ondernemers en teams in Noord-Nederland AI werkend krijgen
-          in hun bedrijf. Praktisch, op maat, met een mens aan het roer.
+          Ik help ondernemers en teams om AI praktisch in te zetten.
+          Concreet, menselijk en zonder afhankelijkheid van losse tools.
         </p>
         <div className="hero-ctas">
           <button className="btn btn-primary btn-lg" onClick={() => onNav("contact")}>
-            Plan een gratis gesprek <Icon.ArrowRight width={17} height={17} />
+            Plan een gratis kennismaking <Icon.ArrowRight width={17} height={17} />
           </button>
           <button className="btn btn-secondary btn-lg" onClick={() => onNav("werkwijze")}>
             Zo werk ik
@@ -44,7 +44,7 @@ function Hero({ onNav }) {
         </div>
         <div className="hero-trust">
           <span><Icon.MapPin width={15} height={15} /> Lemmer · Friesland</span>
-          <span><Icon.Check width={15} height={15} /> Eerste gesprek kosteloos</span>
+          <span><Icon.Check width={15} height={15} /> Eerste gesprek kosteloos · 30 minuten, vrijblijvend.</span>
           <span><Icon.Shield width={15} height={15} /> EU AI-Act conform</span>
         </div>
       </div>
