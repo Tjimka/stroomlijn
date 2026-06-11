@@ -4,7 +4,7 @@ function About() {
       <div className="container-wide">
         <div className="about-grid">
           <div className="about-photo">
-            <img src="../../assets/photos/tjimka-portrait-warm.png" alt="Tjimka Bakker" />
+            <img src="/assets/photos/tjimka-portrait-warm.png" alt="Tjimka Bakker" />
             <div className="about-photo-tag">
               <span className="dot"></span> Lemmer · Friesland
             </div>
