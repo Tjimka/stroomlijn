@@ -11,7 +11,7 @@ function Nav({ current, onNav }) {
     <nav className="nav">
       <div className="container-wide nav-inner">
         <div className="nav-logo" onClick={() => onNav("home")} role="button" aria-label="Stroomlijn home">
-          <img src="../../assets/logo-wordmark.png" alt="Stroomlijn" />
+          <img src="/assets/logo-wordmark.png" alt="Stroomlijn" />
         </div>
         <div className="nav-links">
           {links.map(l => (
