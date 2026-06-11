@@ -4,7 +4,7 @@ function Footer() {
       <div className="container-wide">
         <div className="footer-grid">
           <div className="footer-brand">
-            <img src="../../assets/logo-wordmark.png" alt="Stroomlijn" />
+            <img src="/assets/logo-wordmark.png" alt="Stroomlijn" />
             <p className="footer-tag">
               AI-strategie, training en implementatie. Menselijk, praktisch, op maat.
               Vanuit Lemmer, voor heel Nederland.
