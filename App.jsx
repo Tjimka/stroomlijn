@@ -12,6 +12,7 @@ function App() {
       <main>
         <div id="home"></div>
         <Hero onNav={nav}/>
+        <PainSection/>
         <TrustBar/>
         <Werkwijze onNav={nav}/>
         <Aanbod onNav={nav}/>
