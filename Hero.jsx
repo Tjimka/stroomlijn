@@ -1,7 +1,7 @@
 function Hero({ onNav }) {
   const slides = [
-    "../../assets/photos/hero-slider-1.png",
-    "../../assets/photos/hero-slider-2.png",
+    "/assets/photos/hero-slider-1.png",
+    "/assets/photos/hero-slider-2.png",
   ];
   const [idx, setIdx] = React.useState(0);
 
