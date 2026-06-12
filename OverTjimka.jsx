@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from "react";
+const { useState, useEffect, useRef, useCallback } = React;
 
 /* ─── design tokens STROOMLIJN ──────────────────────────── */
 const T = {
@@ -581,3 +581,4 @@ export default function OverTjimka() {
     </div>
   );
 }
+window.OverTjimka = OverTjimka;
