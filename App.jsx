@@ -18,7 +18,7 @@ function App() {
         <Aanbod onNav={nav}/>
         <Platform onNav={nav}/>
         <AIAct/>
-        <About/>
+        <OverTjimka/>
         <Reviews/>
         <Media onNav={nav}/>
         <CTABand onNav={nav}/>
