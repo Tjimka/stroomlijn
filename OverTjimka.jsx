@@ -1,3 +1,7 @@
+function OverTjimka() {
+  const items = [
+    {
+
 const { useState, useEffect, useRef, useCallback } = React;
 
 /* ─── design tokens STROOMLIJN ──────────────────────────── */
