@@ -24,7 +24,7 @@ const FOTOS = {
   ],
   water: [
     { src: null, alt: "Aan het roer van de SVEA" },
-    { src: null, alt: "De SVEA in Noorwegen" },
+    { src: "foto's/Svea Solo reis - hier in Noorwegen.jpeg", alt: "De SVEA in Noorwegen" },
     { src: null, alt: "IFKS Skûtsjesilen" },
   ],
   lucht: [
