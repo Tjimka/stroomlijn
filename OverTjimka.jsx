@@ -19,27 +19,27 @@ const T = {
    het bijschrift, zodat de lay-out alvast klopt.            */
 const FOTOS = {
   hero: [
-    { src: null, alt: "Tjimka nu, telefoon aan het oor" },
-    { src: null, alt: "Tjimka als kind aan de speelgoedtelefoon" },
+    { src: "foto's/telefoon kopie.jpg", alt: "Tjimka nu, telefoon aan het oor" },
+    { src: "foto's/Tjimka aan telefoon (5jr).jpg", alt: "Tjimka als kind aan de speelgoedtelefoon" },
   ],
   water: [
-    { src: null, alt: "Aan het roer van de SVEA" },
+    { src: "foto's/Scherm­afbeelding 2026-05-23 om 18.38.10.jpg", alt: "Aan het roer van de SVEA" },
     { src: "foto's/Svea Solo reis - hier in Noorwegen.jpeg", alt: "De SVEA in Noorwegen" },
-    { src: null, alt: "IFKS Skûtsjesilen" },
+    { src: "foto's/Scherm­afbeelding 2026-05-23 om 18.44.41.jpg", alt: "IFKS Skûtsjesilen" },
   ],
   lucht: [
-    { src: null, alt: "In de cockpit van de Hawker Hunter" },
-    { src: null, alt: "Meevliegen in een Cessna" },
-    { src: null, alt: "KLM, onderweg" },
+    { src: "foto's/Vlucht in Dutch Hawker Hunter - naar Engeland.jpeg", alt: "In de cockpit van de Hawker Hunter" },
+    { src: "foto's/Vliegen in een Cessna - 1e ervaring.jpeg", alt: "Meevliegen in een Cessna" },
+    { src: "foto's/Vlucht KLM met Northwest Airlines.jpeg", alt: "KLM, Dutch Dakota" },
   ],
   land: [
-    { src: null, alt: "Onderweg op het Pieterpad" },
-    { src: null, alt: "Op de motor" },
-    { src: null, alt: "Superjachten, Fort Lauderdale" },
+    { src: "foto's/Wandelen Pieterpad.jpeg", alt: "Onderweg op het Pieterpad" },
+    { src: "foto's/Tjimka op motor.jpg", alt: "Op de motor" },
+    { src: "foto's/Superjacht Florida.jpeg", alt: "Superjachten, Fort Lauderdale" },
   ],
   ai: [
-    { src: null, alt: "Innovatiecluster Drachten" },
-    { src: null, alt: "Aan het werk met AI-agents" },
+    { src: "foto's/ICD.jpg", alt: "Innovatiecluster Drachten" },
+    { src: "foto's/laptop.jpg", alt: "Aan het werk met AI-agents" },
   ],
 };
 
