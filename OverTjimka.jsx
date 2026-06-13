@@ -105,7 +105,7 @@ function OTSlideshow({ fotos, interval = 3200, pauze }) {
         >
           {f.src ? (
             <img src={f.src} alt={f.alt}
-              style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+              style={{ width: "100%", height: "100%", objectFit: "contain" }} />
           ) : (
             <div style={{
               width: "100%", height: "100%",
