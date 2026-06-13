@@ -3,13 +3,92 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Stroomlijn - AI zonder gedoe, gewoon doen.</title>
+
+<!-- ── Basis SEO ── -->
+<title>STROOMLIJN | AI-strateeg Tjimka Bakker - slimmer werken met AI, zonder gedoe</title>
+<meta name="description" content="STROOMLIJN helpt MKB-ondernemers en teams in Noord-Nederland om praktisch en menselijk met AI te werken. AI-strategie, chatbots en flows van AI-strateeg Tjimka Bakker uit Lemmer.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Tjimka Bakker">
+<link rel="canonical" href="https://stroomlijn.nu/">
+
+<!-- ── Open Graph (LinkedIn, Facebook, WhatsApp) ── -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="STROOMLIJN">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:title" content="STROOMLIJN | Slimmer werken met AI, zonder gedoe">
+<meta property="og:description" content="Praktische, menselijke AI voor MKB-ondernemers en teams in Noord-Nederland. Door AI-strateeg Tjimka Bakker.">
+<meta property="og:url" content="https://stroomlijn.nu/">
+<!-- VERVANG door een echte, absolute afbeeldings-URL van minimaal 1200x630px -->
+<meta property="og:image" content="https://stroomlijn.nu/assets/og-stroomlijn.jpg">
+
+<!-- ── Twitter / X ── -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="STROOMLIJN | Slimmer werken met AI, zonder gedoe">
+<meta name="twitter:description" content="Praktische, menselijke AI voor MKB-ondernemers en teams in Noord-Nederland.">
+<meta name="twitter:image" content="https://stroomlijn.nu/assets/og-stroomlijn.jpg">
+
+<!-- ── Lokaal / geo ── -->
+<meta name="geo.region" content="NL-FR">
+<meta name="geo.placename" content="Lemmer">
+<meta name="theme-color" content="#0F1E28">
+
 <link rel="icon" href="assets/favicon-s-mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="colors_and_type.css">
 <link rel="stylesheet" href="site.css">
+
+<!-- ── Structured data: helpt Google en AI-zoekmachines je correct te citeren ── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://stroomlijn.nu/#organisatie",
+      "name": "STROOMLIJN",
+      "description": "AI-strategie, chatbots en flows voor MKB-ondernemers, professionals en teams. Praktische en menselijke toepassing van AI.",
+      "url": "https://stroomlijn.nu/",
+      "slogan": "Slimmer werken met AI. Zonder gedoe.",
+      "founder": { "@id": "https://stroomlijn.nu/#tjimka" },
+      "areaServed": [
+        { "@type": "AdministrativeArea", "name": "Friesland" },
+        { "@type": "AdministrativeArea", "name": "Noord-Nederland" }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lemmer",
+        "addressRegion": "Friesland",
+        "addressCountry": "NL"
+      },
+      "knowsAbout": [
+        "AI-strategie", "Generatieve AI", "Chatbots", "AI-agents",
+        "Automatisering", "AI-geletterdheid", "Digitale transformatie"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://stroomlijn.nu/#tjimka",
+      "name": "Tjimka Bakker",
+      "jobTitle": "AI-strateeg",
+      "worksFor": { "@id": "https://stroomlijn.nu/#organisatie" },
+      "description": "AI-strateeg en oprichter van STROOMLIJN. Helpt ondernemers en teams om rustig en praktisch met AI te werken.",
+      "knowsAbout": ["AI-strategie", "Chatbots", "AI-agents", "Automatisering"]
+      /* VUL AAN met echte profiel-URL's, bijvoorbeeld:
+      , "sameAs": ["https://www.linkedin.com/in/...", "https://stroomlijn.nu/over"] */
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://stroomlijn.nu/#website",
+      "url": "https://stroomlijn.nu/",
+      "name": "STROOMLIJN",
+      "publisher": { "@id": "https://stroomlijn.nu/#organisatie" },
+      "inLanguage": "nl-NL"
+    }
+  ]
+}
+</script>
 
 <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
@@ -33,7 +112,6 @@
 <script type="text/babel" src="CTABand.jsx"></script>
 <script type="text/babel" src="FAQ.jsx"></script>
 <script type="text/babel" src="Contact.jsx"></script>
-<script type="text/babel" src="Footer.jsx"></script>
 <script type="text/babel" src="App.jsx"></script>
 </body>
 </html>
