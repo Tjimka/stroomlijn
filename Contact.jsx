@@ -60,7 +60,7 @@ function Contact() {
               <div className="icn"><Icon.Mail width={18} height={18}/></div>
               <div>
                 <div className="ttl">E-mail</div>
-                <div className="val">tjimka@stroomlijn.nu</div>
+                <div className="val">info@tjimka.nl</div>
               </div>
             </div>
             <div className="contact-row">
