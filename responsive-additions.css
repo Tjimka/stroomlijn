@@ -1,0 +1,146 @@
+/* ============================================================
+   STROOMLIJN – responsive aanvullingen op site.css
+   Voeg dit toe ONDER aan site.css (of importeer als apart bestand
+   na site.css in index.html).
+   ============================================================ */
+
+/* ── 1. Kleinere padding op echte mobiel ──────────────────── */
+@media (max-width: 600px) {
+  .container,
+  .container-wide,
+  .container-narrow { padding: 0 20px; }
+
+  .section { padding: 64px 0; }
+  .section-sm { padding: 44px 0; }
+
+  .hero-title { font-size: 32px !important; line-height: 1.1 !important; }
+  .hero-lead { font-size: 16px !important; }
+  .hero-content { padding-top: 72px !important; padding-bottom: 80px !important; }
+  .hero-dots { display: none; }
+
+  .sec-title { font-size: 26px !important; }
+  .sec-lead { font-size: 16px !important; }
+  .sec-head { margin-bottom: 36px; }
+
+  .ctaband { padding: 32px 24px !important; }
+  .ctaband h2 { font-size: 22px !important; }
+  .platform { padding: 28px 20px !important; }
+  .platform h2 { font-size: 26px !important; }
+
+  .aiact { padding: 24px 20px !important; }
+  .contact-form-side,
+  .contact-info-side { padding: 24px 20px !important; }
+
+  .footer { padding: 48px 0 20px; }
+}
+
+/* ── 2. Footer naar één kolom op smal scherm ──────────────── */
+@media (max-width: 600px) {
+  .footer-grid { grid-template-columns: 1fr !important; gap: 32px; }
+}
+
+/* ── 3. Hamburger-menu ────────────────────────────────────────
+   Werkt met een data-attribuut [data-menu-open] op het <nav>
+   element. Nav.jsx voegt dat toe via de toggle-knop.
+   Geen wijziging in de structuur van Nav.jsx nodig,
+   alleen de onderstaande Nav.jsx-patch plakken.            */
+
+/* Hamburger-knop – altijd aanwezig in de DOM maar
+   onzichtbaar op breed scherm                              */
+.nav-burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 6px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+.nav-burger:hover { background: rgba(15,30,40,0.06); }
+.nav-burger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--fg-1);
+  border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+/* open-staat: X */
+.nav[data-menu-open] .nav-burger span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav[data-menu-open] .nav-burger span:nth-child(2) {
+  opacity: 0;
+}
+.nav[data-menu-open] .nav-burger span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 960px) {
+  .nav-burger { display: flex; }
+
+  /* verberg de CTA-knop "Plan een gesprek" in de nav,
+     die staat al in het mobiele dropdown-menu          */
+  .nav-cta .btn-primary { display: none; }
+
+  /* uitklapmenu */
+  .nav-links {
+    display: flex !important;        /* overschrijf de display:none */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0; right: 0;
+    background: rgba(240,237,228,0.97);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(225,222,209,0.55);
+    padding: 16px 20px 20px;
+    gap: 0;
+    /* verborgen totdat data-menu-open aanwezig is */
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: opacity 0.22s ease, transform 0.22s ease;
+    /* zorg dat het over de content valt */
+    z-index: 49;
+  }
+
+  .nav[data-menu-open] .nav-links {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .nav-links .nav-link {
+    font-size: 16px;
+    padding: 13px 4px;
+    border-bottom: 1px solid rgba(225,222,209,0.45);
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .nav-links .nav-link:last-child { border-bottom: none; }
+
+  /* de nav-inner moet position:relative hebben
+     zodat het dropdown eronder uitklapt             */
+  .nav-inner { position: relative; }
+}
+
+/* ── 4. Over Tjimka sectie – al responsive via eigen media-query
+        in OverTjimka.jsx (@media max-width:820px)            */
+
+/* ── 5. Kleine uitlijning: platform-features naar 1 kolom ── */
+@media (max-width: 600px) {
+  .platform-features { grid-template-columns: 1fr !important; }
+  .hero-ctas { flex-direction: column; align-items: flex-start; }
+  .hero-ctas .btn { width: 100%; justify-content: center; }
+  .ctaband { flex-direction: column; align-items: flex-start; }
+  .ctaband .actions { width: 100%; }
+  .ctaband .actions .btn { flex: 1; justify-content: center; }
+  .reviews-grid { grid-template-columns: 1fr !important; }
+  .werkwijze-grid { grid-template-columns: 1fr !important; }
+  .aanbod-grid { grid-template-columns: 1fr !important; }
+  .contact-wrap { grid-template-columns: 1fr !important; }
+}
