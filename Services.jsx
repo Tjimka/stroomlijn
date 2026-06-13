@@ -25,6 +25,13 @@ function Aanbod({ onNav }) {
       cta: "Zie implementaties",
     },
   ];
+
+  // Externe vervolgpagina's op app.stroomlijn.nu
+  const meer = [
+    { href: "https://app.stroomlijn.nu/p/xqaaJSySar/interactieve-demos", label: "Bekijk de interactieve demo's" },
+    { href: "https://app.stroomlijn.nu/p/XedeEG7p/social-media-bureau", label: "Social media bureau" },
+  ];
+
   return (
     <section className="section" id="aanbod" data-screen-label="Aanbod" style={{ background: "var(--bg-surface-alt)" }}>
       <div className="container-wide">
@@ -47,6 +54,21 @@ function Aanbod({ onNav }) {
               </ul>
               <span className="link">{c.cta} <Icon.ArrowRight width={14} height={14} /></span>
             </div>
+          ))}
+        </div>
+
+        {/* Vervolgpagina's: demo's en social media bureau */}
+        <div style={{ marginTop: "32px", display: "flex", gap: "14px", flexWrap: "wrap" }}>
+          {meer.map((m, i) => (
+            <a
+              key={i}
+              className="btn btn-secondary"
+              href={m.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {m.label} <Icon.ArrowRight width={15} height={15} />
+            </a>
           ))}
         </div>
       </div>
