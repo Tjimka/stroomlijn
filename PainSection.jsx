@@ -96,7 +96,7 @@ function PainSection() {
       `}</style>
 
       <section className="pain" id="herken">
-        <div className="wrap">
+        <div className="container-wide">
           <div className="pain__grid">
             <div className="pain__sticky rv">
               <span className="eyebrow">Herken je dit</span>
