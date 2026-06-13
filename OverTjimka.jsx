@@ -2,14 +2,14 @@ const { useState, useEffect, useRef, useCallback } = React;
 
 /* ─── design tokens (uniek geprefixt om botsing met andere scripts te voorkomen) ─── */
 const OT = {
-  cream:    "#F7F1E6",
+  cream:    "#F0EDE4",
   teal:     "#4899A7",
-  tealDk:   "#3a7d89",
+  tealDk:   "#347684",
   goud:     "#BD9766",
-  navy:     "#0F1E28",
+  navy:     "#1A2E4A",
   grijs:    "#333333",
   midgrijs: "#777777",
-  licht:    "#ECEAE4",
+  licht:    "#E3DECE",
 };
 
 /* respecteer prefers-reduced-motion */
@@ -292,8 +292,8 @@ function OverTjimka({ onNav }) {
 
             {/* fotovenster */}
             <div style={{
-              position: "relative", width: "100%", aspectRatio: "4 / 3",
-              borderRadius: "4px", overflow: "hidden", background: OT.licht,
+              position: "relative", width: "100%", aspectRatio: "3 / 4",
+              borderRadius: "4px", overflow: "hidden", background: OT.navy,
             }}>
               <OTSlideshow fotos={wereld.fotos} pauze={pauze} />
               {/* leesbare gradient onderaan voor het bijschrift */}
