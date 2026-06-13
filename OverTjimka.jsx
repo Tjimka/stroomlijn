@@ -1,7 +1,3 @@
-function OverTjimka() {
-  const items = [
-    {
-
 const { useState, useEffect, useRef, useCallback } = React;
 
 /* ─── design tokens STROOMLIJN ──────────────────────────── */
@@ -298,7 +294,7 @@ function Stat({ getal, label }) {
 }
 
 /* ─── hoofd-component ───────────────────────────────────── */
-export default function OverTjimka() {
+function OverTjimka() {
   const [sectieRef, progress] = useScrollProgress();
   const [heroRef, heroVis] = useInView(0.08);
   const [sluitRef, sluitVis] = useInView(0.2);
