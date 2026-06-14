@@ -52,8 +52,7 @@ Ik bouw het voor je. Jij vertelt wat je nodig hebt, ik richt de tools, agents en
 Je bouwt het zelf. Met een abonnement op app.stroomlijn.nu maak je dit soort tools en agents in je eigen omgeving. Ik help je op weg.
 
 Wat past, past. Soms is begeleiding genoeg, soms neem ik het hele traject over.
-          <p></p>
-            </br>br></div>
+          </div>
         <div className="aanbod-grid">
           {cards.map((c, i) => (
             <div className={`aanbod-card ${c.cls}`} key={i}>
