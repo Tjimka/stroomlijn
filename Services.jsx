@@ -47,11 +47,11 @@ function Aanbod({ onNav }) {
             Een website die je via een Google Sheet beheert, een AI-assistent die klanten te woord staat, een digitale wallet-pas, een webshop, automatisch weekoverzicht en meer. Geen technische kennis nodig.
 Daarnaast laat ik in een aparte demo zien hoe ik social media-beheer voor meerdere klanten inricht. Van intake tot geplande post, inclusief last-minute wijzigingen.
               </p>
-          <p>
+          
 
-  <h3>De keuze: ik bouw het, of jij bouwt het </h3>
+  <h3><p>De keuze: ik bouw het, of jij bouwt het  </p></h3>
 
-          </p>
+         
 <p>Ik bouw het voor je. Jij vertelt wat je nodig hebt, ik richt de tools, agents en flows in. Klaar om te gebruiken.
 Je bouwt het zelf. Met een abonnement op app.stroomlijn.nu maak je dit soort tools en agents in je eigen omgeving. Ik help je op weg.</p>
 
