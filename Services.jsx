@@ -53,7 +53,7 @@ Je bouwt het zelf. Met een abonnement op app.stroomlijn.nu maak je dit soort too
 
 Wat past, past. Soms is begeleiding genoeg, soms neem ik het hele traject over.
           <p></p>
-        </div>
+            </br>br></div>
         <div className="aanbod-grid">
           {cards.map((c, i) => (
             <div className={`aanbod-card ${c.cls}`} key={i}>
