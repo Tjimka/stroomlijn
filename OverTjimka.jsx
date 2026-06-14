@@ -208,15 +208,23 @@ function OverTjimka({ onNav }) {
               fontSize: "clamp(24px, 3.4vw, 38px)", fontWeight: 700, lineHeight: 1.2,
               letterSpacing: "-0.02em", color: OT.navy, margin: "0 0 22px",
             }}>
-              Altijd op zoek naar koers.
+              De brug tussen
               <br />
-              <span style={{ color: OT.teal }}>Dan met rust aankomen.</span>
+              <span style={{ color: OT.teal }}>innovatie en de mens.</span>
             </h2>
             <p style={{ fontSize: "16px", lineHeight: 1.7, color: OT.grijs, margin: "0 0 14px" }}>
-              Mijn loopbaan loopt zelden recht. Ik beweeg tussen werelden die los lijken te staan, namelijk water, lucht, ondernemen en techniek. Op die snijvlakken leer ik het meest.
+              De meeste bedrijven beginnen bij de tool. Ik begin bij de processen en de mensen die ermee werken. Pas daarna kijk ik welke AI daar goed bij past.
+              Ik kom van de andere kant. KLM, superjachtenindustrie, drie jaar in de kern van de maakindustrie in Noord-Nederland. In al die werelden speelde hetzelfde.
+              Technologie en innovatie gaan snel. Mensen bewegen op een ander tempo. De vraag is altijd hoe je die twee bij elkaar brengt.
+<br></br>
+Dat is mijn vak, al voor AI een naam had.
+<br></br>
+In 2001 voer ik een jaar alleen. Van Nederland naar Scandinavië. Niet om te ontsnappen, maar om scherp te blijven. Om te voelen of ik nog op de juiste koers zat. Die gewoonte ben ik nooit kwijt geraakt.
+
             </p>
             <p style={{ fontSize: "16px", lineHeight: 1.7, color: OT.grijs, margin: "0 0 28px" }}>
-              Daar sta ik nu, met AI-strategie voor mensen die rust willen, geen ruis.
+  Bij STROOMLIJN doe ik dat nu voor anderen. Richting geven in een wereld die snel beweegt. Zodat ze niet worden meegesleurd, maar bewust kiezen.
+
             </p>
 
             <div style={{
