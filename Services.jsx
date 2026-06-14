@@ -44,7 +44,7 @@ function Aanbod({ onNav }) {
             <p></p>
             De voorbeelden hieronder zijn een greep uit de mogelijkheden. In de interactieve demo's zie je enkele werkende voorbeelden die je zelf kunt aanklikken. 
             Een website die je via een Google Sheet beheert, een AI-assistent die klanten te woord staat, een digitale wallet-pas, een webshop, automatisch weekoverzicht en meer. Geen technische kennis nodig.<br>
-Daarnaast laat ik in een aparte demo zien hoe ik social media-beheer voor meerdere klanten inricht. Van intake tot geplande post, inclusief last-minute wijzigingen.<br>
+Daarnaast laat ik in een aparte demo zien hoe ik social media-beheer voor meerdere klanten inricht. Van intake tot geplande post, inclusief last-minute wijzigingen.<br></br>
 
   De keuze: ik bouw het, of jij bouwt het
 
