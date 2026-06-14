@@ -83,7 +83,7 @@ function useOTInView(threshold = 0.15) {
 }
 
 /* ─── kleine crossfade-slideshow binnen de actieve wereld ─── */
-function OTSlideshow({ fotos, interval = 3200, pauze }) {
+function OTSlideshow({ fotos, interval = 3600, pauze }) {
   const [idx, setIdx] = useState(0);
   useEffect(() => { setIdx(0); }, [fotos]);
   useEffect(() => {
