@@ -49,7 +49,7 @@ Daarnaast laat ik in een aparte demo zien hoe ik social media-beheer voor meerde
               </p>
           
 
-  <h3><p>De keuze: ik bouw het, of jij bouwt het  </p></h3>
+  <h3>De keuze: ik bouw het, of jij bouwt het  </h3>
 
          
 <p>Ik bouw het voor je. Jij vertelt wat je nodig hebt, ik richt de tools, agents en flows in. Klaar om te gebruiken.
