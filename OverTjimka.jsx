@@ -1,6 +1,6 @@
 const { useState, useEffect, useRef, useCallback } = React;
 
-/* ─── design tokens (uniek geprefixt om botsing met andere scripts te voorkomen) ─── */
+/* ─── design tokens ─── */
 const OT = {
   cream:    "#F0EDE4",
   teal:     "#4899A7",
@@ -12,57 +12,79 @@ const OT = {
   licht:    "#E3DECE",
 };
 
-/* respecteer prefers-reduced-motion */
 const OT_REDUCED =
   typeof window !== "undefined" &&
   window.matchMedia &&
   window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-/* ─── foto's per wereld. Vervang de paden zodra de foto's gehost zijn. ─── */
-const OT_WERELDEN = [
+/* ─── Rode-draad hoofdstukken: chronologisch, 5 fasen ─── */
+/* Vul src in zodra foto's gehost zijn. Alt-tekst = context. */
+const OT_HOOFDSTUKKEN = [
   {
-    label: "Water",
-    kleur: OT.teal,
+    label:   "Roots",
+    kleur:   OT.teal,
+    periode: "Emmen & Tijnje · 1970–1988",
     tekst:
-      "Op het water ben ik thuis. Van skûtsjesilen tot solo naar Scandinavië op de SVEA. Daar leerde ik wat koers houden echt betekent.",
+      "Op mijn 4e naar Tijnje, een Friestalig dorp. Nederlandstalig, aan de rand. Je past je aan aan een omgeving die niet op je wacht, zonder bevestiging van de groep. Dat leer je vroeg, of niet.",
     fotos: [
-      { src: "foto's/Scherm­afbeelding 2026-05-23 om 18.38.10.jpg", alt: "Aan het roer van de SVEA" },
+      { src: "", alt: "Emmen — eerste pony in de tuin" },
+      { src: "", alt: "Tijnje — opgroeien aan de rand van het dorp" },
+    ],
+  },
+  {
+    label:   "Parijs & KLM",
+    kleur:   OT.goud,
+    periode: "1988–2006",
+    tekst:
+      "Au-pair in Parijs op 17,5 jaar. Daarna KLM: releases voor 70 landen, teletekst live, internet van fenomeen naar platform. Elf jaar meebouwen aan iets dat nog niemand kende.",
+    fotos: [
+      { src: "foto's/Vlucht KLM met Northwest Airlines.jpeg", alt: "KLM — vlucht met Northwest Airlines" },
+      { src: "foto's/Vlucht in Dutch Hawker Hunter - naar Engeland.jpeg", alt: "In de cockpit van de Hawker Hunter" },
+      { src: "foto's/Vliegen in een Cessna - 1e ervaring.jpeg", alt: "Eerste vliegervaring in een Cessna" },
+    ],
+  },
+  {
+    label:   "De SVEA",
+    kleur:   OT.teal,
+    periode: "2001–2002",
+    tekst:
+      "Solo naar Scandinavië op de SVEA. Gefilmd door Sunny Bergman voor \"Echter dan Echt\". Op zee heb je geen gelijk — je past aan, of je vergaat. In de stilte leer je wat je echt weet.",
+    fotos: [
       { src: "foto's/Svea Solo reis - hier in Noorwegen.jpeg", alt: "De SVEA in Noorwegen" },
+      { src: "foto's/Scherm­afbeelding 2026-05-23 om 18.38.10.jpg", alt: "Aan het roer van de SVEA" },
       { src: "foto's/Scherm­afbeelding 2026-05-23 om 18.44.41.jpg", alt: "IFKS Skûtsjesilen" },
     ],
   },
   {
-    label: "Lucht",
-    kleur: OT.goud,
+    label:   "Superjachten",
+    kleur:   OT.goud,
+    periode: "2002–2014",
     tekst:
-      "Elf jaar bij KLM. Meevliegen in een Cessna, later zelfs in een Hawker Hunter. De lucht in betekende voor mij de wereld zien.",
+      "Twaalf jaar internationale superjachtwereld. Van Monaco tot St. Barth. Motor, het Pieterpad, Formule 1. Complexe organisaties, hoge verwachtingen — de vertaalslag van systeem naar mens en terug.",
     fotos: [
-      { src: "foto's/Vlucht in Dutch Hawker Hunter - naar Engeland.jpeg", alt: "In de cockpit van de Hawker Hunter" },
-      { src: "foto's/Vliegen in een Cessna - 1e ervaring.jpeg", alt: "Meevliegen in een Cessna" },
-      { src: "foto's/Vlucht KLM met Northwest Airlines.jpeg", alt: "KLM, Dutch Dakota" },
-    ],
-  },
-  {
-    label: "Land",
-    kleur: OT.teal,
-    tekst:
-      "Motor, het Pieterpad en twaalf jaar een eigen praktijk in de internationale superjachtwereld. Van Monaco tot St. Barth.",
-    fotos: [
-      { src: "foto's/Wandelen Pieterpad.jpeg", alt: "Onderweg op het Pieterpad" },
-      { src: "foto's/Tjimka op motor.jpg", alt: "Op de motor" },
       { src: "foto's/Superjacht Florida.jpeg", alt: "Superjachten, Fort Lauderdale" },
+      { src: "foto's/Tjimka op motor.jpg", alt: "Op de motor" },
+      { src: "foto's/Wandelen Pieterpad.jpeg", alt: "Onderweg op het Pieterpad" },
     ],
   },
   {
-    label: "AI",
-    kleur: OT.goud,
+    label:   "AI & STROOMLIJN",
+    kleur:   OT.teal,
+    periode: "2020–nu",
     tekst:
-      "Drie jaar Innovatiecluster Drachten. Robotica, big data, 3D printing. Sinds ChatGPT volledig verdiept in AI als instrument, niet als hype.",
+      "Drie jaar Innovatiecluster Drachten. Robotica, big data, 3D printing. Dezelfde fascinatie als in 1995 bij de eerste KLM-websites — maar nu met 35 jaar ervaring en een scherp gevoel voor wat mensen echt nodig hebben.",
     fotos: [
       { src: "foto's/ICD.jpg", alt: "Innovatiecluster Drachten" },
       { src: "foto's/laptop.jpg", alt: "Aan het werk met AI-agents" },
     ],
   },
+];
+
+/* ─── Telefoon-diptiek: kind vs. nu ─── */
+/* Vul src in met de twee telefoonfotos zodra ze gehost zijn */
+const OT_DIPTIEK = [
+  { src: "", alt: "Tjimka als kind aan de telefoon", label: "Toen" },
+  { src: "", alt: "Tjimka nu aan de telefoon",       label: "Nu" },
 ];
 
 /* ─── hook: in beeld? ─── */
@@ -82,8 +104,8 @@ function useOTInView(threshold = 0.15) {
   return [ref, visible];
 }
 
-/* ─── kleine crossfade-slideshow binnen de actieve wereld ─── */
-function OTSlideshow({ fotos, interval = 3600, pauze }) {
+/* ─── crossfade-slideshow binnen het actieve hoofdstuk ─── */
+function OTSlideshow({ fotos, interval = 3800, pauze }) {
   const [idx, setIdx] = useState(0);
   useEffect(() => { setIdx(0); }, [fotos]);
   useEffect(() => {
@@ -104,15 +126,21 @@ function OTSlideshow({ fotos, interval = 3600, pauze }) {
           }}
         >
           {f.src ? (
-            <img src={f.src} alt={f.alt}
-              style={{ width: "100%", height: "100%", objectFit: "contain" }} />
+            <img
+              src={f.src}
+              alt={f.alt}
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
           ) : (
+            /* placeholder als foto nog niet gehost is */
             <div style={{
               width: "100%", height: "100%",
-              background: `linear-gradient(150deg, ${OT.licht} 0%, #ded9d0 100%)`,
+              background: `linear-gradient(150deg, ${OT.licht} 0%, #d8d3c8 100%)`,
               display: "flex", alignItems: "flex-end", padding: "16px",
             }}>
-              <span style={{ fontSize: "12px", color: OT.midgrijs, fontStyle: "italic" }}>{f.alt}</span>
+              <span style={{ fontSize: "12px", color: OT.midgrijs, fontStyle: "italic" }}>
+                {f.alt}
+              </span>
             </div>
           )}
         </div>
@@ -121,7 +149,7 @@ function OTSlideshow({ fotos, interval = 3600, pauze }) {
   );
 }
 
-/* ─── compacte teloop-stat ─── */
+/* ─── compacte teller-stat ─── */
 function OTStat({ getal, label }) {
   const [ref, vis] = useOTInView(0.4);
   const [n, setN] = useState(0);
@@ -130,8 +158,10 @@ function OTStat({ getal, label }) {
   useEffect(() => {
     if (!vis) return;
     if (OT_REDUCED) { setN(doel); return; }
-    let frame; const start = performance.now(); const duur = 900;
-    const tick = (t) => {
+    let frame;
+    const start = performance.now();
+    const duur  = 900;
+    const tick  = (t) => {
       const p = Math.min((t - start) / duur, 1);
       setN(Math.round(doel * (1 - Math.pow(1 - p, 3))));
       if (p < 1) frame = requestAnimationFrame(tick);
@@ -140,32 +170,42 @@ function OTStat({ getal, label }) {
     return () => cancelAnimationFrame(frame);
   }, [vis, doel]);
   return (
-    <div>
-      <p style={{ fontSize: "24px", fontWeight: 700, color: OT.navy, lineHeight: 1, margin: 0 }}>{n}{suffix}</p>
+    <div ref={ref}>
+      <p style={{ fontSize: "24px", fontWeight: 700, color: OT.navy, lineHeight: 1, margin: 0 }}>
+        {n}{suffix}
+      </p>
       <p style={{ fontSize: "12px", color: OT.midgrijs, margin: "4px 0 0" }}>{label}</p>
     </div>
   );
 }
 
-/* ─── hoofd-component. onNav is optioneel en stuurt naar de diensten. ─── */
+/* ─── hoofd-component ─── */
 function OverTjimka({ onNav }) {
-  const [actief, setActief] = useState(0);
-  const [pauze, setPauze] = useState(false);
+  const [actief, setActief]   = useState(0);
+  const [pauze,  setPauze]    = useState(false);
   const [paneelRef, paneelVis] = useOTInView(0.12);
-  const [introRef, introVis] = useOTInView(0.12);
-  const wereld = OT_WERELDEN[actief];
+  const [introRef,  introVis]  = useOTInView(0.12);
+  const hoofdstuk = OT_HOOFDSTUKKEN[actief];
 
-  /* automatisch bladeren door de werelden */
+  /* automatisch doorbladeren */
   useEffect(() => {
     if (OT_REDUCED || pauze) return;
-    const t = setInterval(() => setActief((i) => (i + 1) % OT_WERELDEN.length), 5500);
+    const t = setInterval(
+      () => setActief((i) => (i + 1) % OT_HOOFDSTUKKEN.length),
+      5500
+    );
     return () => clearInterval(t);
   }, [pauze]);
 
   const kies = useCallback((i) => setActief(i), []);
+
   const naarDiensten = (e) => {
     e.preventDefault();
     if (typeof onNav === "function") onNav("aanbod");
+    else {
+      const el = document.getElementById("aanbod");
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -189,12 +229,13 @@ function OverTjimka({ onNav }) {
             alignItems: "center",
           }}
         >
-          {/* ── linkerkolom: intro ── */}
+
+          {/* ── linkerkolom: intro-tekst ── */}
           <div
             ref={introRef}
             style={{
-              opacity: introVis ? 1 : 0,
-              transform: introVis ? "none" : "translateY(20px)",
+              opacity:    introVis ? 1 : 0,
+              transform:  introVis ? "none" : "translateY(20px)",
               transition: "opacity 0.6s ease, transform 0.6s ease",
             }}
           >
@@ -204,6 +245,7 @@ function OverTjimka({ onNav }) {
             }}>
               Over Tjimka
             </p>
+
             <h2 style={{
               fontSize: "clamp(24px, 3.4vw, 38px)", fontWeight: 700, lineHeight: 1.2,
               letterSpacing: "-0.02em", color: OT.navy, margin: "0 0 22px",
@@ -212,27 +254,31 @@ function OverTjimka({ onNav }) {
               <br />
               <span style={{ color: OT.teal }}>innovatie en de mens.</span>
             </h2>
-            <p style={{ fontSize: "16px", lineHeight: 1.7, color: OT.grijs, margin: "0 0 14px" }}>
-              De meeste bedrijven beginnen bij de tool. Ik begin bij de processen en de mensen die ermee werken. Pas daarna kijk ik welke AI daar goed bij past.
-              Ik kom van de andere kant. KLM, superjachtenindustrie, drie jaar in de kern van de maakindustrie in Noord-Nederland. In al die werelden speelde hetzelfde.
-              Technologie en innovatie gaan snel. Mensen bewegen op een ander tempo. De vraag is altijd hoe je die twee bij elkaar brengt.
-<br></br>
-Dat is mijn vak, al voor AI een naam had.
-<br></br>
-In 2001 voer ik een jaar alleen. Van Nederland naar Scandinavië. Niet om te ontsnappen, maar om scherp te blijven. Om te voelen of ik nog op de juiste koers zat. Die gewoonte ben ik nooit kwijt geraakt.
 
+            <p style={{ fontSize: "16px", lineHeight: 1.7, color: OT.grijs, margin: "0 0 14px" }}>
+              De meeste bedrijven beginnen bij de tool. Ik begin bij de processen
+              en de mensen die ermee werken. Pas daarna kijk ik welke AI daar goed
+              bij past.
+            </p>
+            <p style={{ fontSize: "16px", lineHeight: 1.7, color: OT.grijs, margin: "0 0 14px" }}>
+              Ik kom van de andere kant. KLM, superjachtenindustrie, drie jaar in
+              de kern van de maakindustrie in Noord-Nederland. In al die werelden
+              speelde hetzelfde: technologie gaat snel. Mensen bewegen op een ander
+              tempo. De vraag is altijd hoe je die twee bij elkaar brengt.
+            </p>
+            <p style={{ fontSize: "16px", lineHeight: 1.7, color: OT.grijs, margin: "0 0 14px" }}>
+              Dat is mijn vak, al voor AI een naam had.
             </p>
             <p style={{ fontSize: "16px", lineHeight: 1.7, color: OT.grijs, margin: "0 0 28px" }}>
-  Bij STROOMLIJN doe ik dat nu voor anderen. Richting geven in een wereld die snel beweegt. Zodat ze niet worden meegesleurd, maar bewust kiezen.
-
+              Bij STROOMLIJN doe ik dat nu voor anderen. Richting geven in een
+              wereld die snel beweegt. Zodat ze niet worden meegesleurd, maar
+              bewust kiezen.
             </p>
 
-            <div style={{
-              display: "flex", gap: "32px", margin: "0 0 30px", flexWrap: "wrap",
-            }}>
+            <div style={{ display: "flex", gap: "32px", margin: "0 0 30px", flexWrap: "wrap" }}>
               <OTStat getal="35+" label="jaar werkervaring" />
-              <OTStat getal="12" label="jaar zelfstandig" />
-              <OTStat getal="3" label="jaar Innovatiecluster" />
+              <OTStat getal="12"  label="jaar zelfstandig" />
+              <OTStat getal="3"   label="jaar Innovatiecluster" />
             </div>
 
             <div style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
@@ -240,12 +286,13 @@ In 2001 voer ik een jaar alleen. Van Nederland naar Scandinavië. Niet om te ont
                 href="https://calendly.com/afspraak-met-tjimka/stroomlijn"
                 target="_blank" rel="noopener noreferrer"
                 style={{
-                  display: "inline-block", padding: "12px 26px", background: OT.teal,
-                  color: "#fff", fontWeight: 600, fontSize: "15px", borderRadius: "3px",
+                  display: "inline-block", padding: "12px 26px",
+                  background: OT.teal, color: "#fff",
+                  fontWeight: 600, fontSize: "15px", borderRadius: "3px",
                   textDecoration: "none", transition: "background 0.2s, transform 0.2s",
                 }}
                 onMouseEnter={(e) => { e.currentTarget.style.background = OT.tealDk; e.currentTarget.style.transform = "translateY(-2px)"; }}
-                onMouseLeave={(e) => { e.currentTarget.style.background = OT.teal; e.currentTarget.style.transform = "translateY(0)"; }}
+                onMouseLeave={(e) => { e.currentTarget.style.background = OT.teal;   e.currentTarget.style.transform = "translateY(0)"; }}
               >
                 Afspraak maken
               </a>
@@ -253,8 +300,9 @@ In 2001 voer ik een jaar alleen. Van Nederland naar Scandinavië. Niet om te ont
                 href="#aanbod"
                 onClick={naarDiensten}
                 style={{
-                  display: "inline-block", padding: "12px 26px", background: "transparent",
-                  color: OT.navy, fontWeight: 600, fontSize: "15px", borderRadius: "3px",
+                  display: "inline-block", padding: "12px 26px",
+                  background: "transparent", color: OT.navy,
+                  fontWeight: 600, fontSize: "15px", borderRadius: "3px",
                   textDecoration: "none", border: `1px solid ${OT.navy}`,
                   transition: "background 0.2s, color 0.2s",
                 }}
@@ -266,75 +314,128 @@ In 2001 voer ik een jaar alleen. Van Nederland naar Scandinavië. Niet om te ont
             </div>
           </div>
 
-          {/* ── rechterkolom: interactief paneel ── */}
+          {/* ── rechterkolom: diptiek + interactief paneel ── */}
           <div
             ref={paneelRef}
             onMouseEnter={() => setPauze(true)}
             onMouseLeave={() => setPauze(false)}
             style={{
-              opacity: paneelVis ? 1 : 0,
-              transform: paneelVis ? "none" : "translateY(24px)",
+              opacity:    paneelVis ? 1 : 0,
+              transform:  paneelVis ? "none" : "translateY(24px)",
               transition: "opacity 0.65s ease 120ms, transform 0.65s ease 120ms",
             }}
           >
-            {/* wereld-tabs */}
-            <div style={{ display: "flex", gap: "8px", marginBottom: "14px", flexWrap: "wrap" }}>
-              {OT_WERELDEN.map((w, i) => (
+
+            {/* ── telefoon-diptiek: kind vs. nu ── */}
+            <div style={{ display: "flex", gap: "10px", marginBottom: "14px" }}>
+              {OT_DIPTIEK.map((d) => (
+                <div
+                  key={d.label}
+                  style={{
+                    flex: 1, position: "relative",
+                    aspectRatio: "1 / 1", borderRadius: "4px",
+                    overflow: "hidden", background: OT.licht,
+                  }}
+                >
+                  {d.src ? (
+                    <img
+                      src={d.src}
+                      alt={d.alt}
+                      style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                    />
+                  ) : (
+                    <div style={{
+                      width: "100%", height: "100%",
+                      background: `linear-gradient(150deg, ${OT.licht} 0%, #ccc9be 100%)`,
+                      display: "flex", alignItems: "flex-end", padding: "10px",
+                    }}>
+                      <span style={{ fontSize: "11px", color: OT.midgrijs, fontStyle: "italic" }}>
+                        {d.alt}
+                      </span>
+                    </div>
+                  )}
+                  {/* label-badge */}
+                  <span style={{
+                    position: "absolute", top: "8px", left: "8px",
+                    background: "rgba(15,30,40,0.65)", color: "#fff",
+                    fontSize: "10px", fontWeight: 700,
+                    letterSpacing: "0.08em", textTransform: "uppercase",
+                    padding: "3px 8px", borderRadius: "2px",
+                  }}>
+                    {d.label}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            {/* ── hoofdstuk-tabs ── */}
+            <div style={{ display: "flex", gap: "6px", marginBottom: "14px", flexWrap: "wrap" }}>
+              {OT_HOOFDSTUKKEN.map((h, i) => (
                 <button
-                  key={w.label}
+                  key={h.label}
                   onClick={() => kies(i)}
                   aria-pressed={i === actief}
                   style={{
                     cursor: "pointer", border: "none", borderRadius: "2px",
-                    padding: "6px 14px", fontSize: "12px", fontWeight: 600,
+                    padding: "5px 12px", fontSize: "11px", fontWeight: 600,
                     letterSpacing: "0.04em", textTransform: "uppercase",
-                    background: i === actief ? w.kleur : "rgba(15,30,40,0.06)",
-                    color: i === actief ? "#fff" : OT.midgrijs,
+                    background: i === actief ? h.kleur : "rgba(15,30,40,0.06)",
+                    color:      i === actief ? "#fff"  : OT.midgrijs,
                     transition: "background 0.25s ease, color 0.25s ease",
                   }}
                 >
-                  {w.label}
+                  {h.label}
                 </button>
               ))}
             </div>
 
-            {/* fotovenster */}
+            {/* ── fotovenster ── */}
             <div style={{
               position: "relative", width: "100%", aspectRatio: "3 / 4",
               borderRadius: "4px", overflow: "hidden", background: OT.navy,
             }}>
-              <OTSlideshow fotos={wereld.fotos} pauze={pauze} />
-              {/* leesbare gradient onderaan voor het bijschrift */}
+              <OTSlideshow fotos={hoofdstuk.fotos} pauze={pauze} />
+
+              {/* gradient + bijschrift */}
               <div style={{
                 position: "absolute", left: 0, right: 0, bottom: 0,
-                padding: "44px 22px 18px",
-                background: "linear-gradient(to top, rgba(15,30,40,0.82), rgba(15,30,40,0))",
+                padding: "52px 22px 18px",
+                background: "linear-gradient(to top, rgba(15,30,40,0.88), rgba(15,30,40,0))",
               }}>
+                {/* periode-label */}
+                <p style={{
+                  margin: "0 0 6px", color: "rgba(255,255,255,0.55)",
+                  fontSize: "11px", fontWeight: 600, letterSpacing: "0.1em",
+                  textTransform: "uppercase",
+                }}>
+                  {hoofdstuk.periode}
+                </p>
                 <p style={{
                   margin: 0, color: "#fff", fontSize: "15px", lineHeight: 1.55,
                   textShadow: "0 1px 2px rgba(0,0,0,0.4)",
                 }}>
-                  {wereld.tekst}
+                  {hoofdstuk.tekst}
                 </p>
               </div>
             </div>
 
-            {/* voortgangsbalk per wereld */}
+            {/* ── voortgangsbalkjes ── */}
             <div style={{ display: "flex", gap: "6px", marginTop: "12px" }}>
-              {OT_WERELDEN.map((w, i) => (
+              {OT_HOOFDSTUKKEN.map((h, i) => (
                 <button
-                  key={w.label}
+                  key={h.label}
                   onClick={() => kies(i)}
-                  aria-label={`Toon ${w.label}`}
+                  aria-label={`Toon ${h.label}`}
                   style={{
                     flex: 1, height: "4px", border: "none", borderRadius: "2px",
                     padding: 0, cursor: "pointer",
-                    background: i === actief ? w.kleur : OT.licht,
+                    background: i === actief ? h.kleur : OT.licht,
                     transition: "background 0.3s ease",
                   }}
                 />
               ))}
             </div>
+
           </div>
         </div>
       </div>
@@ -351,4 +452,5 @@ In 2001 voer ik een jaar alleen. Van Nederland naar Scandinavië. Niet om te ont
     </section>
   );
 }
+
 window.OverTjimka = OverTjimka;
