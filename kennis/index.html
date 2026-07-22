@@ -316,16 +316,16 @@
 
 <nav class="nav" data-section="navbar">
   <div class="container-wide nav-inner">
-    <a class="nav-logo" href="https://app.stroomlijn.nu/p/jQZ6sPrYC"><img src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/logo-wordmark.png" alt="STROOMLIJN"></a>
+    <a class="nav-logo" href="/"><img src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/logo-wordmark.png" alt="STROOMLIJN"></a>
     <div class="nav-links">
-      <a class="nav-link" href="https://app.stroomlijn.nu/p/tXiLaJkM">Aanbod</a>
-      <a class="nav-link" href="https://app.stroomlijn.nu/p/ADwFWV8Y">In de praktijk</a>
-      <a class="nav-link" href="https://app.stroomlijn.nu/p/PfPJGAeyQ">Gratis AI-tools</a>
-      <a class="nav-link" style="background:rgba(26,46,74,.06)" href="https://app.stroomlijn.nu/p/cZy4jaJL" aria-current="page">Kennis en media</a>
-      <a class="nav-link" href="https://app.stroomlijn.nu/p/jQZ6sPrYC#over">Over Tjimka</a>
+      <a class="nav-link" href="/aanbod/">Aanbod</a>
+      <a class="nav-link" href="/cases/">In de praktijk</a>
+      <a class="nav-link" href="/tools/">Gratis AI-tools</a>
+      <a class="nav-link" style="background:rgba(26,46,74,.06)" href="/kennis/" aria-current="page">Kennis en media</a>
+      <a class="nav-link" href="/#over">Over Tjimka</a>
     </div>
     <div class="nav-cta">
-      <a class="btn btn-primary btn-sm" href="https://calendly.com/afspraak-met-tjimka/stroomlijn" target="_blank" rel="noopener noreferrer">Plan een gesprek</a>
+      <a class="btn btn-primary btn-sm" href="https://app.stroomlijn.nu/book/stroomlijnsessie" target="_blank" rel="noopener noreferrer">Plan een gesprek</a>
     </div>
   </div>
 </nav>
@@ -336,7 +336,80 @@
     <h1>Kennis en media</h1>
     <p>Alle artikelen, podcastafleveringen en persaandacht</p>
     <p>Praktisch geschreven en gesproken over AI, zonder hype. De podcast Fris in je oren - AI zonder ruis, artikelen op stroomlijn.nu en tjimka.nl, en persaandacht.</p>
+
+    <section class="press-strip" style="margin-top:3rem;">
+      <span class="eyebrow">PERS EN MEDIA</span>
+      <h2>Gezien en geciteerd</h2>
+      <div class="card-grid" style="margin-top:1rem;">
+        <article class="item-card">
+          <span class="item-kind">FINANCIEEL DAGBLAD</span>
+          <h3>Opiniestuk over waarom AI-leiderschap begint bij de bestuurskamer, niet bij de werkvloer.</h3>
+          <p>Prompten is een leiderschapsvaardigheid geworden.</p>
+          <a href="https://fd.nl/opinie/1564682/leren-omgaan-met-ai-tools-kan-het-beste-in-de-bestuurskamer-beginnen" class="item-link" target="_blank" rel="noopener">Lees artikel</a>
+        </article>
+        <article class="item-card">
+          <span class="item-kind">LEEUWARDER COURANT</span>
+          <h3>Over hoe AI mensen scherper laat nadenken en wat dat betekent voor de toekomst van werk in Noord-Nederland.</h3>
+          <a href="https://lc.nl/opinie/Een-gesprek-met-AI-voelt-écht-maar-wat-zegt-dat-over-ons-opinie-46090942.html" class="item-link" target="_blank" rel="noopener">Lees artikel</a>
+        </article>
+        <article class="item-card">
+          <span class="item-kind">TALKIES MAGAZINE</span>
+          <h3>AI op de werkvloer, kansen benutten zonder de menselijke maat te verliezen.</h3>
+          <p>Over de mensgerichte aanpak van STROOMLIJN.</p>
+          <a href="https://drive.google.com/file/d/1GOYtSK3Vd3vBr8H7pa8uDpNRPmGUh4Qw/view" class="item-link" target="_blank" rel="noopener">Bekijk de video</a>
+        </article>
+      </div>
+    </section>
+
   </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      // Replace Calendly links and internal links anywhere in page
+      // (Though the user asked this here, presumably the script goes here for static page replacement)
+      document.querySelectorAll('a[href]').forEach(a=>{
+        let href=a.getAttribute('href');
+        if (href==='https://app.stroomlijn.nu/p/jQZ6sPrYC') a.setAttribute('href','/');
+        else if (href==='https://app.stroomlijn.nu/p/tXiLaJkM') a.setAttribute('href','/aanbod/');
+        else if (href==='https://app.stroomlijn.nu/p/ADwFWV8Y') a.setAttribute('href','/cases/');
+        else if (href==='https://app.stroomlijn.nu/p/PfPJGAeyQ') a.setAttribute('href','/tools/');
+        else if (href==='https://app.stroomlijn.nu/p/cZy4jaJL') a.setAttribute('href','/kennis/');
+        else if (href==='https://app.stroomlijn.nu/p/7nbhUAW') a.setAttribute('href','/training/');
+        else if (href==='https://app.stroomlijn.nu/p/igY7kPwtu8') a.setAttribute('href','/implementatie/');
+        else if (href==='https://app.stroomlijn.nu/p/w22KgrCy6/ai-wise-start') a.setAttribute('href','/ai-wise-start/');
+        else if (href.includes('calendly.com')) a.setAttribute('href','https://app.stroomlijn.nu/book/stroomlijnsessie');
+      });
+
+      // Newsletter form handling
+      const form = document.querySelector('form[action^="https://app.stroomlijn.nu/api/webhooks/flow/"]');
+      if(form){
+        const inputEmail = form.querySelector('input[type="email"]');
+        if(inputEmail) inputEmail.id = 'nlEmail';
+        form.addEventListener('submit', function(e){
+          e.preventDefault();
+          const email = inputEmail.value.trim();
+          const emailRegex = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+          if(!emailRegex.test(email)){
+            alert('Voer een geldig e-mailadres in.');
+            return;
+          }
+          fetch('https://app.stroomlijn.nu/api/webhooks/flow/4390/9f802a781abc8798f2af2c08f280f98ace094d41116cefbddecbf60eb5308c3e',{
+            method:'POST',
+            headers:{'Content-Type':'application/json'},
+            body: JSON.stringify({contactEmail: email})
+          }).then(resp=>{
+            if(resp.ok){
+              form.innerHTML = '<p>Je bent aangemeld. Tot in je inbox.</p>';
+            } else {
+              throw new Error('Response not OK');
+            }
+          }).catch(()=>{
+            form.innerHTML = '<p>Aanmelden lukte niet, probeer het later opnieuw of mail naar info@tjimka.nl</p>';
+          });
+        });
+      }
+    });
+  </script>
 </section>
 
 <section class="section" data-section="section-1">
@@ -375,6 +448,28 @@
       </div>
     </div>
   </div>
+
+  <div class="container-wide" style="margin-top:72px">
+    <span class="eyebrow" style="color:var(--teal-dk)">PERS EN MEDIA</span>
+    <h2 style="font-size:1.6rem;margin-bottom:28px">Gezien en geciteerd</h2>
+    <div class="card-grid" style="grid-template-columns:repeat(3,1fr)">
+      <div class="item-card">
+        <span class="item-kind" style="background:var(--accent-soft);color:var(--teal-dk)">FINANCIEEL DAGBLAD</span>
+        <p>Opiniestuk over waarom AI-leiderschap begint bij de bestuurskamer, niet bij de werkvloer. Prompten is een leiderschapsvaardigheid geworden.</p>
+        <a class="item-link" href="https://fd.nl/opinie/1564682/leren-omgaan-met-ai-tools-kan-het-beste-in-de-bestuurskamer-beginnen" target="_blank" rel="noopener noreferrer">Lees artikel <svg class="icn-inline" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="item-card">
+        <span class="item-kind" style="background:var(--accent-soft);color:var(--teal-dk)">LEEUWARDER COURANT</span>
+        <p>Over hoe AI mensen scherper laat nadenken en wat dat betekent voor de toekomst van werk in Noord-Nederland.</p>
+        <a class="item-link" href="https://lc.nl/opinie/Een-gesprek-met-AI-voelt-écht-maar-wat-zegt-dat-over-ons-opinie-46090942.html" target="_blank" rel="noopener noreferrer">Lees artikel <svg class="icn-inline" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="item-card">
+        <span class="item-kind" style="background:var(--accent-soft);color:var(--teal-dk)">TALKIES MAGAZINE</span>
+        <p>AI op de werkvloer, kansen benutten zonder de menselijke maat te verliezen. Over de mensgerichte aanpak van STROOMLIJN.</p>
+        <a class="item-link" href="https://drive.google.com/file/d/1GOYtSK3Vd3vBr8H7pa8uDpNRPmGUh4Qw/view" target="_blank" rel="noopener noreferrer">Bekijk de video <svg class="icn-inline" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="section" style="background:var(--surface-alt)" data-section="section-2">
@@ -407,10 +502,84 @@
       </div>
     </div>
   </div>
+
+  <div class="container-wide" style="margin-top:56px">
+    <span class="eyebrow" style="color:var(--teal-dk)">PERS EN MEDIA</span>
+    <h2 style="font-size:1.6rem;margin-bottom:28px">Gezien en geciteerd</h2>
+    <div class="card-grid">
+      <div class="item-card">
+        <span class="item-kind" style="background:var(--gold-soft);color:var(--gold-dk)">FINANCIEEL DAGBLAD</span>
+        <h3>Opiniestuk over waarom AI-leiderschap begint bij de bestuurskamer, niet bij de werkvloer.</h3>
+        <p>Prompten is een leiderschapsvaardigheid geworden.</p>
+        <a class="item-link" href="https://fd.nl/opinie/1564682/leren-omgaan-met-ai-tools-kan-het-beste-in-de-bestuurskamer-beginnen" target="_blank" rel="noopener noreferrer">Lees artikel <svg class="icn-inline" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="item-card">
+        <span class="item-kind" style="background:var(--gold-soft);color:var(--gold-dk)">LEEUWARDER COURANT</span>
+        <h3>Over hoe AI mensen scherper laat nadenken en wat dat betekent voor de toekomst van werk in Noord-Nederland.</h3>
+        <a class="item-link" href="https://lc.nl/opinie/Een-gesprek-met-AI-voelt-écht-maar-wat-zegt-dat-over-ons-opinie-46090942.html" target="_blank" rel="noopener noreferrer">Lees artikel <svg class="icn-inline" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="item-card">
+        <span class="item-kind" style="background:var(--gold-soft);color:var(--gold-dk)">TALKIES MAGAZINE</span>
+        <h3>AI op de werkvloer, kansen benutten zonder de menselijke maat te verliezen.</h3>
+        <p>Over de mensgerichte aanpak van STROOMLIJN.</p>
+        <a class="item-link" href="https://drive.google.com/file/d/1GOYtSK3Vd3vBr8H7pa8uDpNRPmGUh4Qw/view" target="_blank" rel="noopener noreferrer">Bekijk de video <svg class="icn-inline" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.querySelector('form#newsletterForm');
+      if (!form) return;
+
+      const emailInput = document.getElementById('nlEmail');
+      const container = form.parentElement;
+
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        const email = emailInput.value.trim();
+
+        if (!email || !email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+          alert('Voer een geldig e-mailadres in');
+          return;
+        }
+
+        fetch('https://app.stroomlijn.nu/api/webhooks/flow/4390/9f802a781abc8798f2af2c08f280f98ace094d41116cefbddecbf60eb5308c3e', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({contactEmail: email})
+        }).then(res => {
+          if (!res.ok) throw new Error('Network response was not ok');
+          container.innerHTML = '<p>Je bent aangemeld. Tot in je inbox.</p>';
+        }).catch(() => {
+          container.innerHTML = '<p>Aanmelden lukte niet, probeer het later opnieuw of mail naar info@tjimka.nl</p>';
+        });
+      });
+    });
+  </script>
 </section>
 
 <section class="section" data-section="section-3">
   <div class="container-wide">
+    <div class="eyebrow" style="color:var(--teal-dk);margin-bottom:14px;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase">PERS EN MEDIA</div>
+    <h2 style="font-size:1.6rem;margin-bottom:8px">Gezien en geciteerd</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-bottom:72px">
+      <div class="item-card" style="background:#fff;border:1px solid rgba(26,46,74,.1);border-radius:16px;padding:26px 28px;display:flex;flex-direction:column">
+        <h3 style="font-size:1.1rem;margin-bottom:8px">FINANCIEEL DAGBLAD</h3>
+        <p style="color:var(--mute);font-size:.92rem;margin:0 0 14px;flex-grow:1">Opiniestuk over waarom AI-leiderschap begint bij de bestuurskamer, niet bij de werkvloer. Prompten is een leiderschapsvaardigheid geworden.</p>
+        <a class="item-link" href="https://fd.nl/opinie/1564682/leren-omgaan-met-ai-tools-kan-het-beste-in-de-bestuurskamer-beginnen" target="_blank" rel="noopener noreferrer" style="font-size:.86rem;font-weight:600;color:var(--teal-dk);display:flex;align-items:center;gap:6px;margin-top:auto">Lees artikel</a>
+      </div>
+      <div class="item-card" style="background:#fff;border:1px solid rgba(26,46,74,.1);border-radius:16px;padding:26px 28px;display:flex;flex-direction:column">
+        <h3 style="font-size:1.1rem;margin-bottom:8px">LEEUWARDER COURANT</h3>
+        <p style="color:var(--mute);font-size:.92rem;margin:0 0 14px;flex-grow:1">Over hoe AI mensen scherper laat nadenken en wat dat betekent voor de toekomst van werk in Noord-Nederland.</p>
+        <a class="item-link" href="https://lc.nl/opinie/Een-gesprek-met-AI-voelt-écht-maar-wat-zegt-dat-over-ons-opinie-46090942.html" target="_blank" rel="noopener noreferrer" style="font-size:.86rem;font-weight:600;color:var(--teal-dk);display:flex;align-items:center;gap:6px;margin-top:auto">Lees artikel</a>
+      </div>
+      <div class="item-card" style="background:#fff;border:1px solid rgba(26,46,74,.1);border-radius:16px;padding:26px 28px;display:flex;flex-direction:column">
+        <h3 style="font-size:1.1rem;margin-bottom:8px">TALKIES MAGAZINE</h3>
+        <p style="color:var(--mute);font-size:.92rem;margin:0 0 14px;flex-grow:1">AI op de werkvloer, kansen benutten zonder de menselijke maat te verliezen. Over de mensgerichte aanpak van STROOMLIJN.</p>
+        <a class="item-link" href="https://drive.google.com/file/d/1GOYtSK3Vd3vBr8H7pa8uDpNRPmGUh4Qw/view" target="_blank" rel="noopener noreferrer" style="font-size:.86rem;font-weight:600;color:var(--teal-dk);display:flex;align-items:center;gap:6px;margin-top:auto">Bekijk de video</a>
+      </div>
+    </div>
     <h2 style="font-size:1.6rem;margin-bottom:8px">Kennis en media</h2>
     <p style="font-size:1rem;color:var(--mute);margin-bottom:28px">Alle artikelen, podcastafleveringen en persaandacht</p>
     <div class="press-grid">
@@ -439,33 +608,170 @@
     <h2 style="font-family:var(--ff-display);color:var(--navy);margin-bottom:12px">Praktische AI-tips in je inbox</h2>
     <p style="color:var(--mute);margin:0 0 24px">Af en toe een korte mail met wat werkt, zonder hype. Uitschrijven kan altijd.</p>
     <form id="nieuwsbriefForm" style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
-      <input type="email" name="contactEmail" id="email" required placeholder="jouw@e-mailadres.nl" style="flex:1 1 260px;max-width:320px;padding:13px 16px;border:1px solid rgba(26,46,74,.25);border-radius:14px;font-family:inherit;font-size:15px">
+      <input type="email" name="contactEmail" id="nlEmail" required placeholder="jouw@e-mailadres.nl" style="flex:1 1 260px;max-width:320px;padding:13px 16px;border:1px solid rgba(26,46,74,.25);border-radius:14px;font-family:inherit;font-size:15px">
       <button type="submit" class="btn btn-primary">Inschrijven</button>
     </form>
     <p id="nieuwsbriefDank" style="display:none;color:var(--teal-dk);font-weight:600;margin-top:16px">Dank je. Je staat op de lijst.</p>
+  </div>
+  <script>
+    document.getElementById('nieuwsbriefForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const emailField = document.getElementById('nlEmail');
+      const email = emailField.value.trim();
+      const successMsg = document.createElement('p');
+      const errorMsg = document.createElement('p');
+      successMsg.style.color = getComputedStyle(document.documentElement).getPropertyValue('--teal-dk').trim() || '#347684';
+      successMsg.style.fontWeight = '600';
+      successMsg.style.marginTop = '16px';
+      errorMsg.style.color = 'red';
+      errorMsg.style.fontWeight = '600';
+      errorMsg.style.marginTop = '16px';
+
+      // Basic email regex validation
+      const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      if(!emailValid){
+        if(!this.contains(errorMsg)){
+          errorMsg.textContent = 'Voer een geldig e-mailadres in.';
+          this.parentNode.appendChild(errorMsg);
+        }
+        return;
+      } else {
+        if(this.parentNode.contains(errorMsg)){
+          this.parentNode.removeChild(errorMsg);
+        }
+      }
+
+      fetch("https://app.stroomlijn.nu/api/webhooks/flow/4390/9f802a781abc8798f2af2c08f280f98ace094d41116cefbddecbf60eb5308c3e", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ contactEmail: email })
+      }).then(r => {
+        if(r.ok){
+          this.style.display = 'none';
+          successMsg.textContent = "Je bent aangemeld. Tot in je inbox.";
+          this.parentNode.appendChild(successMsg);
+        } else {
+          errorMsg.textContent = "Aanmelden lukte niet, probeer het later opnieuw of mail naar info@tjimka.nl";
+          if(!this.parentNode.contains(errorMsg)){
+            this.parentNode.appendChild(errorMsg);
+          }
+        }
+      }).catch(() => {
+        errorMsg.textContent = "Aanmelden lukte niet, probeer het later opnieuw of mail naar info@tjimka.nl";
+        if(!this.parentNode.contains(errorMsg)){
+          this.parentNode.appendChild(errorMsg);
+        }
+      });
+    });
+  </script>
+  <div class="container-wide" style="max-width:900px;text-align:center;margin-top:48px">
+    <span class="eyebrow" style="color:var(--teal-dk)">PERS EN MEDIA</span>
+    <h2 style="font-family:var(--ff-display);color:var(--navy);margin-bottom:32px">Gezien en geciteerd</h2>
+    <div class="card-grid" style="grid-template-columns:repeat(3,1fr);gap:24px;text-align:left">
+      <article class="item-card">
+        <div class="item-kind" style="background:var(--accent-soft);color:var(--teal-dk)">FINANCIEEL DAGBLAD</div>
+        <h3>Opiniestuk over waarom AI-leiderschap begint bij de bestuurskamer, niet bij de werkvloer. Prompten is een leiderschapsvaardigheid geworden.</h3>
+        <a href="https://fd.nl/opinie/1564682/leren-omgaan-met-ai-tools-kan-het-beste-in-de-bestuurskamer-beginnen" class="item-link" target="_blank" rel="noopener">Lees artikel
+          <svg class="icn-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </article>
+      <article class="item-card">
+        <div class="item-kind" style="background:var(--accent-soft);color:var(--teal-dk)">LEEUWARDER COURANT</div>
+        <h3>Over hoe AI mensen scherper laat nadenken en wat dat betekent voor de toekomst van werk in Noord-Nederland.</h3>
+        <a href="https://lc.nl/opinie/Een-gesprek-met-AI-voelt-écht-maar-wat-zegt-dat-over-ons-opinie-46090942.html" class="item-link" target="_blank" rel="noopener">Lees artikel
+          <svg class="icn-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </article>
+      <article class="item-card">
+        <div class="item-kind" style="background:var(--accent-soft);color:var(--teal-dk)">TALKIES MAGAZINE</div>
+        <h3>AI op de werkvloer, kansen benutten zonder de menselijke maat te verliezen. Over de mensgerichte aanpak van STROOMLIJN.</h3>
+        <a href="https://drive.google.com/file/d/1GOYtSK3Vd3vBr8H7pa8uDpNRPmGUh4Qw/view" class="item-link" target="_blank" rel="noopener">Bekijk de video
+          <svg class="icn-inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </article>
+    </div>
   </div>
 </section>
 
 <section data-section="cta" style="background:var(--surface-alt);padding:40px 0;text-align:center;border-top:1px solid rgba(26,46,74,0.1)">
   <h2 style="font-family:var(--ff-display);color:var(--navy);margin-bottom:16px">Liever een gesprek dan een artikel?</h2>
-  <a href="https://calendly.com/afspraak-met-tjimka/stroomlijn" class="btn btn-primary">Plan een kennismaking</a>
+  <a href="https://app.stroomlijn.nu/book/stroomlijnsessie" class="btn btn-primary">Plan een kennismaking</a>
 </section>
 
 <footer class="footer" data-section="footer">
   <div class="container-wide">
     <div class="footer-inner">
-      <a href="https://app.stroomlijn.nu/p/jQZ6sPrYC"><img src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/logo-wordmark.png" alt="STROOMLIJN"></a>
+      <a href="/"><img src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/logo-wordmark.png" alt="STROOMLIJN"></a>
       <div class="footer-links">
-        <a href="https://app.stroomlijn.nu/p/tXiLaJkM">Aanbod</a>
-        <a href="https://app.stroomlijn.nu/p/ADwFWV8Y">In de praktijk</a>
-        <a href="https://app.stroomlijn.nu/p/PfPJGAeyQ">Gratis AI-tools</a>
-        <a href="https://app.stroomlijn.nu/p/cZy4jaJL" aria-current="page" style="font-weight:700; color:var(--teal-dk)">Kennis en media</a>
-        <a href="https://app.stroomlijn.nu/p/jQZ6sPrYC#over">Over Tjimka</a>
+        <a href="/aanbod/">Aanbod</a>
+        <a href="/cases/">In de praktijk</a>
+        <a href="/tools/">Gratis AI-tools</a>
+        <a href="/kennis/" aria-current="page" style="font-weight:700; color:var(--teal-dk)">Kennis en media</a>
+        <a href="/#over">Over Tjimka</a>
       </div>
-      <a class="btn btn-primary" href="https://calendly.com/afspraak-met-tjimka/stroomlijn" style="margin-left:auto">Plan een gesprek</a>
+      <a class="btn btn-primary" href="https://app.stroomlijn.nu/book/stroomlijnsessie" style="margin-left:auto">Plan een gesprek</a>
     </div>
+    <section class="section" style="padding-top:0; padding-bottom:36px;">
+      <div class="container-wide">
+        <div class="eyebrow" style="font-weight:700; margin-bottom:6px; color:var(--teal-dk);">PERS EN MEDIA</div>
+        <h2 style="margin-top:0; margin-bottom:24px; font-weight:700; color:var(--navy);">Gezien en geciteerd</h2>
+        <div class="card-grid" style="grid-template-columns:repeat(3,1fr); gap:20px;">
+          <article class="item-card">
+            <div class="item-kind" style="background:var(--accent-soft); color:var(--teal-dk);">FINANCIEEL DAGBLAD</div>
+            <h3>Opiniestuk over waarom AI-leiderschap begint bij de bestuurskamer, niet bij de werkvloer.</h3>
+            <p>Prompten is een leiderschapsvaardigheid geworden.</p>
+            <a class="item-link" href="https://fd.nl/opinie/1564682/leren-omgaan-met-ai-tools-kan-het-beste-in-de-bestuurskamer-beginnen" target="_blank" rel="noopener">Lees artikel</a>
+          </article>
+          <article class="item-card">
+            <div class="item-kind" style="background:var(--accent-soft); color:var(--teal-dk);">LEEUWARDER COURANT</div>
+            <h3>Over hoe AI mensen scherper laat nadenken en wat dat betekent voor de toekomst van werk in Noord-Nederland.</h3>
+            <a class="item-link" href="https://lc.nl/opinie/Een-gesprek-met-AI-voelt-écht-maar-wat-zegt-dat-over-ons-opinie-46090942.html" target="_blank" rel="noopener">Lees artikel</a>
+          </article>
+          <article class="item-card">
+            <div class="item-kind" style="background:var(--accent-soft); color:var(--teal-dk);">TALKIES MAGAZINE</div>
+            <h3>AI op de werkvloer, kansen benutten zonder de menselijke maat te verliezen.</h3>
+            <p>Over de mensgerichte aanpak van STROOMLIJN.</p>
+            <a class="item-link" href="https://drive.google.com/file/d/1GOYtSK3Vd3vBr8H7pa8uDpNRPmGUh4Qw/view" target="_blank" rel="noopener">Bekijk de video</a>
+          </article>
+        </div>
+      </div>
+    </section>
     <div class="footer-bottom">© 2026 Stroomlijn - Tjimka Bakker · KvK 57904561 · BTW NL001434241B82 · info@tjimka.nl</div>
   </div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.querySelector('form.newsletter-form');
+  if (!form) return;
+
+  const emailInput = document.getElementById('nlEmail');
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const container = form.parentElement;
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const email = emailInput.value.trim();
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert('Voer een geldig e-mailadres in.');
+      emailInput.focus();
+      return;
+    }
+
+    submitBtn.disabled = true;
+    fetch('https://app.stroomlijn.nu/api/webhooks/flow/4390/9f802a781abc8798f2af2c08f280f98ace094d41116cefbddecbf60eb5308c3e', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ contactEmail: email })
+    }).then(response => {
+      if (!response.ok) throw new Error('Netwerkfout');
+      container.innerHTML = '<p>Je bent aangemeld. Tot in je inbox.</p>';
+    }).catch(() => {
+      container.innerHTML = '<p>Aanmelden lukte niet, probeer het later opnieuw of mail naar info@tjimka.nl</p>';
+    });
+  });
+});
+</script>
 </footer>
 </body>
 </html>
