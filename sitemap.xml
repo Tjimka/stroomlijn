@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://stroomlijn.info/ai-wise-start/</loc>
-    <lastmod>2026-07-22T09:21:40.327Z</lastmod>
+    <loc>https://stroomlijn.info/</loc>
+    <lastmod>2026-07-22T10:01:40.509Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://stroomlijn.info/implementatie/</loc>
-    <lastmod>2026-07-22T09:21:28.612Z</lastmod>
+    <loc>https://stroomlijn.info/ai-wise-start/</loc>
+    <lastmod>2026-07-22T10:00:36.526Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://stroomlijn.info/training/</loc>
-    <lastmod>2026-07-22T09:21:18.292Z</lastmod>
+    <lastmod>2026-07-22T09:58:16.295Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://stroomlijn.info/kennis/</loc>
-    <lastmod>2026-07-22T09:21:10.508Z</lastmod>
+    <lastmod>2026-07-22T09:57:40.754Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://stroomlijn.info/tools/</loc>
-    <lastmod>2026-07-22T09:21:00.575Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.info/cases/</loc>
-    <lastmod>2026-07-22T09:20:52.634Z</lastmod>
+    <loc>https://stroomlijn.info/implementatie/</loc>
+    <lastmod>2026-07-22T09:54:50.280Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://stroomlijn.info/aanbod/</loc>
-    <lastmod>2026-07-22T09:20:42.916Z</lastmod>
+    <lastmod>2026-07-22T09:54:09.584Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://stroomlijn.info/</loc>
-    <lastmod>2026-07-22T09:20:33.722Z</lastmod>
+    <loc>https://stroomlijn.info/tools/</loc>
+    <lastmod>2026-07-22T09:54:07.785Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.info/cases/</loc>
+    <lastmod>2026-07-22T09:51:45.300Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
