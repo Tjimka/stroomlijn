@@ -454,6 +454,7 @@
           <p>AI-adoptietraject voor een ingenieursbureau van 100+ medewerkers, gespecialiseerd in geotechnisch bodemonderzoek. Kick-off op locatie, gevolgd door een kartrekkersprogramma per afdeling. Aanpak gericht op kennisoverdracht, verantwoord AI-gebruik en toepassing binnen technische processen.</p>
         </div>
         <div>
+          <img src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/photos/wiertsema-ai-sessie.webp" alt="AI-sessie bij Wiertsema &amp; Partners: medewerkers werken aan AI-beleid" loading="lazy" style="width:100%;height:auto;border-radius:14px;margin-bottom:20px;display:block">
           <div class="case-stats">
             <div>100+<span>MEDEWERKERS</span></div>
           </div>
@@ -468,6 +469,7 @@
           <p>Gefaseerd AI-traject in-company: procesanalyse per afdeling, implementatie van Microsoft Copilot, maatwerk GPT-assistenten voor verkoop, marketing en administratie, en promptbibliotheken als naslagwerk. Traject inclusief begeleiding subsidieaanvraag Adviesvoucherregeling Fryslân.</p>
         </div>
         <div>
+          <img src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/photos/dekas-kantoorservice.webp" alt="Het pand van Dekas Kantoorservice" loading="lazy" style="width:100%;height:auto;border-radius:14px;margin-bottom:20px;display:block">
           <div class="case-stats">
             <div>5<span>AFDELINGEN</span></div>
           </div>
@@ -614,5 +616,29 @@
 
 
   <script src="script.js"></script>
+
+<!-- Scrollknoppen -->
+<div id="scroll-knoppen" style="position:fixed;right:22px;bottom:22px;display:flex;flex-direction:column;gap:10px;z-index:90">
+  <button id="scroll-omlaag" aria-label="Scroll naar beneden" onclick="window.scrollBy({top:window.innerHeight*0.85,behavior:'smooth'})" style="width:44px;height:44px;border-radius:50%;border:1px solid rgba(26,46,74,.15);background:#fff;color:var(--navy,#1A2E4A);cursor:pointer;box-shadow:0 2px 12px rgba(26,46,74,.12);display:flex;align-items:center;justify-content:center;transition:opacity .2s">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+  </button>
+  <button id="scroll-omhoog" aria-label="Terug naar boven" onclick="window.scrollTo({top:0,behavior:'smooth'})" style="width:44px;height:44px;border-radius:50%;border:none;background:var(--teal,#4899A7);color:#fff;cursor:pointer;box-shadow:0 2px 12px rgba(26,46,74,.18);display:none;align-items:center;justify-content:center;transition:opacity .2s">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </button>
+</div>
+<script>
+(function(){
+  var omhoog=document.getElementById('scroll-omhoog');
+  var omlaag=document.getElementById('scroll-omlaag');
+  function update(){
+    var y=window.scrollY;
+    var onderaan=(window.innerHeight+y)>=document.body.scrollHeight-120;
+    omhoog.style.display=y>400?'flex':'none';
+    omlaag.style.display=onderaan?'none':'flex';
+  }
+  window.addEventListener('scroll',update,{passive:true});
+  update();
+})();
+</script>
 </body>
 </html>
