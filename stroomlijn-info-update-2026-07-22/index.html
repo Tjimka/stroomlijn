@@ -1,0 +1,854 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Tjimka Bakker">
+
+<!-- NOTE bij domeinoverdracht: canonical, og:url en twitter-tags hieronder bijwerken naar het uiteindelijke domein (stroomlijn.info) zodra live. -->
+
+<meta property="og:site_name" content="STROOMLIJN">
+<meta property="og:locale" content="nl_NL">
+
+<meta name="geo.region" content="NL-FR">
+<meta name="geo.placename" content="Lemmer">
+<meta name="theme-color" content="#1A2E4A">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "#organisatie",
+      "name": "STROOMLIJN",
+      "description": "AI-strategie, training en implementatie voor MKB-ondernemers, professionals en teams. Praktische en menselijke toepassing van AI.",
+      "slogan": "Slimmer werken met AI. Zonder gedoe.",
+      "founder": { "@id": "#tjimka" },
+      "email": "info@tjimka.nl",
+      "areaServed": [
+        { "@type": "AdministrativeArea", "name": "Friesland" },
+        { "@type": "AdministrativeArea", "name": "Noord-Nederland" }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lemmer",
+        "addressRegion": "Friesland",
+        "addressCountry": "NL"
+      },
+      "knowsAbout": ["AI-strategie", "Generatieve AI", "Chatbots", "AI-agents", "Automatisering", "AI-geletterdheid", "EU AI Act", "Digitale transformatie"]
+    },
+    {
+      "@type": "Person",
+      "@id": "#tjimka",
+      "name": "Tjimka Bakker",
+      "jobTitle": "AI-strateeg",
+      "worksFor": { "@id": "#organisatie" },
+      "image": "https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/photos/tjimka-staand.jpg",
+      "description": "AI-strateeg en oprichter van STROOMLIJN. Helpt ondernemers en teams om rustig en praktisch met AI te werken.",
+      "sameAs": ["https://www.linkedin.com/in/tjimka/", "https://www.instagram.com/tjimka/", "https://www.youtube.com/@TjimkaBakker"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "#website",
+      "name": "STROOMLIJN",
+      "publisher": { "@id": "#organisatie" },
+      "inLanguage": "nl-NL"
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ProfessionalService",
+   "@id": "https://app.stroomlijn.nu/p/jQZ6sPrYC#organisatie",
+   "name": "STROOMLIJN",
+   "description": "AI-advies, training en implementatie voor MKB-ondernemers en teams. Concreet, menselijk en zonder afhankelijkheid van losse tools.",
+   "url": "https://app.stroomlijn.nu/p/jQZ6sPrYC",
+   "email": "info@tjimka.nl",
+   "telephone": "+31624696925",
+   "vatID": "NL001434241B82",
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lemmer",
+    "addressRegion": "Friesland",
+    "addressCountry": "NL"
+   },
+   "areaServed": [
+    "Noord-Nederland",
+    "Nederland"
+   ],
+   "founder": {
+    "@id": "https://app.stroomlijn.nu/p/jQZ6sPrYC#tjimka"
+   },
+   "sameAs": [
+    "https://www.linkedin.com/in/tjimka/",
+    "https://www.instagram.com/tjimka/",
+    "https://www.youtube.com/@TjimkaBakker",
+    "https://serve.podhome.fm/fris-in-je-oren"
+   ],
+   "makesOffer": [
+    {
+     "@type": "Offer",
+     "name": "Strategie en AI-scan",
+     "description": "Quickscan 975 euro excl. btw, analyse en advies op aanvraag."
+    },
+    {
+     "@type": "Offer",
+     "name": "Training en workshops",
+     "description": "In-company AI-training, AI-geletterdheid en EU AI Act, prijs op maat."
+    },
+    {
+     "@type": "Offer",
+     "name": "Agents en automatisering",
+     "description": "AI-agents, chatbots en workflow-automatisering op maat."
+    }
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://app.stroomlijn.nu/p/jQZ6sPrYC#tjimka",
+   "name": "Tjimka Bakker",
+   "jobTitle": "Strategisch AI- en Procesarchitect",
+   "worksFor": {
+    "@id": "https://app.stroomlijn.nu/p/jQZ6sPrYC#organisatie"
+   },
+   "sameAs": [
+    "https://www.linkedin.com/in/tjimka/"
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Hoe snel kan ik AI in mijn bedrijf gebruiken?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sneller dan je denkt. Een eerste werkende oplossing, bijvoorbeeld een AI-assistent voor klantvragen of interne kennis, staat vaak binnen twee tot vier weken. Een gratis kennismaking duurt 30 minuten."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Wat kost het om te starten?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Elk traject is maatwerk. Na een gratis kennismaking en een korte intake brengt STROOMLIJN in kaart wat je nodig hebt, en ontvang je een voorstel dat daarbij past. Een quickscan kost 975 euro excl. btw, analyse en advies op aanvraag."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Wat als ik geen technische kennis heb?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Dan ben je aan het juiste adres. STROOMLIJN legt AI uit in normale taal en zorgt dat je het zelf snapt en kunt sturen. Geen jargon, geen technologische push."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Waar is STROOMLIJN gevestigd?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In Lemmer, Friesland. STROOMLIJN werkt met klanten in heel Noord-Nederland en online of fysiek door heel Nederland. Op aanvraag ook in EU-landen, in het Engels."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Hoe zit het met de EU AI-Act?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "De EU AI-Act stelt eisen aan AI-gebruik in bedrijven. STROOMLIJN helpt compliant te werken, denk aan transparantie, risico-classificatie en datagebruik."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Wat is een AI-strateeg?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Een AI-strateeg kijkt welke processen in een bedrijf geschikt zijn voor AI, welke tools daarbij passen en hoe je dat verantwoord invoert."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Kun je ook helpen om gevonden te worden door AI-zoekmachines?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ja. Naast klassieke zoekmachine-optimalisatie werkt STROOMLIJN aan GEO, generative engine optimization, zodat AI-modellen zoals ChatGPT en Claude het bedrijf vinden en aanbevelen."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- SEO Meta Tags -->
+<title>STROOMLIJN | AI-strateeg Tjimka Bakker - slimmer werken met AI, zonder gedoe</title>
+<meta name="description" content="STROOMLIJN helpt MKB-ondernemers en teams in Noord-Nederland om praktisch en menselijk met AI te werken. AI-strategie, training en implementatie door AI-strateeg Tjimka Bakker uit Lemmer." />
+<meta property="og:title" content="STROOMLIJN | AI-strateeg Tjimka Bakker - slimmer werken met AI, zonder gedoe" />
+<meta property="og:description" content="STROOMLIJN helpt MKB-ondernemers en teams in Noord-Nederland om praktisch en menselijk met AI te werken. AI-strategie, training en implementatie door AI-strateeg Tjimka Bakker uit Lemmer." />
+<meta property="og:image" content="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/photos/tjimka-staand.jpg" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="STROOMLIJN | AI-strateeg Tjimka Bakker - slimmer werken met AI, zonder gedoe" />
+<meta name="twitter:description" content="STROOMLIJN helpt MKB-ondernemers en teams in Noord-Nederland om praktisch en menselijk met AI te werken. AI-strategie, training en implementatie door AI-strateeg Tjimka Bakker uit Lemmer." />
+<meta name="twitter:image" content="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/photos/tjimka-staand.jpg" />
+<link rel="icon" href="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/favicon-s-mark.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/favicon-s-mark.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/favicon-s-mark.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/favicon-s-mark.png" />
+<!-- End SEO Meta Tags -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mrb2ccws-i4gqd";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  var u=new URL(location.href);var found=null;var changed=false;
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{localStorage.setItem(map[p]+slug,v);}catch(e){}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://app.stroomlijn.nu/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=5376');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='jQZ6sPrYC';
+  var apiBase='https://app.stroomlijn.nu';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    var phone=findPhone();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,phone:phone||'',amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var sidP=urlParams.get('session_id');
+      if(sidP){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidP})}).catch(function(){});}catch(e){}}
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<script data-cart>
+(function(){
+  var slug='jQZ6sPrYC';
+  var apiBase='https://app.stroomlijn.nu';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findCartEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realCart=function(arg){
+    var items, email='', customerName='', successUrl, cancelUrl, currency;
+    if(Array.isArray(arg)){items=arg;}
+    else if(arg&&typeof arg==='object'){
+      items=arg.items;email=arg.email||'';customerName=arg.name||arg.customerName||'';
+      successUrl=arg.successUrl;cancelUrl=arg.cancelUrl;currency=arg.currency;
+    }
+    if(!Array.isArray(items)||items.length===0){alert('No items in cart.');return Promise.reject('no_items');}
+    var cleanItems=[];var totalCents=0;
+    for(var i=0;i<items.length;i++){
+      var it=items[i];if(!it||typeof it!=='object'){alert('Invalid item at position '+i);return Promise.reject('bad_item');}
+      var nm=typeof it.name==='string'?it.name.trim():'';
+      if(!nm){alert('Item '+(i+1)+' is missing a name.');return Promise.reject('no_name');}
+      var amt=typeof it.amountCents==='number'?it.amountCents:(typeof it.amount==='number'?Math.round(it.amount*100):NaN);
+      if(!isFinite(amt)||amt<1){alert('Item "'+nm+'" needs a valid amount in cents.');return Promise.reject('bad_amount');}
+      var qty=(typeof it.quantity==='number'&&it.quantity>0)?Math.floor(it.quantity):1;
+      cleanItems.push({name:nm,description:it.description||'',amountCents:amt,quantity:qty});
+      totalCents+=amt*qty;
+    }
+    if(totalCents<50){alert('Cart total must be at least $0.50');return Promise.reject('total_too_low');}
+    if(!email)email=findCartEmail();
+    if(!customerName)customerName=findCartName();
+    var cartPhone=findCartPhone();
+    if(!email){var p=window.prompt('Enter your email for the receipt:','');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert('An email address is required to complete checkout.');return Promise.reject('no_email');}}
+    var successBase=window.location.href.split('?')[0];
+    var body={email:email,name:customerName,items:cleanItems,locale:(document.documentElement.lang||navigator.language||'en')};
+    if(currency)body.currency=currency;
+    if(cartPhone)body.phone=cartPhone;
+    body.successUrl=successUrl||(successBase+'?cart=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}');
+    body.cancelUrl=cancelUrl||(successBase+'?cart=cancelled');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/cart/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(body)
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process checkout');throw new Error(d.error);}
+    });
+  };
+  try{Object.defineProperty(window,'__processCart',{value:__realCart,writable:false,configurable:false});}catch(e){window.__processCart=__realCart;}
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('cart')==='success'){
+      var sidC=urlParams.get('session_id');
+      if(sidC){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidC})}).catch(function(){});}catch(e){}}
+      if(document.getElementById('payment-success-overlay')||document.getElementById('donation-success-overlay')||document.getElementById('cart-success-overlay'))return;
+      var overlay=document.createElement('div');overlay.id='cart-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||'Thank you for your order.';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var cBtn=document.getElementById('lp-cart-success-btn');
+      if(cBtn){cBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav" id="siteNav">
+  <div class="container-wide nav-inner">
+    <div class="nav-logo" onclick="navTo('home')" role="button" aria-label="Stroomlijn home"><img src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/logo-wordmark.png" alt="STROOMLIJN" width="1261" height="218"></div>
+    <div class="nav-links">
+      <a class="nav-link" href="/aanbod/" style="text-decoration:none">Aanbod</a>
+      <a class="nav-link" href="/cases/" style="text-decoration:none">In de praktijk</a>
+      <a class="nav-link" href="/tools/" style="text-decoration:none">Gratis AI-tools</a>
+      <a class="nav-link" href="/kennis/" style="text-decoration:none">Kennis en media</a>
+      <button class="nav-link" onclick="navTo('over')">Over Tjimka</button>
+    </div>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm" href="https://app.stroomlijn.nu/book/stroomlijnsessie" target="_blank" rel="noopener noreferrer">Plan een gesprek</a>
+      <button class="nav-burger" id="navBurger" aria-label="Menu openen"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<main>
+<div id="home"></div>
+
+<!-- HERO -->
+<section class="hero" data-section="hero">
+  <svg class="hero-waves" viewBox="0 0 1440 500" preserveAspectRatio="none" aria-hidden="true" width="100%" height="100%" style="position:absolute;inset:0">
+    <path d="M0,120 Q360,60 720,120 T1440,120" stroke="rgba(189,151,102,.35)" stroke-width="1.5" fill="none"/>
+    <path d="M0,220 Q380,160 760,220 T1440,220" stroke="rgba(72,153,167,.28)" stroke-width="1.5" fill="none"/>
+    <path d="M0,340 Q400,280 800,340 T1440,340" stroke="rgba(255,255,255,.08)" stroke-width="1.5" fill="none"/>
+  </svg>
+  <div class="container-wide hero-grid">
+    <div class="hero-content">
+      <span class="eyebrow">AI-strategie · Training · Implementatie</span>
+      <h1 class="hero-title">Slimmer werken.<br><em>Zonder gedoe.</em></h1>
+      <p class="hero-lead">AI-advies, training en implementatie voor MKB-ondernemers en teams. Concreet, menselijk en zonder afhankelijkheid van losse tools.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary btn-lg" href="https://app.stroomlijn.nu/book/stroomlijnsessie" target="_blank" rel="noopener noreferrer">Plan een gratis kennismaking <svg class="icn-inline" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-secondary btn-lg" style="border-color:rgba(255,255,255,.35);color:#fff;text-decoration:none" href="/aanbod/">Bekijk het aanbod</a>
+      </div>
+      <div class="hero-trust">
+        <span><svg class="icn-inline" viewBox="0 0 24 24"><path d="M12 21s-7-5.2-9-9.6C1.5 7 4 3 8 3c1.9 0 3.3 1 4 2 .7-1 2.1-2 4-2 4 0 6.5 4 5 8.4C19 15.8 12 21 12 21z" fill="none"/></svg>Lemmer · Friesland</span>
+        <span><svg class="icn-inline" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Eerste gesprek kosteloos · 30 minuten, vrijblijvend</span>
+        <span><svg class="icn-inline" viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3z"/></svg>EU AI-Act conform</span>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="https://stroomlijn.nu/wp-content/uploads/2025/07/004a-PBTjimkaBakker-FE0O5A5844-Brandinginbeeld.png" alt="Tjimka Bakker, AI-strateeg van STROOMLIJN" width="2048" height="1366" fetchpriority="high">
+    </div>
+  </div>
+</section>
+
+<!-- PAIN -->
+<section class="pain reveal" id="herken">
+  <div class="container-wide pain__grid">
+    <div class="pain__sticky">
+      <span class="eyebrow">Herken je dit</span>
+      <h2>Veel willen met AI.<br><em style="color:var(--teal);font-style:italic">Weinig rust erin.</em></h2>
+      <p>De meeste ondernemers lopen niet vast op de techniek. Ze lopen vast op waar te beginnen, en hoe het rustig blijft. Dat los ik samen met je op.</p>
+    </div>
+    <div class="pain__items">
+      <div class="pain__item"><span class="pain__num">1</span><div><h3>AI is overal, maar waar begin je</h3><p>Je ziet de mogelijkheden, maar mist een helder startpunt dat past bij jouw werk en budget.</p></div></div>
+      <div class="pain__item"><span class="pain__num">2</span><div><h3>Losse tools die niet samenwerken</h3><p>Een app hier, een abonnement daar. Het kost tijd in plaats van dat het tijd oplevert.</p></div></div>
+      <div class="pain__item"><span class="pain__num">3</span><div><h3>Twijfel over veiligheid en de regels</h3><p>Mag dit wel met klantgegevens, en hoe zit het met de EU AI Act. Begrijpelijke vragen, met een helder antwoord.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WERKWIJZE -->
+<section class="section reveal" id="werkwijze">
+  <div class="container-wide">
+    <div class="sec-head" style="text-align:center;margin:0 auto 56px;max-width:640px">
+      <span class="eyebrow">Werkwijze</span>
+      <h2 class="sec-title">Drie stappen, één doel: rust en tijd terugwinnen</h2>
+      <p class="sec-lead">AI is het middel, niet het doel. Waar het om gaat is overzicht in je werkprocessen en tijd voor de dingen die er echt toe doen. Geen lange trajecten zonder einde. We beginnen klein, leveren snel resultaat, en bouwen verder vanaf wat werkt.</p>
+    </div>
+    <div class="werkwijze-grid">
+      <div class="step-card"><div class="step-num">1</div><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 3a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2-.4c1 .3 2 .5 3 .7a2 2 0 0 1 1.7 2z"/></svg></div><h3>Gratis kennismaking</h3><p>We bellen of zien elkaar, fysiek of online. Ik luister naar je situatie. Geen pitch, geen verplichtingen.</p><div class="meta">30 minuten · kosteloos</div></div>
+      <div class="step-card"><div class="step-num">2</div><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M16.2 7.8 14 14l-6.2 2.2L10 10z"/></svg></div><h3>Stroomlijn Sessie</h3><p>Een werksessie waarin we samen kijken waar AI rust en winst oplevert in jouw bedrijf. Helder, concreet, praktisch.</p><div class="meta">Halve of hele dag</div></div>
+      <div class="step-card"><div class="step-num">3</div><div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></div><h3>Plan van aanpak</h3><p>Een helder plan met keuzes, prioriteiten en vervolgstappen. Inclusief wat je zelf doet en waar ik je bij help.</p><div class="meta">Schriftelijk uitgewerkt</div></div>
+    </div>
+    <div style="text-align:center;margin-top:48px">
+      <a class="btn btn-primary btn-lg" href="https://app.stroomlijn.nu/book/stroomlijnsessie" target="_blank" rel="noopener noreferrer">Start met stap 1 <svg class="icn-inline" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- DIT LEVERT HET OP -->
+<section class="section-tight reveal" data-section="resultaat" style="background:var(--gold-soft)">
+  <div class="container-wide" style="padding-top:40px;padding-bottom:40px">
+    <span class="eyebrow">Resultaat</span>
+    <h2 class="sec-title" style="margin-bottom:24px">Dit levert het op</h2>
+    <div class="levert-grid">
+      <div class="levert-item"><svg class="icn-inline" viewBox="0 0 24 24" style="color:var(--teal)"><path d="M20 6 9 17l-5-5"/></svg>Effici&euml;nter werken met je bestaande systemen</div>
+      <div class="levert-item"><svg class="icn-inline" viewBox="0 0 24 24" style="color:var(--teal)"><path d="M20 6 9 17l-5-5"/></svg>Meer zichtbaarheid voor je bedrijf</div>
+      <div class="levert-item"><svg class="icn-inline" viewBox="0 0 24 24" style="color:var(--teal)"><path d="M20 6 9 17l-5-5"/></svg>Betere klantenservice</div>
+      <div class="levert-item"><svg class="icn-inline" viewBox="0 0 24 24" style="color:var(--teal)"><path d="M20 6 9 17l-5-5"/></svg>Slimmer gebruik van je CRM</div>
+      <div class="levert-item"><svg class="icn-inline" viewBox="0 0 24 24" style="color:var(--teal)"><path d="M20 6 9 17l-5-5"/></svg>Meer tijd voor je kernactiviteiten</div>
+      <div class="levert-item"><svg class="icn-inline" viewBox="0 0 24 24" style="color:var(--teal)"><path d="M20 6 9 17l-5-5"/></svg>Zelfvertrouwen in het gebruik van AI</div>
+      <div class="levert-item"><svg class="icn-inline" viewBox="0 0 24 24" style="color:var(--teal)"><path d="M20 6 9 17l-5-5"/></svg>Vooroplopen in je sector</div>
+    </div>
+    <div style="margin-top:28px">
+      <a class="btn btn-primary" href="https://app.stroomlijn.nu/book/stroomlijnsessie" target="_blank" rel="noopener noreferrer">Plan je gratis Stroomlijn gesprek <svg class="icn-inline" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- AANBOD -->
+<section class="section reveal" id="aanbod" style="background:var(--surface-alt)">
+  <div class="container-wide">
+    <div class="sec-head aanbod-intro">
+      <span class="eyebrow">Aanbod</span>
+      <h2 class="sec-title">Van eerste vraag tot werkend systeem</h2>
+      <p>Ik begeleid je in drie vormen. Soms is één genoeg. Soms loopt het een natuurlijke route: eerst advies, dan training, dan implementatie. Wat past, past.</p>
+      <p>De voorbeelden hieronder zijn een greep uit de mogelijkheden. In de interactieve demo's zie je werkende voorbeelden die je zelf kunt aanklikken: een website die je via een Google Sheet beheert, een AI-assistent die klanten te woord staat, een digitale wallet-pas, een webshop, automatisch weekoverzicht en meer. Geen technische kennis nodig. Daarnaast laat ik in een aparte demo zien hoe ik social media-beheer voor meerdere klanten inricht, van intake tot geplande post, inclusief last-minute wijzigingen.</p>
+    </div>
+
+    <div class="aanbod-choice">
+      <h3>De keuze: ik bouw het, of jij bouwt het</h3>
+      <p>Ik bouw het voor je: jij vertelt wat je nodig hebt, ik richt de tools, agents en flows in, klaar om te gebruiken. Of je bouwt het zelf: met een abonnement op app.stroomlijn.nu maak je dit soort tools en agents in je eigen omgeving, en help ik je op weg. Wat past, past. Soms is begeleiding genoeg, soms neem ik het hele traject over.</p>
+    </div>
+
+    <div class="aanbod-grid">
+      <div class="aanbod-card">
+        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 3v18h18M7 15l4-5 3 3 5-7"/></svg></div>
+        <h3>Advies &amp; strategie</h3>
+        <p>Wat heeft jouw bedrijf nodig, en wat juist niet. Heldere keuzes, zonder technologische push.</p>
+        <ul><li><svg class="icn-inline ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>AI-scan van je processen</li><li><svg class="icn-inline ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Strategie &amp; roadmap</li><li><svg class="icn-inline ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Risico's &amp; EU AI-Act</li></ul>
+        <a class="link" href="#contact" onclick="navTo('contact');return false;">Plan een gesprek over advies <svg class="icn-inline" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="aanbod-card gold">
+        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3z"/></svg></div>
+        <h3>Training &amp; kennissessies</h3>
+        <p>Voor jou alleen of met je team. Praktisch, rustig en direct toepasbaar, geen drie-dagen-cursus.</p>
+        <ul><li><svg class="icn-inline ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Stroomlijn Sessie (1-op-1)</li><li><svg class="icn-inline ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Team workshops</li><li><svg class="icn-inline ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Kennissessies op maat</li></ul>
+        <a class="link" href="/training/">Bekijk trainingen <svg class="icn-inline" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="aanbod-card navy">
+        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg></div>
+        <h3>Implementatie</h3>
+        <p>AI-assistenten, chatbots, kennisbanken en geautomatiseerde workflows die jouw werkdag dragen.</p>
+        <ul><li><svg class="icn-inline ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>AI-agents &amp; chatbots</li><li><svg class="icn-inline ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Kennisbanken &amp; knowhow</li><li><svg class="icn-inline ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Workflow-automatisering</li></ul>
+        <a class="link" href="/implementatie/">Zie implementaties <svg class="icn-inline" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+
+    <div class="aanbod-more">
+      <a class="btn btn-secondary" href="https://app.stroomlijn.nu/p/xqaaJSySar/interactieve-demos" target="_blank" rel="noopener noreferrer">Bekijk de interactieve demo's <svg class="icn-inline" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-secondary" href="https://app.stroomlijn.nu/p/XedeEG7p/social-media-bureau" target="_blank" rel="noopener noreferrer">Social media bureau <svg class="icn-inline" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn-secondary" href="/cases/">In de praktijk: alle cases <svg class="icn-inline" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+
+  </div>
+</section>
+
+<!-- AI ACT -->
+<section class="section-tight reveal">
+  <div class="container-wide">
+    <div class="aiact">
+      <div class="aiact-shield"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3z"/></svg></div>
+      <div>
+        <div class="aiact-eu">EU AI-Act · 2026</div>
+        <h3 style="margin-top:4px">AI implementeren binnen de regels</h3>
+        <p>De EU AI-Act stelt eisen aan hoe je AI inzet in je bedrijf, denk aan transparantie, risico-classificatie en datagebruik. Ik help je compliant te werken zonder dat het bureaucratie wordt. Onderdeel van elk advies- en implementatietraject.</p>
+      </div>
+      <div><a class="btn btn-secondary" href="/ai-wise-start/">Lees meer <svg class="icn-inline" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section class="trust-bar reveal">
+  <div class="container-wide">
+    <div class="trust-bar-label">Eerder gewerkt met</div>
+    <div class="trust-slider">
+      <button class="trust-arrow trust-arrow-left" id="trustPrev" aria-label="Vorige logo's">‹</button>
+      <div class="trust-track" id="trustTrack"></div>
+      <button class="trust-arrow trust-arrow-right" id="trustNext" aria-label="Volgende logo's">›</button>
+    </div>
+    <p class="trust-bar-foot">Van luchtvaart en superjachten tot MKB in Friesland - 35+ jaar werkervaring, nu ingezet voor AI die past bij <em>jouw</em> werk.</p>
+  </div>
+</section>
+
+<!-- BEWIJS -->
+<section class="section reveal" id="reviews" style="background:var(--surface-alt)" data-section="bewijs">
+  <div class="container-wide">
+    <div class="sec-head" style="text-align:center;margin:0 auto 48px;max-width:640px">
+      <span class="eyebrow">In de praktijk</span>
+      <h2 class="sec-title"><a href="/cases/" style="color:inherit;text-decoration:none">Zo werkt AI bij bedrijven zoals het jouwe</a></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;align-items:center;max-width:960px;margin:0 auto">
+      <div style="border-radius:16px;overflow:hidden">
+        <img src="https://app.stroomlijn.nu/objects/quick-uploads/82/e1033131d68e1347.jpg" alt="Tjimka bij Innovatiecluster Drachten" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;aspect-ratio:4/3">
+      </div>
+      <div>
+        <div style="font-family:'DM Sans',serif;font-size:clamp(48px,7vw,72px);font-weight:600;color:var(--teal-dk,#2F6873);line-height:1">65%</div>
+        <p style="font-size:1.15rem;margin:12px 0 8px;font-weight:600">meer sollicitaties via de vacature-chatbot</p>
+        <p style="margin:0 0 12px">Voor Innovatiecluster Drachten, een samenwerking van 24 hightechbedrijven, wijst een chatbot bezoekers direct naar de juiste vacature en informatie.</p>
+        <p style="margin:0 0 24px;color:var(--muted,#5a6b7a)">Van geotechnisch adviesbureau tot bloemenwinkel. Zeven bedrijven, zeven werkende oplossingen, met cijfers.</p>
+        <a class="btn btn-secondary" href="/cases/" style="text-decoration:none">Bekijk alle voorbeelden <svg class="icn-inline" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OVER STROOMLIJN -->
+<section class="section reveal" data-section="over-stroomlijn" style="background:#fff">
+  <div class="container-wide os-grid">
+    <div>
+      <span class="eyebrow">Over STROOMLIJN</span>
+      <h2 class="sec-title">STROOMLIJN is Tjimka Bakker</h2>
+      <p style="font-size:1.02rem;margin:0 0 14px">Strateeg. Iemand die weet hoe het voelt om de koers kwijt te zijn, en daarom weet hoe je die terugvindt.</p>
+      <p style="color:var(--mute);margin:0">Na jaren bij KLM, een solo zeilreis naar Scandinavi&euml;, een loopbaan die nooit een rechte lijn was en een eigen marketingpraktijk, weet ik &eacute;&eacute;n ding zeker. Techniek werkt pas als die past bij de mensen die ermee moeten werken. Daarom begeleid ik ondernemers en teams, van eerste kennissessie tot volledige implementatie. Advies dat klopt. Trainingen die blijven hangen. AI die rust geeft in plaats van ruis.</p>
+    </div>
+    <div>
+      <img src="https://stroomlijn.nu/wp-content/uploads/2025/06/001-PBTjimkaBakker-FE0O5A5726-Brandinginbeeld.jpg" alt="Tjimka Bakker van STROOMLIJN" loading="lazy" decoding="async" style="width:100%;height:100%;min-height:320px;object-fit:cover;border-radius:16px">
+    </div>
+  </div>
+</section>
+
+<!-- OVER TJIMKA -->
+<section class="over reveal" id="over">
+  <div class="container-wide over-grid">
+    <div>
+      <p class="over-eyebrow">Over Tjimka</p>
+      <h2>De brug tussen<br><span>innovatie en de mens.</span></h2>
+      <p>De meeste bedrijven beginnen bij de tool. Ik begin bij de processen en de mensen die ermee werken. Pas daarna kijk ik welke AI daar goed bij past.</p>
+      <p>Ik kom van de andere kant. KLM, superjachtenindustrie, drie jaar in de kern van de maakindustrie in Noord-Nederland. In al die werelden speelde hetzelfde: technologie gaat snel, mensen bewegen op een ander tempo. De vraag is altijd hoe je die twee bij elkaar brengt.</p>
+      <p>Dat is mijn vak, al voor AI een naam had. Bij STROOMLIJN doe ik dat nu voor anderen. Richting geven in een wereld die snel beweegt, zodat ze niet worden meegesleurd, maar bewust kiezen.</p>
+      <div class="over-stats">
+        <div>35+<span>jaar werkervaring</span></div>
+        <div>13<span>jaar zelfstandig</span></div>
+        <div>3<span>jaar Innovatiecluster</span></div>
+      </div>
+      <div class="over-ctas">
+        <a class="btn btn-primary" href="https://app.stroomlijn.nu/book/stroomlijnsessie" target="_blank" rel="noopener noreferrer">Afspraak maken</a>
+        <button class="btn btn-secondary" onclick="navTo('aanbod')">Bekijk mijn diensten</button>
+      </div>
+    </div>
+    <div>
+      <div class="over-tabs" id="overTabs"></div>
+      <div class="over-panel" id="overPanel">
+        <img id="overImg" src="" alt="" loading="lazy" decoding="async">
+        <div class="over-scrim" aria-hidden="true"></div>
+        <div class="over-panel-period" id="overPeriod"></div>
+        <div class="over-panel-inner"><p id="overText"></p></div>
+      </div>
+      <div class="over-bars" id="overBars"></div>
+    </div>
+  </div>
+</section>
+
+<!-- GEZIEN & GECITEERD -->
+<section class="section-tight reveal">
+  <div class="container-wide">
+    <div class="pers-strip" style="margin-top:0;padding-top:0;border-top:none">
+      <div class="pers-strip-label">Gezien &amp; geciteerd</div>
+      <div class="pers-slider">
+        <button class="pers-arrow pers-arrow-left" id="persPrev" aria-label="Vorige">‹</button>
+        <div class="pers-track" id="persTrack"></div>
+        <button class="pers-arrow pers-arrow-right" id="persNext" aria-label="Volgende">›</button>
+      </div>
+      <p class="pers-strip-foot">Interview in Talkies Lifestyle Magazine · <a href="https://drive.google.com/file/d/1GOYtSK3Vd3vBr8H7pa8uDpNRPmGUh4Qw/view" target="_blank" rel="noopener noreferrer" style="color:var(--teal-dk);font-weight:600">bekijk de video</a> · <a href="/kennis/" style="color:var(--teal-dk);font-weight:600">alle artikelen en afleveringen</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="section-tight reveal">
+  <div class="container-wide">
+    <div class="ctaband">
+      <div><h2>Meer rust en tijd in jouw bedrijf. Met een mens aan het roer.</h2><p>30 minuten, kosteloos en vrijblijvend. We kijken samen of het klikt.</p></div>
+      <div class="actions">
+        <a class="btn btn-on-dark btn-lg" href="https://app.stroomlijn.nu/book/stroomlijnsessie" target="_blank" rel="noopener noreferrer">Plan een gratis gesprek <svg class="icn-inline" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <button class="btn btn-outline-dark btn-lg" style="color:var(--navy);border-color:rgba(26,46,74,.3)" onclick="navTo('aanbod')">Bekijk het aanbod</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section reveal" id="faq">
+  <div class="container-wide faq-grid">
+    <div>
+      <span class="eyebrow">Veelgestelde vragen</span>
+      <h2 class="sec-title">Goede vragen, eerlijke antwoorden.</h2>
+      <p class="sec-lead">Staat jouw vraag er niet bij? Stel hem in een gratis kennismaking, dan kijken we er samen naar.</p>
+      <a class="btn btn-secondary" style="margin-top:24px" href="mailto:info@tjimka.nl">Stel je vraag</a>
+    </div>
+    <div class="faq-list" id="faqList"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section reveal" id="contact" data-section="contact">
+  <div class="container-wide">
+    <div class="sec-head" style="text-align:center;margin:0 auto 40px;max-width:640px">
+      <span class="eyebrow">Plan een kennismaking</span>
+      <h2 class="sec-title">Wil je weten wat AI voor jouw werk kan doen?</h2>
+      <p class="sec-lead">30 minuten, kosteloos en vrijblijvend. Je gaat naar huis met twee of drie concrete kansen voor jouw bedrijf.</p>
+      <div class="contact-checks">
+        <span><svg class="icn-inline" viewBox="0 0 24 24" style="color:var(--teal)"><path d="M20 6 9 17l-5-5"/></svg>Gratis 30-minuten gesprek, online of telefonisch</span>
+        <span><svg class="icn-inline" viewBox="0 0 24 24" style="color:var(--teal)"><path d="M20 6 9 17l-5-5"/></svg>Nuchter gesprek over wat er speelt in het bedrijf</span>
+        <span><svg class="icn-inline" viewBox="0 0 24 24" style="color:var(--teal)"><path d="M20 6 9 17l-5-5"/></svg>Direct inzicht in waar AI echt verschil kan maken</span>
+        <span><svg class="icn-inline" viewBox="0 0 24 24" style="color:var(--teal)"><path d="M20 6 9 17l-5-5"/></svg>Geen verkooppraat, maar praktisch advies</span>
+      </div>
+      <div style="margin-top:32px;display:flex;gap:14px;flex-wrap:wrap;justify-content:center">
+        <a class="btn btn-primary btn-lg" href="https://app.stroomlijn.nu/book/stroomlijnsessie" target="_blank" rel="noopener noreferrer">Plan een gesprek <svg class="icn-inline" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-secondary btn-lg" href="mailto:info@tjimka.nl">E-mail</a>
+      </div>
+      <p style="margin-top:28px;font-size:.95rem">Liever bellen of mailen? <a href="tel:+31624696925" style="color:var(--teal-dk);font-weight:600;text-decoration:none">06 24 69 69 25</a> · <a href="mailto:info@tjimka.nl" style="color:var(--teal-dk);font-weight:600;text-decoration:none">info@tjimka.nl</a></p>
+      <p style="color:var(--muted,#5a6b7a);margin-top:6px;font-size:.9rem">Reactie binnen één werkdag · Lemmer, Friesland · online en fysiek door heel Nederland</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container-wide">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="wordmark"><img src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/logo-wordmark.png" alt="STROOMLIJN"></div>
+        <p class="footer-tag">AI-strategie, training en implementatie. Menselijk, praktisch, op maat. Vanuit Lemmer, voor heel Nederland.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/tjimka/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="color:#fff"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-.9 1.8-1.9 3.7-1.9 4 0 4.7 2.6 4.7 6v6.2h-4v-5.5c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21H9z"/></svg></a>
+          <a href="mailto:info@tjimka.nl" aria-label="E-mail"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="color:#fff"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+          <a href="https://www.instagram.com/tjimka/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="color:#fff"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="https://www.youtube.com/@TjimkaBakker" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="color:#fff"><rect x="2.5" y="6" width="19" height="12" rx="3"/><path d="m10 9.5 5 2.5-5 2.5z" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://serve.podhome.fm/fris-in-je-oren" target="_blank" rel="noopener noreferrer" aria-label="Podcast Fris in je oren"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="color:#fff"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-7h3zM3 19a2 2 0 0 0 2 2h1v-7H3z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col"><h5>Menu</h5><a href="/aanbod/">Aanbod</a><a href="/cases/">In de praktijk</a><a href="/tools/">Gratis AI-tools</a><a href="/kennis/">Kennis en media</a><a href="#over" onclick="navTo('over');return false;">Over Tjimka</a></div>
+      <div class="footer-col"><h5>Op deze pagina</h5><a href="#werkwijze" onclick="navTo('werkwijze');return false;">Werkwijze</a><a href="#faq" onclick="navTo('faq');return false;">Veelgestelde vragen</a><a href="#contact" onclick="navTo('contact');return false;">Contact</a><a href="https://app.stroomlijn.nu/book/stroomlijnsessie" target="_blank" rel="noopener noreferrer">Plan een gesprek</a></div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 STROOMLIJN - Tjimka Bakker · KvK 57904561 · BTW NL001434241B82</div>
+      <div class="legal"><a href="https://tjimka.nl/privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy</a><a href="https://tjimka.nl/terms-and-conditions/" target="_blank" rel="noopener noreferrer">Algemene voorwaarden</a><a href="https://tjimka.nl/cookieverklaring/" target="_blank" rel="noopener noreferrer">Cookies</a><a href="https://stroomlijn.nu/transparantie-ai-disclaimer-ai-gebruik/" target="_blank" rel="noopener noreferrer">AI-disclaimer</a></div>
+    </div>
+  </div>
+</footer>
+
+
+<script>window.WidgetConfig={widgetId:'51886538',type:'launcher',primaryColor:'#4899A7',position:'bottom-right',theme:'light',label:'Stel je vraag hier'};</script>
+<script src="https://app.stroomlijn.nu/widget.js" async></script>
+  <script src="script.js"></script>
+</body>
+</html>
