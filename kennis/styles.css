@@ -21,7 +21,7 @@ h1,h2,h3{font-family:var(--ff-display);color:var(--navy);line-height:1.15;margin
 .icn-inline{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:2;vertical-align:-2px}
 .nav{position:sticky;top:0;z-index:50;background:rgba(251,250,247,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(26,46,74,.08)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
-.nav-logo img{height:34px;width:auto;display:block}
+.nav-logo img{height:40px;width:auto;display:block}
 .nav-links{display:flex;gap:6px}
 .nav-link{padding:8px 14px;font-size:14.5px;font-weight:500;color:var(--navy);border-radius:12px;transition:background .15s}
 .nav-link:hover{background:rgba(26,46,74,.06)}
