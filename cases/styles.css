@@ -87,6 +87,7 @@ h1,h2,h3,h4{font-family:var(--ff-display);color:var(--navy);line-height:1.15;mar
 .case-card.featured .case-client{color:rgba(255,255,255,.65)}
 .case-card p{color:var(--mute);font-size:.95rem;margin:0 0 10px;line-height:1.65}
 .case-card.featured p{color:rgba(255,255,255,.85)}
+.case-result{font-style:italic;color:var(--teal-dk);font-size:.92rem;margin-top:12px}
 .case-stats{display:flex;gap:20px;flex-wrap:wrap;margin-top:auto;padding-top:18px;border-top:1px solid rgba(26,46,74,.1)}
 .case-card.featured .case-stats{border-top:1px solid rgba(255,255,255,.14)}
 .case-stats div{font-family:var(--ff-display);font-size:1.3rem;color:var(--navy)}
