@@ -36,7 +36,7 @@ img { max-width: 100%; display: block; }
 }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; gap: 32px; }
 .nav-logo { display: flex; align-items: center; cursor: pointer; }
-.nav-logo img { height: 30px; }
+.nav-logo img { height: 40px; width: auto; display: block; }
 .nav-links { display: flex; gap: 30px; align-items: center; }
 .nav-link {
   font-size: 14.5px; font-weight: 500; color: var(--fg-1);
