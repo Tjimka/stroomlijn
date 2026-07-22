@@ -62,7 +62,7 @@ var trustLogos = [
 
   var autoTimer = setInterval(function(){
     if(isHover||isDragging||!oneSetWidth) return;
-    track.scrollLeft += 0.6;
+    track.scrollLeft += 1.1;
     wrapCheck();
   }, 16);
 
@@ -134,7 +134,7 @@ var persLogos = [
 
   var autoTimer = setInterval(function(){
     if(isHover||isDragging||!oneSetWidth) return;
-    track.scrollLeft += 0.5;
+    track.scrollLeft += 0.8;
     wrapCheck();
   }, 16);
 
@@ -214,7 +214,7 @@ var chapters = [
   {label:"Innovatiecluster Drachten", period:"2020-2023", text:"Drie jaar in de kern van de Noord-Nederlandse maakindustrie. 24 hightechbedrijven, Robotica, Big Data, 3D Printing. Het digitale domein van het cluster vormgegeven en de zichtbaarheid vergroot.", img:"https://app.stroomlijn.nu/objects/quick-uploads/82/e1033131d68e1347.jpg", alt:"Tjimka bij Innovatiecluster Drachten"},
   {label:"Naast het werk", period:"Een greep uit de bezigheden", text:"Motorrijden, zeilen op het IJsselmeer, skiën, een fanatieke Formule 1-kijker, en het Pieterpad lopen van Pieterburen naar Maastricht. Rust vinden buiten het scherm hoort net zo bij mijn werk als de AI zelf.", img:"https://raw.githubusercontent.com/Tjimka/stroomlijn/main/foto%27s/Formule%201%20Zandvoort.jpeg", alt:"Tjimka bij het Formule 1-circuit van Zandvoort"},
   {label:"AI & STROOMLIJN", period:"2013-nu", text:"Sinds 2013 zelfstandig vanuit Lemmer. Drie jaar Innovatiecluster Drachten, 24 bedrijven, robotica en big data. In 2022 dezelfde fascinatie als bij de eerste KLM-websites, nu met ChatGPT. STROOMLIJN werd de logische volgende stap, inmiddels met een eigen platform dat alle grote taalmodellen ondersteunt en werkt via API's en MCP-koppelingen, niet gebonden aan één tool.", img:"https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/photos/tjimka-presentatie-2.jpg", alt:"Tjimka geeft een presentatie over werken met AI"},
-  {label:"Nu", period:"Vandaag", text:"Dezelfde telefoon, een ander gesprek. Van kind aan de lijn tot AI-strateeg die organisaties helpt met verbinding maken, nu met technologie als hulpmiddel in plaats van speelgoed.", img:"https://app.stroomlijn.nu/objects/quick-uploads/82/00be201fc8561b93.jpg", alt:"Tjimka nu aan de telefoon"}
+  {label:"Nu", period:"Vandaag", text:"De telefoon is compacter en slimmer geworden, het gesprek is nog net zo menselijk. Zo sta ik ook mijn klanten te woord. De technologie verandert, het persoonlijke contact blijft.", img:"https://app.stroomlijn.nu/objects/quick-uploads/82/00be201fc8561b93.jpg", alt:"Tjimka nu aan de telefoon"}
 ];
 var overTabs = document.getElementById('overTabs');
 var overBars = document.getElementById('overBars');
