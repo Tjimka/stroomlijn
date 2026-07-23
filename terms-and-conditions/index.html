@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1A2E4A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://stroomlijn.nu/terms-and-conditions/" />
+
+
+
+
+
+<meta property="og:url" content="https://stroomlijn.nu/terms-and-conditions/" />
+<meta property="og:locale" content="nl_NL" />
+
+
+<!-- SEO Meta Tags -->
+<title>Algemene Voorwaarden | STROOMLIJN</title>
+<meta name="description" content="Algemene voorwaarden van Tjimka Bakker | STROOMLIJN, versie 2.1 (maart 2026). Van toepassing op AI-trainingen, workshops, strategisch advies, agentbouw en platformdiensten." />
+<meta property="og:title" content="Algemene Voorwaarden | STROOMLIJN" />
+<meta property="og:description" content="Algemene voorwaarden van Tjimka Bakker | STROOMLIJN, versie 2.1 (maart 2026). Van toepassing op AI-trainingen, workshops, strategisch advies, agentbouw en platformdiensten." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Algemene Voorwaarden | STROOMLIJN" />
+<meta name="twitter:description" content="Algemene voorwaarden van Tjimka Bakker | STROOMLIJN, versie 2.1 (maart 2026). Van toepassing op AI-trainingen, workshops, strategisch advies, agentbouw en platformdiensten." />
+<!-- End SEO Meta Tags -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="lp-mrxo6equ-t90x6";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  var u=new URL(location.href);var found=null;var changed=false;
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{localStorage.setItem(map[p]+slug,v);}catch(e){}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://app.stroomlijn.nu/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=5725');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='g992USazas';
+  var apiBase='https://app.stroomlijn.nu';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    var phone=findPhone();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,phone:phone||'',amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var sidP=urlParams.get('session_id');
+      if(sidP){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidP})}).catch(function(){});}catch(e){}}
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<script data-cart>
+(function(){
+  var slug='g992USazas';
+  var apiBase='https://app.stroomlijn.nu';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findCartEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  function findCartPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
+  var __realCart=function(arg){
+    var items, email='', customerName='', successUrl, cancelUrl, currency;
+    if(Array.isArray(arg)){items=arg;}
+    else if(arg&&typeof arg==='object'){
+      items=arg.items;email=arg.email||'';customerName=arg.name||arg.customerName||'';
+      successUrl=arg.successUrl;cancelUrl=arg.cancelUrl;currency=arg.currency;
+    }
+    if(!Array.isArray(items)||items.length===0){alert('No items in cart.');return Promise.reject('no_items');}
+    var cleanItems=[];var totalCents=0;
+    for(var i=0;i<items.length;i++){
+      var it=items[i];if(!it||typeof it!=='object'){alert('Invalid item at position '+i);return Promise.reject('bad_item');}
+      var nm=typeof it.name==='string'?it.name.trim():'';
+      if(!nm){alert('Item '+(i+1)+' is missing a name.');return Promise.reject('no_name');}
+      var amt=typeof it.amountCents==='number'?it.amountCents:(typeof it.amount==='number'?Math.round(it.amount*100):NaN);
+      if(!isFinite(amt)||amt<1){alert('Item "'+nm+'" needs a valid amount in cents.');return Promise.reject('bad_amount');}
+      var qty=(typeof it.quantity==='number'&&it.quantity>0)?Math.floor(it.quantity):1;
+      cleanItems.push({name:nm,description:it.description||'',amountCents:amt,quantity:qty});
+      totalCents+=amt*qty;
+    }
+    if(totalCents<50){alert('Cart total must be at least $0.50');return Promise.reject('total_too_low');}
+    if(!email)email=findCartEmail();
+    if(!customerName)customerName=findCartName();
+    var cartPhone=findCartPhone();
+    if(!email){var p=window.prompt('Enter your email for the receipt:','');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert('An email address is required to complete checkout.');return Promise.reject('no_email');}}
+    var successBase=window.location.href.split('?')[0];
+    var body={email:email,name:customerName,items:cleanItems,locale:(document.documentElement.lang||navigator.language||'en')};
+    if(currency)body.currency=currency;
+    if(cartPhone)body.phone=cartPhone;
+    body.successUrl=successUrl||(successBase+'?cart=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}');
+    body.cancelUrl=cancelUrl||(successBase+'?cart=cancelled');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/cart/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(body)
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process checkout');throw new Error(d.error);}
+    });
+  };
+  try{Object.defineProperty(window,'__processCart',{value:__realCart,writable:false,configurable:false});}catch(e){window.__processCart=__realCart;}
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('cart')==='success'){
+      var sidC=urlParams.get('session_id');
+      if(sidC){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidC})}).catch(function(){});}catch(e){}}
+      if(document.getElementById('payment-success-overlay')||document.getElementById('donation-success-overlay')||document.getElementById('cart-success-overlay'))return;
+      var overlay=document.createElement('div');overlay.id='cart-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||'Thank you for your order.';
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var cBtn=document.getElementById('lp-cart-success-btn');
+      if(cBtn){cBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="nav" data-section="navbar">
+  <div class="container-wide nav-inner">
+    <a class="nav-logo" href="/"><img src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/logo-wordmark.png" alt="STROOMLIJN"></a>
+    <div class="nav-links">
+      <a class="nav-link" href="/aanbod/">Aanbod</a>
+      <a class="nav-link" href="/cases/">In de praktijk</a>
+      <a class="nav-link" href="/tools/">Gratis AI-tools</a>
+      <a class="nav-link" href="/kennis/">Kennis en media</a>
+      <a class="nav-link" href="/#over">Over Tjimka</a>
+    </div>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm" href="https://app.stroomlijn.nu/book/stroomlijnsessie" target="_blank" rel="noopener noreferrer">Plan een gesprek</a>
+    </div>
+  </div>
+</nav>
+<header class="art-hero" data-section="hero">
+  <div class="container-wide">
+    <span class="eyebrow">Juridisch</span>
+    <h1>Algemene Voorwaarden</h1>
+    <p>Versie 2.1 | Maart 2026</p>
+  </div>
+</header>
+<main data-section="inhoud">
+  <div class="article">
+<p><strong>Tjimka Bakker | STROOMLIJN</strong><br>AI-strategie, training, begeleiding en digitale diensten<br>
+Versie 2.1 | Maart 2026<br>
+KvK: 57904561 | BTW: NL001434241B82<br>
+info@tjimka.nl | stroomlijn.nu | 06 24 69 69 25</p>
+<p>Deze algemene voorwaarden zijn van toepassing op alle offertes, overeenkomsten en werkzaamheden van Tjimka Bakker, handelend onder de naam STROOMLIJN. Ze gelden voor AI-trainingen, workshops, strategisch advies, begeleiding, agentbouw, platformdiensten en aanverwante diensten.</p>
+<h2>Artikel 1 - Definities en toepasselijkheid</h2>
+<p>a) In deze algemene voorwaarden wordt verstaan onder:</p>
+<ul>
+<li><strong>Aanbieder:</strong> Tjimka Bakker, handelend onder de naam STROOMLIJN, AI-strateeg en trainer, gevestigd te Lemmer.</li>
+<li><strong>Opdrachtgever:</strong> de natuurlijke persoon of rechtspersoon die een overeenkomst aangaat met Aanbieder.</li>
+<li><strong>Overeenkomst:</strong> elke afspraak over de levering van diensten, vastgelegd in een offerte, voorstel of opdrachtbevestiging.</li>
+<li><strong>Diensten:</strong> AI-trainingen, workshops, strategisch advies, begeleidingstrajecten, agentbouw, platformdiensten en aanverwante werkzaamheden.</li>
+<li><strong>Platform:</strong> de digitale omgeving app.stroomlijn.nu, waarbinnen AI-agents en workflows voor de Opdrachtgever worden gebouwd en beheerd.</li>
+<li><strong>Agent:</strong> een door Aanbieder gebouwde, geautomatiseerde AI-toepassing die namens of ten behoeve van de Opdrachtgever taken uitvoert.</li>
+</ul>
+<p>b) Deze voorwaarden zijn van toepassing op alle offertes, overeenkomsten en werkzaamheden van Aanbieder, tenzij uitdrukkelijk schriftelijk anders overeengekomen.</p>
+<p>c) Algemene voorwaarden van de Opdrachtgever worden uitdrukkelijk van de hand gewezen, tenzij schriftelijk anders overeengekomen.</p>
+<p>d) Afwijkingen zijn uitsluitend geldig indien schriftelijk bevestigd door Aanbieder.</p>
+<p>e) Indien een bepaling nietig of vernietigbaar is, blijven de overige bepalingen volledig van kracht. Partijen treden in overleg over een vervangende bepaling die het doel van de oorspronkelijke bepaling zoveel mogelijk benadert.</p>
+<h2>Artikel 2 - Offerte en totstandkoming overeenkomst</h2>
+<p>a) Alle offertes en voorstellen zijn vrijblijvend, tenzij een aanvaardingstermijn is opgenomen.</p>
+<p>b) Offertes zijn geldig gedurende de in de offerte vermelde termijn, standaard 30 dagen na offertedatum.</p>
+<p>c) Prijzen zijn exclusief 21% BTW en eventuele reiskosten, tenzij uitdrukkelijk anders vermeld. Kosten van externe software, licenties of diensten van derden die noodzakelijk zijn voor de uitvoering zijn eveneens exclusief, tenzij de offerte dit uitdrukkelijk omvat. Hieronder vallen ook kosten voor AI-tokengebruik, API-licenties van LLM-providers en kosten verbonden aan eigen API-accounts van Aanbieder die ten behoeve van de opdracht worden ingezet. Deze kosten worden doorberekend op basis van werkelijk gebruik, tenzij de offerte een all-in prijs vermeldt.</p>
+<p>d) Een overeenkomst komt tot stand op het moment dat de schriftelijke bevestiging van de Opdrachtgever door Aanbieder is ontvangen en geaccepteerd, of bij aanvang van de werkzaamheden.</p>
+<p>e) Aanbieder behoudt het recht prijsstijgingen door te berekenen die zich voordoen na offertedatum maar voor volledige uitvoering, mits Aanbieder de Opdrachtgever minimaal 30 dagen van tevoren schriftelijk informeert.</p>
+<h2>Artikel 3 - Uitvoering van de overeenkomst</h2>
+<p>a) Aanbieder voert de werkzaamheden uit naar beste inzicht, vermogen en vakmanschap.</p>
+<p>b) Aanbieder heeft het recht bepaalde werkzaamheden te laten uitvoeren door derden of in te zetten via externe platforms en API-koppelingen. De Opdrachtgever wordt hierover vooraf geïnformeerd.</p>
+<p>c) De Opdrachtgever zorgt tijdig voor alle gegevens en medewerking die noodzakelijk zijn voor een goede uitvoering. Indien dit niet tijdig gebeurt, heeft Aanbieder het recht de uitvoering op te schorten of meerkosten in rekening te brengen.</p>
+<p>d) Aanbieder verwerkt persoonsgegevens conform de Algemene Verordening Gegevensbescherming (AVG). Op verzoek stelt Aanbieder een verwerkersovereenkomst beschikbaar.</p>
+<p>e) Aanbieder stemt het trainingsmateriaal en de inhoud van workshops af op de context en het niveau van de Opdrachtgever, op basis van de bij aanvang verstrekte informatie.</p>
+<p>f) Aanbieder is niet verantwoordelijk voor de werking of beschikbaarheid van externe platforms, API-diensten of infrastructuur van derden waarop de dienstverlening mede steunt, waaronder maar niet beperkt tot LLM-providers en de infrastructuur van app.stroomlijn.nu.</p>
+<p>g) Aanbieder fungeert niet als doorlopend communicatiemanager of operationeel beheerder voor de Opdrachtgever, tenzij dit expliciet en schriftelijk is overeengekomen als onderdeel van de opdracht.</p>
+<h2>Artikel 4 - Levering en planning</h2>
+<p>a) Aanbieder streeft ernaar de overeengekomen diensten op de afgesproken datum en tijd uit te voeren. Genoemde data zijn geen fatale termijnen, tenzij uitdrukkelijk schriftelijk anders overeengekomen.</p>
+<p>b) Indien de Opdrachtgever gegevens, materialen of bevestigingen niet tijdig aanlevert, kan Aanbieder de planning aanpassen. Meerkosten die hieruit voortvloeien zijn voor rekening van de Opdrachtgever.</p>
+<p>c) Bij een training of workshop op locatie draagt de Opdrachtgever zorg voor een geschikte ruimte, benodigde technische faciliteiten en aanwezigheid van de deelnemers, tenzij anders overeengekomen.</p>
+<h2>Artikel 5 - Annulering en no-show</h2>
+<h3>5.1 Annulering door de Opdrachtgever</h3>
+<p>Bij annulering van een overeengekomen training, workshop of begeleidingstraject gelden de volgende voorwaarden:</p>
+<ul>
+<li>Annulering meer dan 14 kalenderdagen voor de startdatum: geen kosten.</li>
+<li>Annulering 7 tot 14 kalenderdagen voor de startdatum: 50% van de overeengekomen vergoeding is verschuldigd.</li>
+<li>Annulering minder dan 7 kalenderdagen voor de startdatum of no-show op de dag zelf: 100% van de overeengekomen vergoeding is verschuldigd.</li>
+</ul>
+<p>Annulering dient schriftelijk of per e-mail te worden gemeld. De annuleringsdatum is de datum van ontvangst door Aanbieder.</p>
+<h3>5.2 Verzuim deelnemers</h3>
+<p>Indien deelnemers aan een training of workshop niet aanwezig zijn, zonder dat de Opdrachtgever dit tijdig heeft gemeld, geldt het no-show tarief voor de niet aanwezige deelnemers, tenzij anders overeengekomen.</p>
+<h3>5.3 Annulering door Aanbieder</h3>
+<p>Aanbieder behoudt het recht een training, workshop of afspraak te verzetten bij overmacht (ziekte, calamiteiten). Aanbieder informeert de Opdrachtgever zo spoedig mogelijk en stelt een nieuwe datum voor. Bij annulering door Aanbieder zijn geen kosten verschuldigd voor de Opdrachtgever.</p>
+<h3>5.4 Doorlopende trajecten en meerfasige opdrachten</h3>
+<p>Voor doorlopende begeleidingstrajecten geldt een opzegtermijn van een maand voor trajecten korter dan 6 maanden, en twee maanden voor trajecten van 6 maanden of langer. Opzegging geschiedt schriftelijk.</p>
+<p>Bij meerfasige opdrachten geldt bij tussentijdse beëindiging door de Opdrachtgever: reeds geleverde en afgeronde fases worden volledig gefactureerd. Fases die nog niet zijn gestart vervallen, tenzij daarvoor al materiaal of voorbereidingen zijn gemaakt die aantoonbaar voor rekening van Aanbieder komen.</p>
+<h2>Artikel 6 - Betaling</h2>
+<p>a) Facturen dienen te worden voldaan binnen 7 dagen na factuurdatum, tenzij in de offerte of opdrachtbevestiging een andere termijn is overeengekomen.</p>
+<p>b) De betalingsstructuur per opdracht wordt vastgelegd in de offerte of opdrachtbevestiging. De offerte vermeldt of betaling volledig vooraf, per fase of in termijnen plaatsvindt. Gebruikelijke structuren zijn 50% bij akkoord en 50% bij oplevering, of een termijnschema van maximaal vijf gelijke termijnen waarvan de eerste bij akkoord.</p>
+<p>c) Betaling vindt netto plaats, zonder korting, inhouding of verrekening.</p>
+<p>d) Aanbieder is gerechtigd facturen elektronisch te verzenden.</p>
+<p>e) Bij niet-tijdige betaling is de Opdrachtgever van rechtswege in verzuim. Aanbieder is gerechtigd vertragingsrente in rekening te brengen van 1,5% per maand over het openstaande bedrag, tot een maximum van 18% per jaar.</p>
+<p>f) Alle kosten van invordering, zowel gerechtelijk als buitengerechtelijk, zijn voor rekening van de Opdrachtgever. Buitengerechtelijke incassokosten bedragen minimaal 15% van het verschuldigde bedrag met een minimum van &euro;75.</p>
+<p>g) Klachten over facturen dienen uiterlijk binnen 8 dagen na factuurdatum schriftelijk te worden ingediend. Na deze termijn wordt de factuur geacht te zijn geaccepteerd.</p>
+<p>h) Bij niet-betaling van een of meerdere facturen worden alle nog openstaande facturen direct opeisbaar.</p>
+<p>i) Kosten van externe software, licenties of platform-abonnementen van derden die door Aanbieder worden voorgeschoten in het kader van een opdracht, worden doorberekend aan de Opdrachtgever op basis van de werkelijke kosten, tenzij de offerte anders bepaalt.</p>
+<h2>Artikel 7 - Klachten en reclamaties</h2>
+<p>a) Klachten over de verrichte werkzaamheden dienen door de Opdrachtgever binnen 14 dagen na uitvoering schriftelijk te worden gemeld, met een zo concreet mogelijke omschrijving van de tekortkoming.</p>
+<p>b) Indien een klacht gegrond is, zal Aanbieder de betreffende werkzaamheden alsnog naar behoren uitvoeren, tenzij dit aantoonbaar zinloos is geworden.</p>
+<p>c) Indien herstel niet meer mogelijk of zinvol is, geldt de aansprakelijkheidsbeperking van artikel 8.</p>
+<h2>Artikel 8 - Aansprakelijkheid</h2>
+<p>a) De aansprakelijkheid van Aanbieder voor directe schade is beperkt tot het bedrag dat voor de betreffende opdracht in rekening is gebracht, met een maximum van &euro;10.000 per opdracht. Aanbieder is uitsluitend aansprakelijk voor schade die het directe gevolg is van een aantoonbare tekortkoming in de nakoming van de overeenkomst.</p>
+<p>b) Aanbieder is niet aansprakelijk voor schade die is ontstaan doordat de Opdrachtgever onjuiste of onvolledige informatie heeft verstrekt.</p>
+<p>c) Aanbieder is niet aansprakelijk voor indirecte schade, gevolgschade, gederfde winst, gemiste besparingen of schade door bedrijfsstagnatie.</p>
+<p>d) De aansprakelijkheid van Aanbieder is te allen tijde beperkt tot het bedrag dat door de verzekeraar van Aanbieder in het betreffende geval wordt uitgekeerd.</p>
+<p>e) Aanbieder geeft geen garanties over de resultaten van AI-gebruik of de toepassing van geleerde vaardigheden na een training. De verantwoordelijkheid voor de toepassing ligt bij de Opdrachtgever en de deelnemers.</p>
+<p>f) Aanbieder is niet aansprakelijk voor uitval, storingen of wijzigingen in externe platforms, API-diensten of LLM-providers waarop de geleverde diensten of agents steunen. Aanbieder spant zich in om storingen tijdig te signaleren en alternatieve oplossingen voor te stellen, maar kan de continuïteit van diensten van derden niet garanderen.</p>
+<p>g) Aanbieder is niet aansprakelijk voor schade die voortvloeit uit het gebruik van outputs gegenereerd door AI-agents of AI-tools, waaronder maar niet beperkt tot onjuiste, onvolledige of misleidende inhoud. De Opdrachtgever is verantwoordelijk voor het beoordelen en controleren van AI-gegenereerde outputs alvorens deze te gebruiken.</p>
+<h2>Artikel 9 - Vrijwaring</h2>
+<p>De Opdrachtgever vrijwaart Aanbieder voor aanspraken van derden die in verband met de uitvoering van de overeenkomst schade lijden, voor zover de oorzaak aan de Opdrachtgever is toe te rekenen. Indien Aanbieder door derden wordt aangesproken, is de Opdrachtgever verplicht Aanbieder bij te staan en alle medewerking te verlenen. Alle kosten en schade die hieruit voortvloeien zijn voor rekening van de Opdrachtgever.</p>
+<h2>Artikel 10 - Intellectueel eigendom</h2>
+<p>a) Aanbieder behoudt alle intellectuele eigendomsrechten op de door haar ontwikkelde methodieken, werkwijzen, trainingsconcepten, tools, prompts, agents en overig materiaal, ook indien dit tijdens de uitvoering van de opdracht is ontwikkeld of gepresenteerd.</p>
+<p>b) Trainingsmateriaal dat op maat is ontwikkeld voor de Opdrachtgever mag door de Opdrachtgever intern worden gebruikt. Verspreiding buiten de organisatie, publicatie of commercieel gebruik is niet toegestaan zonder voorafgaande schriftelijke toestemming van Aanbieder.</p>
+<p>c) AI-agents en workflows die door Aanbieder zijn gebouwd in het kader van een opdracht, zijn na volledige betaling bestemd voor gebruik door de Opdrachtgever binnen de overeengekomen scope. De onderliggende technische architectuur, systeemprompts en bouwmethodiek blijven eigendom van Aanbieder.</p>
+<p>d) De Opdrachtgever behoudt de eigendom van alle informatie, data en documenten die hij aan Aanbieder beschikbaar stelt. Aanbieder gebruikt deze uitsluitend voor de uitvoering van de opdracht.</p>
+<p>e) Aanbieder behoudt het recht de opgedane kennis en ervaring voor andere doeleinden in te zetten, mits geen vertrouwelijke informatie van de Opdrachtgever aan derden wordt verstrekt.</p>
+<h2>Artikel 11 - Geheimhouding</h2>
+<p>Beide partijen zijn verplicht tot geheimhouding van alle vertrouwelijke informatie die zij in het kader van de overeenkomst van elkaar verkrijgen. Informatie is vertrouwelijk als dit uitdrukkelijk is aangegeven of als dit voortvloeit uit de aard van de informatie. Deze verplichting geldt ook na beëindiging van de overeenkomst.</p>
+<h2>Artikel 12 - Persoonsgegevens en privacy</h2>
+<p>a) Aanbieder verwerkt persoonsgegevens in overeenstemming met de AVG. Aanbieder handelt hierbij als verwerkingsverantwoordelijke voor de eigen bedrijfsvoering.</p>
+<p>b) Indien Aanbieder in het kader van de opdracht persoonsgegevens van medewerkers of klanten van de Opdrachtgever verwerkt, worden nadere afspraken vastgelegd in een verwerkersovereenkomst.</p>
+<p>c) Aanbieder slaat geen vertrouwelijke informatie van de Opdrachtgever op buiten de overeengekomen werkwijze en verwijdert gegevens na afronding van de opdracht, tenzij een wettelijke bewaartermijn van toepassing is.</p>
+<p>d) Bij gebruik van digitale intaketools of AI-widgets van Aanbieder in het kader van trainingen of workshops geldt het volgende: deelnemers worden voorafgaand geïnformeerd over het doel van de dataverzameling. Antwoorden worden anoniem of gepseudonimiseerd verwerkt wanneer dit redelijkerwijs mogelijk is. Vastgelegde gegevens worden uitsluitend gebruikt voor voorbereiding en uitvoering van de betreffende opdracht, zijn alleen toegankelijk voor Aanbieder, en worden na afronding van de opdracht verwijderd, tenzij de Opdrachtgever uitdrukkelijk toestemming geeft voor langere bewaring.</p>
+<p>e) Verwerking van persoonsgegevens via externe AI-platforms (zoals LLM-providers) vindt plaats op basis van de verwerkingsvoorwaarden van die betreffende platforms. Aanbieder informeert de Opdrachtgever op verzoek over welke externe verwerkers worden ingezet.</p>
+<h2>Artikel 13 - Platformdiensten en abonnementen</h2>
+<p>a) Indien de opdracht het gebruik van het platform app.stroomlijn.nu of vergelijkbare digitale omgevingen omvat, gelden de technische en commerciële voorwaarden van het betreffende platform aanvullend op deze algemene voorwaarden.</p>
+<p>b) Platformtoegang die als onderdeel van een opdracht aan de Opdrachtgever wordt verleend, is persoonsgebonden en niet overdraagbaar aan derden zonder voorafgaande schriftelijke toestemming van Aanbieder.</p>
+<p>c) Indien de Opdrachtgever zelfstandig toegang wil tot het platform na afronding van de opdracht, worden hiervoor separate afspraken gemaakt over toegang, beheer en kosten.</p>
+<p>d) Aanbieder is gerechtigd platformdiensten tijdelijk buiten gebruik te stellen voor onderhoud of updates. Aanbieder informeert de Opdrachtgever hierover vooraf wanneer dit redelijkerwijs mogelijk is.</p>
+<h2>Artikel 14 - Overmacht</h2>
+<p>a) Aanbieder is niet gehouden tot nakoming van enige verplichting jegens de Opdrachtgever indien nakoming wordt verhinderd door overmacht. Onder overmacht wordt verstaan: ziekte, calamiteiten, staking, brand, overheidsmaatregelen, uitval van communicatiediensten, storingen bij externe platform- of API-aanbieders, of andere omstandigheden buiten de invloedssfeer van Aanbieder.</p>
+<p>b) Indien een overmachtsituatie langer dan 30 dagen duurt, hebben beide partijen het recht de overeenkomst te ontbinden, zonder verplichting tot schadevergoeding.</p>
+<h2>Artikel 15 - Wijziging van de voorwaarden</h2>
+<p>Aanbieder behoudt het recht deze algemene voorwaarden te wijzigen. Wijzigingen worden minimaal 30 dagen van tevoren schriftelijk of per e-mail meegedeeld. Indien de Opdrachtgever niet akkoord gaat, kan hij de overeenkomst schriftelijk opzeggen voor de ingangsdatum van de wijziging.</p>
+<h2>Artikel 16 - Toepasselijk recht en geschillen</h2>
+<p>a) Op alle overeenkomsten tussen Aanbieder en Opdrachtgever is Nederlands recht van toepassing. Het Weens Koopverdrag is uitdrukkelijk uitgesloten.</p>
+<p>b) Partijen trachten eventuele geschillen in onderling overleg op te lossen, alvorens een procedure bij de rechter te starten.</p>
+<p>c) Geschillen die niet in onderling overleg worden opgelost, worden voorgelegd aan de bevoegde rechter in de vestigingsplaats van Aanbieder, tenzij de wet dwingend een andere rechter aanwijst.</p>
+<h2>Versie en geldigheid</h2>
+<p>Deze algemene voorwaarden zijn opgesteld in maart 2026 (versie 2.1) en vervangen alle eerdere versies. Ze zijn beschikbaar via stroomlijn.nu/terms-and-conditions.</p>
+<p class="src-note">Tjimka Bakker | STROOMLIJN | info@tjimka.nl</p>
+  </div>
+</main>
+<footer class="footer" data-section="footer">
+  <div class="container-wide">
+    <div class="footer-inner">
+      <a href="/"><img src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/logo-wordmark.png" alt="STROOMLIJN"></a>
+      <div class="footer-links">
+        <a href="/aanbod/">Aanbod</a>
+        <a href="/cases/">In de praktijk</a>
+        <a href="/tools/">Gratis AI-tools</a>
+        <a href="/kennis/">Kennis en media</a>
+        <a href="/#over">Over Tjimka</a>
+      </div>
+      <a class="btn btn-primary" href="https://app.stroomlijn.nu/book/stroomlijnsessie" style="margin-left:auto">Plan een gesprek</a>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Stroomlijn - Tjimka Bakker &middot; KvK 57904561 &middot; BTW NL001434241B82 &middot; info@tjimka.nl</div>
+    <div class="footer-legal">
+      <a href="/privacy-policy/">Privacy Policy</a>
+      <a href="/terms-and-conditions/">Algemene Voorwaarden</a>
+      <a href="/transparantie-ai-disclaimer-ai-gebruik/">Transparantie &amp; AI-disclaimer</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
