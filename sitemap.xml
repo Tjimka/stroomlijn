@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://stroomlijn.info/kennis/</loc>
+    <lastmod>2026-07-23T15:36:15.193Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://stroomlijn.info/transparantie-ai-disclaimer-ai-gebruik/</loc>
     <lastmod>2026-07-23T15:33:05.339Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -58,11 +63,6 @@
   <url>
     <loc>https://stroomlijn.info/ai-wise-start/</loc>
     <lastmod>2026-07-22T17:55:45.796Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.info/kennis/</loc>
-    <lastmod>2026-07-22T16:56:19.555Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
