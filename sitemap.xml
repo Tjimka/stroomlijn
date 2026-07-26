@@ -2,32 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://stroomlijn.info/</loc>
-    <lastmod>2026-07-26T10:21:04.515Z</lastmod>
+    <lastmod>2026-07-26T16:16:58.042Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.info/ai-wise-start/</loc>
+    <lastmod>2026-07-26T15:55:19.771Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.info/implementatie/</loc>
+    <lastmod>2026-07-26T15:54:28.240Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.info/training/</loc>
+    <lastmod>2026-07-26T15:53:27.136Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://stroomlijn.info/kennis/</loc>
-    <lastmod>2026-07-26T10:20:36.942Z</lastmod>
+    <lastmod>2026-07-26T15:52:28.852Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.info/tools/</loc>
+    <lastmod>2026-07-26T15:52:23.079Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.info/cases/</loc>
+    <lastmod>2026-07-26T15:50:27.053Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.info/aanbod/</loc>
+    <lastmod>2026-07-26T15:49:33.112Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://stroomlijn.info/kennis/podcast-05-ai-geletterdheid/</loc>
-    <lastmod>2026-07-26T10:20:08.250Z</lastmod>
+    <lastmod>2026-07-26T15:01:44.696Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://stroomlijn.info/kennis/echter-dan-echt/</loc>
     <lastmod>2026-07-26T09:42:05.171Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.info/ai-wise-start/</loc>
-    <lastmod>2026-07-26T03:50:51.378Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.info/tools/</loc>
-    <lastmod>2026-07-25T07:20:28.751Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -83,26 +103,6 @@
   <url>
     <loc>https://stroomlijn.info/kennis/waarom-ai-ons-juist-scherper-laat-nadenken/</loc>
     <lastmod>2026-07-23T15:20:42.493Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.info/implementatie/</loc>
-    <lastmod>2026-07-22T16:53:25.631Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.info/cases/</loc>
-    <lastmod>2026-07-22T11:31:35.461Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.info/training/</loc>
-    <lastmod>2026-07-22T11:30:48.713Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.info/aanbod/</loc>
-    <lastmod>2026-07-22T11:30:22.731Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
