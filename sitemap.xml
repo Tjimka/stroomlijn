@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://stroomlijn.info/kennis/podcast-05-ai-geletterdheid/</loc>
+    <lastmod>2026-07-26T16:17:51.181Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://stroomlijn.info/kennis/podcast-04-chatgpt-agent-modus/</loc>
     <lastmod>2026-07-26T16:17:47.666Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -73,11 +78,6 @@
   <url>
     <loc>https://stroomlijn.info/tools/</loc>
     <lastmod>2026-07-26T15:52:23.079Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.info/kennis/podcast-05-ai-geletterdheid/</loc>
-    <lastmod>2026-07-26T15:01:44.696Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
