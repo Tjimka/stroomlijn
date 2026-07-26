@@ -1,28 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://stroomlijn.info/kennis/podcast-05-ai-geletterdheid/</loc>
+    <lastmod>2026-07-26T10:20:08.250Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.info/</loc>
+    <lastmod>2026-07-26T10:16:23.334Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://stroomlijn.info/kennis/echter-dan-echt/</loc>
-    <lastmod>2026-07-25T10:39:30.392Z</lastmod>
+    <lastmod>2026-07-26T09:42:05.171Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.info/kennis/</loc>
+    <lastmod>2026-07-26T09:23:24.420Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://stroomlijn.info/ai-wise-start/</loc>
-    <lastmod>2026-07-25T08:12:13.487Z</lastmod>
+    <lastmod>2026-07-26T03:50:51.378Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://stroomlijn.info/tools/</loc>
     <lastmod>2026-07-25T07:20:28.751Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.info/</loc>
-    <lastmod>2026-07-25T02:47:11.706Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.info/kennis/</loc>
-    <lastmod>2026-07-24T07:44:09.875Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
