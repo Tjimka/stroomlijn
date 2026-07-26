@@ -25,7 +25,8 @@ var trustLogos = [
   {img:"https://tjimka.nl/wp-content/uploads/2025/02/tsrh.jpeg", alt:"The Tall Ships Races Harlingen"},
   {img:"https://tjimka.nl/wp-content/uploads/2025/02/okkinga_communicatie_logo.jpeg", alt:"Okkinga Communicatie"},
   {img:"https://tjimka.nl/wp-content/uploads/2025/02/koga-logo-1.png", alt:"Koga"},
-  {img:"https://tjimka.nl/wp-content/uploads/2025/02/cyclups_zwart_logo.png", alt:"Cyclups"}
+  {img:"https://tjimka.nl/wp-content/uploads/2025/02/cyclups_zwart_logo.png", alt:"Cyclups"},
+  {img:"https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/logo/FSH-Air-Filters.png", alt:"Filter Service Heerenveen"}
 ];
 (function(){
   var track = document.getElementById('trustTrack');
@@ -38,6 +39,7 @@ var trustLogos = [
     });
   }
   track.innerHTML = html;
+  track.style.scrollBehavior = 'auto';
   var oneSetWidth = 0;
   function computeWidth(){ oneSetWidth = track.scrollWidth / copies; if(oneSetWidth) track.scrollLeft = oneSetWidth; }
   var imgs = track.querySelectorAll('img');
@@ -55,7 +57,7 @@ var trustLogos = [
   }
   var autoTimer = setInterval(function(){
     if(isHover||isDragging||!oneSetWidth) return;
-    track.scrollLeft += 1.1;
+    track.scrollLeft += 2.4;
     wrapCheck();
   }, 16);
   track.addEventListener('mouseenter', function(){ isHover=true; });
