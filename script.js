@@ -1,4 +1,3 @@
-/* ---- nav ---- */
 function navTo(id){
   var nav = document.getElementById('siteNav');
   nav.removeAttribute('data-menu-open');
@@ -11,8 +10,6 @@ document.getElementById('navBurger').addEventListener('click', function(){
   if(nav.hasAttribute('data-menu-open')) nav.removeAttribute('data-menu-open');
   else nav.setAttribute('data-menu-open','');
 });
-
-/* ---- trust logo slider ---- */
 var trustLogos = [
   {img:"https://logic4cdn.azureedge.net/cdn/styles/clients/dekas2021/img/logo.svg", alt:"Dekas Kantoorservice"},
   {img:"https://logo.clearbit.com/filterservice.nl", alt:"Filter Service Heerenveen"},
@@ -41,7 +38,6 @@ var trustLogos = [
     });
   }
   track.innerHTML = html;
-
   var oneSetWidth = 0;
   function computeWidth(){ oneSetWidth = track.scrollWidth / copies; if(oneSetWidth) track.scrollLeft = oneSetWidth; }
   var imgs = track.querySelectorAll('img');
@@ -51,24 +47,19 @@ var trustLogos = [
   });
   setTimeout(computeWidth, 500);
   window.addEventListener('load', computeWidth);
-
   var isHover=false, isDragging=false, dragStartX=0, dragStartScroll=0, dragMoved=false;
-
   function wrapCheck(){
     if(!oneSetWidth) return;
     if(track.scrollLeft <= oneSetWidth*0.15){ track.scrollLeft += oneSetWidth; }
     else if(track.scrollLeft >= oneSetWidth*1.85){ track.scrollLeft -= oneSetWidth; }
   }
-
   var autoTimer = setInterval(function(){
     if(isHover||isDragging||!oneSetWidth) return;
     track.scrollLeft += 1.1;
     wrapCheck();
   }, 16);
-
   track.addEventListener('mouseenter', function(){ isHover=true; });
   track.addEventListener('mouseleave', function(){ isHover=false; });
-
   track.addEventListener('mousedown', function(e){
     isDragging=true; dragMoved=false; dragStartX=e.pageX; dragStartScroll=track.scrollLeft; track.style.scrollBehavior='auto';
   });
@@ -90,12 +81,9 @@ var trustLogos = [
     track.scrollLeft = dragStartScroll - dx;
   }, {passive:true});
   track.addEventListener('touchend', function(){ isDragging=false; track.style.scrollBehavior='smooth'; wrapCheck(); });
-
   document.getElementById('trustPrev').addEventListener('click', function(){ track.scrollBy({left:-320, behavior:'smooth'}); setTimeout(wrapCheck, 400); });
   document.getElementById('trustNext').addEventListener('click', function(){ track.scrollBy({left:320, behavior:'smooth'}); setTimeout(wrapCheck, 400); });
 })();
-
-/* ---- pers logo slider (Gezien en geciteerd) ---- */
 var persLogos = [
   {img:"https://app.stroomlijn.nu/objects/quick-uploads/82/09a6bbb061ab2e26.png", alt:"Het Financieele Dagblad", href:"https://fd.nl/opinie/1564682/leren-omgaan-met-ai-tools-kan-het-beste-in-de-bestuurskamer-beginnen"},
   {img:"https://app.stroomlijn.nu/objects/quick-uploads/82/a3e3eeacccae79df.png", alt:"Leeuwarder Courant", href:"https://lc.nl/opinie/Een-gesprek-met-AI-voelt-écht-maar-wat-zegt-dat-over-ons-opinie-46090942.html"},
@@ -113,7 +101,6 @@ var persLogos = [
     });
   }
   track.innerHTML = html;
-
   var oneSetWidth = 0;
   function computeWidth(){ oneSetWidth = track.scrollWidth / copies; if(oneSetWidth) track.scrollLeft = oneSetWidth; }
   var imgs = track.querySelectorAll('img');
@@ -123,24 +110,19 @@ var persLogos = [
   });
   setTimeout(computeWidth, 500);
   window.addEventListener('load', computeWidth);
-
   var isHover=false, isDragging=false, dragStartX=0, dragStartScroll=0, dragMoved=false;
-
   function wrapCheck(){
     if(!oneSetWidth) return;
     if(track.scrollLeft <= oneSetWidth*0.4){ track.scrollLeft += oneSetWidth; }
     else if(track.scrollLeft >= oneSetWidth*2.6){ track.scrollLeft -= oneSetWidth; }
   }
-
   var autoTimer = setInterval(function(){
     if(isHover||isDragging||!oneSetWidth) return;
     track.scrollLeft += 0.8;
     wrapCheck();
   }, 16);
-
   track.addEventListener('mouseenter', function(){ isHover=true; });
   track.addEventListener('mouseleave', function(){ isHover=false; });
-
   track.addEventListener('mousedown', function(e){
     isDragging=true; dragMoved=false; dragStartX=e.pageX; dragStartScroll=track.scrollLeft; track.style.scrollBehavior='auto';
   });
@@ -163,19 +145,14 @@ var persLogos = [
     track.scrollLeft = dragStartScroll - dx;
   }, {passive:true});
   track.addEventListener('touchend', function(){ isDragging=false; track.style.scrollBehavior='smooth'; wrapCheck(); });
-
   document.getElementById('persPrev').addEventListener('click', function(){ track.scrollBy({left:-220, behavior:'smooth'}); setTimeout(wrapCheck, 400); });
   document.getElementById('persNext').addEventListener('click', function(){ track.scrollBy({left:220, behavior:'smooth'}); setTimeout(wrapCheck, 400); });
 })();
-
-/* ---- reveal on scroll ---- */
 var revealEls = document.querySelectorAll('.reveal');
 var io = new IntersectionObserver(function(entries){
   entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
 },{threshold:.12});
 revealEls.forEach(function(el){ io.observe(el); });
-
-/* ---- FAQ ---- */
 var faqItems = [
   {q:"Hoe snel kan ik AI in mijn bedrijf gebruiken?", a:"Sneller dan je denkt. Een eerste werkende oplossing, bijvoorbeeld een AI-assistent voor klantvragen of interne kennis, staat vaak binnen twee tot vier weken. Een gratis kennismaking duurt 30 minuten."},
   {q:"Wat kost het om te starten?", a:"Elk traject is maatwerk. Na een gratis kennismaking en een korte intake breng ik in kaart wat je nodig hebt, en ontvang je een voorstel dat daarbij past. Geen vaste prijslijst, wel altijd vooraf duidelijkheid voordat je iets afspreekt."},
@@ -199,8 +176,6 @@ faqItems.forEach(function(item, i){
     if(!wasOpen){ div.classList.add('open'); div.querySelector('.faq-trigger').setAttribute('aria-expanded','true'); }
   });
 });
-
-/* ---- Over Tjimka chapters ---- */
 var chapters = [
   {label:"Toen", period:"5 jaar oud", text:"Al vroeg aan de telefoon. Verbinding maken zit er lang in, alleen de technologie veranderde.", img:"https://app.stroomlijn.nu/objects/quick-uploads/82/7ae7a028174dac20.png", alt:"Tjimka als kind aan de telefoon"},
   {label:"Roots", period:"Emmen & Tijnje · 1970-1988", text:"Geboren in Emmen, met een pony in de tuin. Op mijn 4e naar Tijnje, een Friestalig dorp. Nederlandstalig, aan de rand. Je past je aan aan een omgeving die niet op je wacht. Dat leer je vroeg, of niet.", img:"https://raw.githubusercontent.com/Tjimka/stroomlijn/main/foto%27s/Emmen%20-%201e%20pony%20in%20tuin.jpeg", alt:"Tjimka als kind met haar eerste pony in de tuin in Emmen"},
@@ -244,7 +219,6 @@ function renderOver(){
   }
 }
 renderOver();
-/* foto's van de andere hoofdstukken alvast laden zodra de sectie in beeld komt */
 (function(){
   var loadedAll = false;
   var overSection = document.getElementById('over');
