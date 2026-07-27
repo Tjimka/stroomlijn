@@ -1,23 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://stroomlijn.info/aanbod/</loc>
-    <lastmod>2026-07-27T15:46:36.783Z</lastmod>
+    <loc>https://stroomlijn.info/</loc>
+    <lastmod>2026-07-27T18:31:15.192Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.info/implementatie/</loc>
+    <lastmod>2026-07-27T18:16:36.435Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.info/training/</loc>
+    <lastmod>2026-07-27T18:14:47.775Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://stroomlijn.info/tools/</loc>
-    <lastmod>2026-07-27T14:17:58.246Z</lastmod>
+    <lastmod>2026-07-27T18:12:54.593Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.info/kennis/</loc>
+    <lastmod>2026-07-27T18:09:45.709Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://stroomlijn.info/cases/</loc>
-    <lastmod>2026-07-27T12:11:46.618Z</lastmod>
+    <lastmod>2026-07-27T18:07:06.001Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://stroomlijn.info/</loc>
-    <lastmod>2026-07-27T11:41:21.611Z</lastmod>
+    <loc>https://stroomlijn.info/aanbod/</loc>
+    <lastmod>2026-07-27T15:46:36.783Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -28,11 +43,6 @@
   <url>
     <loc>https://stroomlijn.info/transparantie-ai-disclaimer-ai-gebruik/</loc>
     <lastmod>2026-07-26T16:18:18.937Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.info/training/</loc>
-    <lastmod>2026-07-26T16:18:15.289Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -93,16 +103,6 @@
   <url>
     <loc>https://stroomlijn.info/kennis/ai-op-de-werkvloer-kansen-grijpen-zonder-de-menselijke-maat-te-verliezen/</loc>
     <lastmod>2026-07-26T16:17:24.512Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.info/kennis/</loc>
-    <lastmod>2026-07-26T16:17:20.811Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.info/implementatie/</loc>
-    <lastmod>2026-07-26T16:17:15.778Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
