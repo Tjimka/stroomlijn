@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://stroomlijn.info/tools/</loc>
+    <lastmod>2026-07-27T10:51:50.893Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.info/ai-wise-start/</loc>
+    <lastmod>2026-07-27T08:36:47.719Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://stroomlijn.info/aanbod/</loc>
     <lastmod>2026-07-27T08:03:14.834Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -13,11 +23,6 @@
   <url>
     <loc>https://stroomlijn.info/training/</loc>
     <lastmod>2026-07-26T16:18:15.289Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.info/tools/</loc>
-    <lastmod>2026-07-26T16:18:11.350Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -93,11 +98,6 @@
   <url>
     <loc>https://stroomlijn.info/cases/</loc>
     <lastmod>2026-07-26T16:17:11.935Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.info/ai-wise-start/</loc>
-    <lastmod>2026-07-26T16:17:07.315Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
