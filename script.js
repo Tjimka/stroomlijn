@@ -12,7 +12,6 @@ document.getElementById('navBurger').addEventListener('click', function(){
 });
 var trustLogos = [
   {img:"https://logic4cdn.azureedge.net/cdn/styles/clients/dekas2021/img/logo.svg", alt:"Dekas Kantoorservice"},
-  {img:"https://logo.clearbit.com/filterservice.nl", alt:"Filter Service Heerenveen"},
   {img:"https://tjimka.nl/wp-content/uploads/2025/02/ICD_logo_final-blue-small.png", alt:"Innovatiecluster Drachten"},
   {img:"https://tjimka.nl/wp-content/uploads/2025/02/mavasol-logo-ZA.png", alt:"Mavasol"},
   {img:"https://tjimka.nl/wp-content/uploads/2025/02/Schouwassurantien-logo-1.png", alt:"Schouw Assurantiën"},
