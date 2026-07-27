@@ -1,3 +1,29 @@
+(function(){
+  var omhoog=document.getElementById('scroll-omhoog');
+  var omlaag=document.getElementById('scroll-omlaag');
+  function update(){
+    var y=window.scrollY;
+    var onderaan=(window.innerHeight+y)>=document.body.scrollHeight-120;
+    omhoog.style.display=y>400?'flex':'none';
+    omlaag.style.display=onderaan?'none':'flex';
+  }
+  window.addEventListener('scroll',update,{passive:true});
+  update();
+})();
+
+(function(){
+  var omhoog=document.getElementById('scroll-omhoog');
+  var omlaag=document.getElementById('scroll-omlaag');
+  function update(){
+    var y=window.scrollY;
+    var onderaan=(window.innerHeight+y)>=document.body.scrollHeight-120;
+    omhoog.style.display=y>400?'flex':'none';
+    omlaag.style.display=onderaan?'none':'flex';
+  }
+  window.addEventListener('scroll',update,{passive:true});
+  update();
+})();
+
 var revealEls = document.querySelectorAll('.reveal');
 var io = new IntersectionObserver(function(entries){
   entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
