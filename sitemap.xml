@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://stroomlijn.info/kennis/podcast-03-optimaliseer-je-week-met-ai/</loc>
+    <lastmod>2026-07-27T18:32:02.307Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://stroomlijn.info/kennis/podcast-02-ai-als-sparringpartner/</loc>
     <lastmod>2026-07-27T18:31:58.260Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -98,11 +103,6 @@
   <url>
     <loc>https://stroomlijn.info/kennis/podcast-04-chatgpt-agent-modus/</loc>
     <lastmod>2026-07-26T16:17:47.666Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.info/kennis/podcast-03-optimaliseer-je-week-met-ai/</loc>
-    <lastmod>2026-07-26T16:17:43.734Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
