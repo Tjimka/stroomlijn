@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://stroomlijn.info/transparantie-ai-disclaimer-ai-gebruik/</loc>
+    <lastmod>2026-07-28T07:29:20.438Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://stroomlijn.info/training/</loc>
     <lastmod>2026-07-28T07:29:15.865Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -98,11 +103,6 @@
   <url>
     <loc>https://stroomlijn.info/</loc>
     <lastmod>2026-07-28T07:27:52.712Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.info/transparantie-ai-disclaimer-ai-gebruik/</loc>
-    <lastmod>2026-07-28T07:11:42.965Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
