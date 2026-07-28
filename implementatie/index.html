@@ -32,7 +32,7 @@
   if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
   else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
   if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
-  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);}catch(e){return null;}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);}catch(e)/^null;/;}}
   function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
   if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
   if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
@@ -304,6 +304,8 @@
   });
 })();
 </script>  <link rel="stylesheet" href="styles.css">
+<link rel="canonical" href="https://stroomlijn.nu/implementatie/" />
+<meta property="og:url" content="https://stroomlijn.nu/implementatie/" />
 
 <!-- SEO Meta Tags -->
 <title>Implementatie | STROOMLIJN</title>
@@ -649,7 +651,7 @@
       <div class="case-card"><span class="case-tag">Technische groothandel</span><h3>Filter Service Heerenveen</h3><p>AI ingezet om terugkerende werkzaamheden te versnellen en klantvragen sneller af te handelen, zodat het team tijd overhoudt voor het echte werk.</p></div>
       <div class="case-card"><span class="case-tag">Kantoorservice</span><h3>Dekas Kantoorservice</h3><p>Slimmere processen in de dagelijkse dienstverlening, met AI als ondersteuning van het team in plaats van vervanging.</p></div>
       <div class="case-card"><span class="case-tag">Geotechnisch adviesbureau</span><h3>Wiertsema &amp; Partners</h3><p>AI-toepassingen die specialistische kennis beter vindbaar en bruikbaar maken binnen de organisatie.</p></div>
-      <div class="case-card"><span class="case-tag">Handel</span><h3>Flevo Trade Service</h3><p>Automatisering van terugkerende administratieve stappen, zodat er meer tijd overblijft voor klanten en handel.</p></div>
+      <div class="case-card"><span class="case-tag">Handel</span><h3>Flevo Trade Service</h3><p>Automatisering van terugkerende administratieve stappen, zodat er more tijd overblijft voor klanten en handel.</p></div>
     </div>
     <div style="margin-top:36px">
       <a class="btn btn-secondary" href="/cases/">Bekijk alle cases met cijfers <svg class="icn-inline" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
