@@ -1,18 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://stroomlijn.info/transparantie-ai-disclaimer-ai-gebruik/</loc>
-    <lastmod>2026-07-28T07:11:42.965Z</lastmod>
+    <loc>https://stroomlijn.info/</loc>
+    <lastmod>2026-07-28T07:27:52.712Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.info/ai-wise-start/</loc>
+    <lastmod>2026-07-28T07:27:46.809Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://stroomlijn.info/training/</loc>
-    <lastmod>2026-07-28T07:11:39.036Z</lastmod>
+    <lastmod>2026-07-28T07:27:36.265Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://stroomlijn.info/tools/</loc>
-    <lastmod>2026-07-28T07:11:35.850Z</lastmod>
+    <lastmod>2026-07-28T07:27:12.236Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.info/kennis/</loc>
+    <lastmod>2026-07-28T07:26:43.550Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.info/implementatie/</loc>
+    <lastmod>2026-07-28T07:26:20.726Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.info/cases/</loc>
+    <lastmod>2026-07-28T07:25:58.048Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.info/aanbod/</loc>
+    <lastmod>2026-07-28T07:25:31.602Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.info/transparantie-ai-disclaimer-ai-gebruik/</loc>
+    <lastmod>2026-07-28T07:11:42.965Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -73,36 +103,6 @@
   <url>
     <loc>https://stroomlijn.info/kennis/ai-op-de-werkvloer-kansen-grijpen-zonder-de-menselijke-maat-te-verliezen/</loc>
     <lastmod>2026-07-28T07:10:48.064Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.info/kennis/</loc>
-    <lastmod>2026-07-28T07:10:43.956Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.info/implementatie/</loc>
-    <lastmod>2026-07-28T07:10:40.109Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.info/cases/</loc>
-    <lastmod>2026-07-28T07:10:36.686Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.info/ai-wise-start/</loc>
-    <lastmod>2026-07-28T07:10:33.116Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.info/aanbod/</loc>
-    <lastmod>2026-07-28T07:10:28.463Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.info/</loc>
-    <lastmod>2026-07-28T07:10:24.749Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
