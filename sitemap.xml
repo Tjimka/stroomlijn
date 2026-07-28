@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://stroomlijn.info/cases/</loc>
+    <lastmod>2026-07-28T07:32:18.975Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://stroomlijn.info/ai-wise-start/</loc>
     <lastmod>2026-07-28T07:32:15.592Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -98,11 +103,6 @@
   <url>
     <loc>https://stroomlijn.info/kennis/ai-op-de-werkvloer-kansen-grijpen-zonder-de-menselijke-maat-te-verliezen/</loc>
     <lastmod>2026-07-28T07:28:17.675Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.info/cases/</loc>
-    <lastmod>2026-07-28T07:28:05.774Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
