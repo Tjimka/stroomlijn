@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://stroomlijn.info/kennis/waarom-ai-niet-begint-bij-de-werkvloer-maar-in-de-bestuurskamer/</loc>
+    <lastmod>2026-07-28T07:28:55.668Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://stroomlijn.info/kennis/podcast-05-ai-geletterdheid/</loc>
     <lastmod>2026-07-28T07:28:50.987Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -98,11 +103,6 @@
   <url>
     <loc>https://stroomlijn.info/kennis/waarom-ai-ons-juist-scherper-laat-nadenken/</loc>
     <lastmod>2026-07-28T07:11:24.008Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.info/kennis/waarom-ai-niet-begint-bij-de-werkvloer-maar-in-de-bestuurskamer/</loc>
-    <lastmod>2026-07-28T07:11:20.237Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
