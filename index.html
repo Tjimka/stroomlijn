@@ -801,17 +801,29 @@
 
 <nav class="nav" id="siteNav" data-section="navbar">
   <div class="container-wide nav-inner">
-    <a class="nav-logo" href="/" aria-label="Stroomlijn home"><img src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/logo-wordmark.png" alt="STROOMLIJN" width="1261" height="218"></a>
+    <div class="nav-logo" onclick="navTo('home')" role="button" aria-label="Stroomlijn home"><img src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/logo-wordmark.png" alt="STROOMLIJN" width="1261" height="218"></div>
     <div class="nav-links">
-      <a class="nav-link" href="/aanbod/">Aanbod</a>
-      <a class="nav-link" href="/cases/">In de praktijk</a>
-      <a class="nav-link" href="/tools/">Gratis AI-tools</a>
-      <a class="nav-link" href="/kennis/">Kennis en media</a>
-      <a class="nav-link" href="/#over" onclick="navTo('over');return false;">Over Tjimka</a>
+      <a class="nav-link" href="/aanbod/" style="text-decoration:none">Aanbod</a>
+      <a class="nav-link" href="/cases/" style="text-decoration:none">In de praktijk</a>
+      <a class="nav-link" href="/tools/" style="text-decoration:none">Gratis AI-tools</a>
+      <a class="nav-link" href="/kennis/" style="text-decoration:none">Kennis en media</a>
+>>>>>>> REPLACE
+
+<<<<<<< SEARCH
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm" href="https://app.stroomlijn.nu/book/stroomlijnsessie" target="_blank" rel="noopener noreferrer">Plan een gesprek</a>
+      <button class="nav-burger" id="navBurger" aria-label="Menu openen"><span></span><span></span><span></span></button>
     </div>
-    <div class="nav-cta" style="display:flex;align-items:center;gap:10px;">
+=======
+    <div class="nav-cta">
       <a class="btn btn-primary btn-sm" href="https://app.stroomlijn.nu/book/stroomlijnsessie" target="_blank" rel="noopener noreferrer">Plan een gesprek</a>
       <a href="https://app.stroomlijn.nu/shop/slim-gekozen-ai-tools" target="_blank" rel="noopener noreferrer" aria-label="AI-tools shop" title="AI-tools shop" style="display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:10px;color:#1A2E4A;text-decoration:none;flex:0 0 auto"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.3 11.2a1.6 1.6 0 0 0 1.6 1.3h8.2a1.6 1.6 0 0 0 1.6-1.3L21 7H6"/></svg></a>
+      <button class="nav-burger" id="navBurger" aria-label="Menu openen"><span></span><span></span><span></span></button>
+    </div>
+      <button class="nav-link" onclick="navTo('over')">Over Tjimka</button>
+    </div>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm" href="https://app.stroomlijn.nu/book/stroomlijnsessie" target="_blank" rel="noopener noreferrer">Plan een gesprek</a>
       <button class="nav-burger" id="navBurger" aria-label="Menu openen"><span></span><span></span><span></span></button>
     </div>
   </div>
