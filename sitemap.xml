@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://stroomlijn.info/kennis/podcast-01-slim-werken-met-ai/</loc>
+    <lastmod>2026-07-28T07:11:00.085Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://stroomlijn.info/kennis/echter-dan-echt/</loc>
     <lastmod>2026-07-28T07:10:56.176Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -98,11 +103,6 @@
   <url>
     <loc>https://stroomlijn.info/kennis/podcast-02-ai-als-sparringpartner/</loc>
     <lastmod>2026-07-28T06:57:27.978Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.info/kennis/podcast-01-slim-werken-met-ai/</loc>
-    <lastmod>2026-07-28T06:57:23.985Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
