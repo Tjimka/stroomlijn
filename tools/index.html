@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600&family=Newsreader:ital,opsz,wght@0,6..72,300;1,6..72,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
 
 <!-- SEO Meta Tags -->
@@ -721,20 +722,21 @@
 </script></head>
 <body>
 
-<nav data-section="navbar" style="position:sticky;top:0;z-index:100;background:rgba(251,250,247,0.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(26,46,74,0.08);height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 2rem;">
-  <a href="/" style="display:flex;align-items:center;">
-    <img src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/logo-wordmark.png" alt="STROOMLIJN" style="height:34px;width:auto;display:block;">
-  </a>
-  <div class="nav-links" style="display:flex;align-items:center;gap:1rem;font-size:0.9375rem;color:#1A2E4A;font-weight:500;white-space:nowrap;">
-    <a href="/aanbod/" style="padding:0.45rem 0.6rem;border-radius:12px;color:#1A2E4A;text-decoration:none;white-space:nowrap;">Aanbod</a>
-    <a href="/cases/" style="padding:0.45rem 0.6rem;border-radius:12px;color:#1A2E4A;text-decoration:none;white-space:nowrap;">In de praktijk</a>
-    <a href="/tools/" style="padding:0.45rem 0.6rem;border-radius:12px;color:#1A2E4A;font-weight:600;background:rgba(26,46,74,0.1);text-decoration:none;white-space:nowrap;">Gratis AI-tools</a>
-    <a href="/kennis/" style="padding:0.45rem 0.6rem;border-radius:12px;color:#1A2E4A;text-decoration:none;white-space:nowrap;">Kennis en media</a>
-    <a href="/#over" style="padding:0.45rem 0.6rem;border-radius:12px;color:#1A2E4A;text-decoration:none;white-space:nowrap;">Over Tjimka</a>
-  </div>
-  <div style="display:flex;align-items:center;gap:0.5rem;">
-    <a href="https://app.stroomlijn.nu/book/stroomlijnsessie" style="background:#4899A7;color:#FBFAF7;padding:0.5rem 1rem;border-radius:12px;font-weight:600;text-decoration:none;white-space:nowrap;">Plan een gesprek</a>
-    <a href="https://app.stroomlijn.nu/shop/slim-gekozen-ai-tools" target="_blank" rel="noopener noreferrer" aria-label="AI-tools shop" title="AI-tools shop" style="display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:10px;color:#1A2E4A;text-decoration:none;flex:0 0 auto"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.3 11.2a1.6 1.6 0 0 0 1.6 1.3h8.2a1.6 1.6 0 0 0 1.6-1.3L21 7H6"/></svg></a>
+<nav class="nav" id="siteNav" data-section="navbar">
+  <div class="container-wide nav-inner">
+    <a class="nav-logo" href="/" aria-label="Stroomlijn home"><img src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/logo-wordmark.png" alt="STROOMLIJN" width="1261" height="218"></a>
+    <div class="nav-links">
+      <a class="nav-link" href="/aanbod/">Aanbod</a>
+      <a class="nav-link" href="/cases/">In de praktijk</a>
+      <a class="nav-link is-active" href="/tools/" aria-current="page">Gratis AI-tools</a>
+      <a class="nav-link" href="/kennis/">Kennis en media</a>
+      <a class="nav-link" href="/#over">Over Tjimka</a>
+    </div>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm" href="https://app.stroomlijn.nu/book/stroomlijnsessie" target="_blank" rel="noopener noreferrer">Plan een gesprek</a>
+      <a href="https://app.stroomlijn.nu/shop/slim-gekozen-ai-tools" target="_blank" rel="noopener noreferrer" aria-label="AI-tools shop" title="AI-tools shop" class="nav-cart"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.3 11.2a1.6 1.6 0 0 0 1.6 1.3h8.2a1.6 1.6 0 0 0 1.6-1.3L21 7H6"/></svg></a>
+      <button class="nav-burger" id="navBurger" aria-label="Menu openen"><span></span><span></span><span></span></button>
+    </div>
   </div>
 </nav>
 
@@ -957,5 +959,15 @@
 </footer>
 
 <script src="https://app.stroomlijn.nu/widget.js" data-widget="32177907" async></script>
+<script>
+(function(){
+  var b=document.getElementById('navBurger'),n=document.getElementById('siteNav');
+  if(!b||!n)return;
+  b.addEventListener('click',function(){
+    if(n.hasAttribute('data-menu-open'))n.removeAttribute('data-menu-open');
+    else n.setAttribute('data-menu-open','');
+  });
+})();
+</script>
 </body>
 </html>
