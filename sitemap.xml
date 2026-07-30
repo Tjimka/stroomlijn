@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://stroomlijn.info/aanbod/</loc>
+    <lastmod>2026-07-30T10:28:11.426Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://stroomlijn.info/</loc>
-    <lastmod>2026-07-28T19:20:04.707Z</lastmod>
+    <lastmod>2026-07-30T10:23:40.475Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.info/ai-wise-start/</loc>
+    <lastmod>2026-07-29T22:39:16.651Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://stroomlijn.info/tools/</loc>
-    <lastmod>2026-07-28T18:54:22.100Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.info/aanbod/</loc>
-    <lastmod>2026-07-28T18:51:23.781Z</lastmod>
+    <lastmod>2026-07-29T22:29:30.381Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -98,11 +103,6 @@
   <url>
     <loc>https://stroomlijn.info/implementatie/</loc>
     <lastmod>2026-07-28T09:02:37.899Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.info/ai-wise-start/</loc>
-    <lastmod>2026-07-28T09:02:31.164Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
