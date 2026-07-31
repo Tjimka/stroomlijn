@@ -1,91 +1,31 @@
 (function(){
-  var omhoog=document.getElementById('scroll-omhoog');
-  var omlaag=document.getElementById('scroll-omlaag');
-  function update(){
-    var y=window.scrollY;
-    var onderaan=(window.innerHeight+y)>=document.body.scrollHeight-120;
-    omhoog.style.display=y>400?'flex':'none';
-    omlaag.style.display=onderaan?'none':'flex';
+  var nav=document.getElementById('siteNav'),links=document.getElementById('navLinks'),burger=document.getElementById('navBurger');
+  if(!nav||!links||!burger)return;
+  var open=false;
+  function layout(){
+    var mobile=window.matchMedia('(max-width:900px)').matches;
+    var faq=document.getElementById('navFaqIcon'),cart=document.getElementById('navCartIcon'),cta=document.getElementById('navCtaBtn'),logo=document.getElementById('navLogoImg');
+    if(mobile){
+      burger.style.display='flex';
+      if(faq)faq.style.display='none';
+      if(cart)cart.style.display='none';
+      if(logo)logo.style.height='30px';
+      if(cta){cta.style.padding='8px 12px';cta.style.fontSize='13px';}
+      if(open){
+        links.style.display='flex';links.style.flexDirection='column';links.style.alignItems='stretch';links.style.position='absolute';links.style.top='72px';links.style.left='0';links.style.right='0';links.style.background='#FBFAF7';links.style.padding='12px 24px';links.style.borderBottom='1px solid rgba(26,46,74,.08)';links.style.gap='4px';links.style.zIndex='99';links.style.boxShadow='0 12px 24px rgba(26,46,74,.08)';links.querySelectorAll('.nav-link-extra').forEach(function(e){e.style.display='block';});
+      }else{links.style.display='none';}
+    }else{
+      burger.style.display='none';open=false;
+      if(faq)faq.style.display='inline-flex';
+      if(cart)cart.style.display='inline-flex';
+      if(logo)logo.style.height='42px';
+      if(cta){cta.style.padding='9px 18px';cta.style.fontSize='14px';}
+      links.style.display='flex';links.style.flexDirection='row';links.style.alignItems='center';links.style.position='static';links.style.background='transparent';links.style.padding='0';links.style.borderBottom='none';links.style.gap='6px';links.style.boxShadow='none';links.querySelectorAll('.nav-link-extra').forEach(function(e){e.style.display='none';});
+    }
+    burger.setAttribute('aria-expanded',open?'true':'false');
   }
-  window.addEventListener('scroll',update,{passive:true});
-  update();
-})();
-
-var revealEls = document.querySelectorAll('.reveal');
-var io = new IntersectionObserver(function(entries){
-  entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
-},{threshold:.12});
-revealEls.forEach(function(el){ io.observe(el); });
-
-/* media logo slider - auto-scroll, drag, arrows */
-var mediaLogos = [
-  {img:"https://app.stroomlijn.nu/objects/quick-uploads/82/09a6bbb061ab2e26.png", alt:"Het Financieele Dagblad", href:"https://fd.nl/opinie/1564682/leren-omgaan-met-ai-tools-kan-het-beste-in-de-bestuurskamer-beginnen"},
-  {img:"https://app.stroomlijn.nu/objects/quick-uploads/82/a3e3eeacccae79df.png", alt:"Leeuwarder Courant", href:"https://lc.nl/opinie/Een-gesprek-met-AI-voelt-écht-maar-wat-zegt-dat-over-ons-opinie-46090942.html"},
-  {img:"https://app.stroomlijn.nu/objects/quick-uploads/82/ba5a7d421652476a.png", alt:"Talkies Lifestyle Magazine", href:"https://www.talkiesmagazine.nl/"},
-  {img:"https://app.stroomlijn.nu/objects/quick-uploads/82/de4df41a2f065f4e.png", alt:"Dagblad van het Noorden", href:"https://lc.nl/opinie/Een-gesprek-met-AI-voelt-écht-maar-wat-zegt-dat-over-ons-opinie-46090942.html"}
-];
-(function(){
-  var track = document.getElementById('mediaTrack');
-  if(!track) return;
-  var copies = 4;
-  var html = '';
-  for(var c=0;c<copies;c++){
-    mediaLogos.forEach(function(l){
-      html += '<a class="media-logo-link" href="'+l.href+'" target="_blank" rel="noopener noreferrer"><img src="'+l.img+'" alt="'+l.alt+'" loading="lazy" draggable="false"></a>';
-    });
-  }
-  track.innerHTML = html;
-
-  var oneSetWidth = 0;
-  function computeWidth(){ oneSetWidth = track.scrollWidth / copies; if(oneSetWidth) track.scrollLeft = oneSetWidth; }
-  var imgs = track.querySelectorAll('img');
-  var loaded = 0;
-  imgs.forEach(function(im){
-    if(im.complete){ loaded++; } else { im.addEventListener('load', function(){ loaded++; if(loaded===imgs.length) computeWidth(); }); im.addEventListener('error', function(){ loaded++; if(loaded===imgs.length) computeWidth(); }); }
-  });
-  setTimeout(computeWidth, 500);
-  window.addEventListener('load', computeWidth);
-
-  var isHover=false, isDragging=false, dragStartX=0, dragStartScroll=0, dragMoved=false;
-
-  function wrapCheck(){
-    if(!oneSetWidth) return;
-    if(track.scrollLeft <= oneSetWidth*0.4){ track.scrollLeft += oneSetWidth; }
-    else if(track.scrollLeft >= oneSetWidth*2.6){ track.scrollLeft -= oneSetWidth; }
-  }
-
-  var autoTimer = setInterval(function(){
-    if(isHover||isDragging||!oneSetWidth) return;
-    track.scrollLeft += 0.5;
-    wrapCheck();
-  }, 16);
-
-  track.addEventListener('mouseenter', function(){ isHover=true; });
-  track.addEventListener('mouseleave', function(){ isHover=false; });
-
-  track.addEventListener('mousedown', function(e){
-    isDragging=true; dragMoved=false; dragStartX=e.pageX; dragStartScroll=track.scrollLeft; track.style.scrollBehavior='auto';
-  });
-  window.addEventListener('mouseup', function(){
-    if(isDragging){ isDragging=false; track.style.scrollBehavior='smooth'; wrapCheck(); }
-  });
-  window.addEventListener('mousemove', function(e){
-    if(!isDragging) return;
-    var dx = e.pageX - dragStartX;
-    if(Math.abs(dx)>3) dragMoved=true;
-    track.scrollLeft = dragStartScroll - dx;
-  });
-  track.addEventListener('click', function(e){ if(dragMoved){ e.preventDefault(); } }, true);
-  track.addEventListener('touchstart', function(e){
-    isDragging=true; dragStartX=e.touches[0].pageX; dragStartScroll=track.scrollLeft; track.style.scrollBehavior='auto';
-  }, {passive:true});
-  track.addEventListener('touchmove', function(e){
-    if(!isDragging) return;
-    var dx = e.touches[0].pageX - dragStartX;
-    track.scrollLeft = dragStartScroll - dx;
-  }, {passive:true});
-  track.addEventListener('touchend', function(){ isDragging=false; track.style.scrollBehavior='smooth'; wrapCheck(); });
-
-  document.getElementById('mediaPrev').addEventListener('click', function(){ track.scrollBy({left:-220, behavior:'smooth'}); setTimeout(wrapCheck, 400); });
-  document.getElementById('mediaNext').addEventListener('click', function(){ track.scrollBy({left:220, behavior:'smooth'}); setTimeout(wrapCheck, 400); });
+  burger.addEventListener('click',function(){open=!open;layout();});
+  links.addEventListener('click',function(){if(open){open=false;layout();}});
+  window.addEventListener('resize',layout);
+  layout();
 })();
