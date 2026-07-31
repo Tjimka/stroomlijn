@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://stroomlijn.nu/implementatie/</loc>
+    <lastmod>2026-07-31T18:32:28.873Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://stroomlijn.nu/training/</loc>
     <lastmod>2026-07-31T18:30:15.465Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -33,11 +38,6 @@
   <url>
     <loc>https://stroomlijn.nu/ai-wise-start/</loc>
     <lastmod>2026-07-31T13:40:03.705Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/implementatie/</loc>
-    <lastmod>2026-07-31T13:15:13.929Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
