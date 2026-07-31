@@ -14,6 +14,7 @@
 <link rel="canonical" href="https://stroomlijn.nu/kennis/" />
 <meta property="og:url" content="https://stroomlijn.nu/kennis/" />
 
+<!-- SEO Meta Tags -->
 
 
 
@@ -29,7 +30,8 @@
 
 
 
-
+<!-- End SEO Meta Tags -->
+<link rel="stylesheet" href="styles.css">
 
 <!-- SEO Meta Tags -->
 <title>Kennis en media | STROOMLIJN - alle artikelen en podcastafleveringen</title>
@@ -329,23 +331,26 @@
     }
   });
 })();
-</script>  <link rel="stylesheet" href="styles.css">
-</head>
+</script></head>
 <body>
 
-<nav class="nav" data-section="navbar">
-  <div class="container-wide nav-inner">
-    <a class="nav-logo" href="/"><img src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/logo-wordmark.png" alt="STROOMLIJN" style="height:42px;width:auto;display:block"></a>
-    <div class="nav-links" style="white-space:nowrap">
-      <a class="nav-link" href="/aanbod/">Aanbod</a>
-      <a class="nav-link" href="/cases/">In de praktijk</a>
-      <a class="nav-link" href="/tools/">Gratis AI-tools</a>
-      <a class="nav-link" style="background:rgba(26,46,74,.06)" href="/kennis/" aria-current="page">Kennis en media</a>
-      <a class="nav-link" href="/#over">Over Tjimka</a>
+<nav class="nav" id="siteNav" data-section="navbar" style="position:sticky;top:0;z-index:100;background:rgba(251,250,247,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(26,46,74,.08)">
+  <div class="container-wide nav-inner" style="max-width:1180px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:72px">
+    <a class="nav-logo" href="/" aria-label="Stroomlijn home" style="display:flex;align-items:center;min-width:0"><img id="navLogoImg" src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/logo-wordmark.png" alt="STROOMLIJN" width="1261" height="218" style="height:42px;width:auto;display:block;max-width:60vw;object-fit:contain"></a>
+    <div class="nav-links" id="navLinks" style="display:flex;gap:6px;align-items:center">
+      <a class="nav-link" href="/aanbod/" style="padding:8px 14px;font-size:14.5px;font-weight:500;color:#1A2E4A;border-radius:10px;text-decoration:none;white-space:nowrap">Aanbod</a>
+      <a class="nav-link" href="/cases/" style="padding:8px 14px;font-size:14.5px;font-weight:500;color:#1A2E4A;border-radius:10px;text-decoration:none;white-space:nowrap">In de praktijk</a>
+      <a class="nav-link" href="/tools/" style="padding:8px 14px;font-size:14.5px;font-weight:500;color:#1A2E4A;border-radius:10px;text-decoration:none;white-space:nowrap">Gratis AI-tools</a>
+      <a class="nav-link" href="/kennis/" aria-current="page" style="padding:8px 14px;font-size:14.5px;font-weight:600;color:#1A2E4A;border-radius:10px;background:rgba(26,46,74,.06);text-decoration:none;white-space:nowrap">Kennis en media</a>
+      <a class="nav-link" href="/#over" style="padding:8px 14px;font-size:14.5px;font-weight:500;color:#1A2E4A;border-radius:10px;text-decoration:none;white-space:nowrap">Over Tjimka</a>
+      <a class="nav-link nav-link-extra" href="/#faq" style="display:none;padding:8px 14px;font-size:14.5px;font-weight:500;color:#1A2E4A;border-radius:10px;text-decoration:none;white-space:nowrap">Veelgestelde vragen</a>
+      <a class="nav-link nav-link-extra" href="https://app.stroomlijn.nu/shop/slim-gekozen-ai-tools" target="_blank" rel="noopener noreferrer" style="display:none;padding:8px 14px;font-size:14.5px;font-weight:500;color:#1A2E4A;border-radius:10px;text-decoration:none;white-space:nowrap">AI-tools shop</a>
     </div>
-    <div class="nav-cta">
-      <a class="btn btn-primary btn-sm" href="https://app.stroomlijn.nu/book/stroomlijnsessie" target="_blank" rel="noopener noreferrer">Plan een gesprek</a>
-      <a href="https://app.stroomlijn.nu/shop/slim-gekozen-ai-tools" target="_blank" rel="noopener noreferrer" aria-label="AI-tools shop" title="AI-tools shop" style="display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:10px;color:#1A2E4A;text-decoration:none;flex:0 0 auto"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.3 11.2a1.6 1.6 0 0 0 1.6 1.3h8.2a1.6 1.6 0 0 0 1.6-1.3L21 7H6"/></svg></a>
+    <div class="nav-cta" style="display:flex;align-items:center;gap:10px">
+      <a class="btn btn-primary btn-sm" id="navCtaBtn" href="https://app.stroomlijn.nu/book/stroomlijnsessie" target="_blank" rel="noopener noreferrer" style="background:#4899A7;color:#fff;padding:9px 18px;font-size:14px;font-weight:600;border-radius:10px;text-decoration:none;white-space:nowrap;display:inline-flex;align-items:center">Plan een gesprek</a>
+      <a href="/#faq" id="navFaqIcon" aria-label="Veelgestelde vragen" title="Veelgestelde vragen" style="display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:10px;color:#1A2E4A;text-decoration:none;flex:0 0 auto"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 1.5-2.5 2-2.5 3.5"/><circle cx="12" cy="17" r=".6" fill="currentColor" stroke="none"/></svg></a>
+      <a href="https://app.stroomlijn.nu/shop/slim-gekozen-ai-tools" target="_blank" rel="noopener noreferrer" id="navCartIcon" aria-label="AI-tools shop" title="AI-tools shop" style="display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:10px;color:#1A2E4A;text-decoration:none;flex:0 0 auto"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.3 11.2a1.6 1.6 0 0 0 1.6 1.3h8.2a1.6 1.6 0 0 0 1.6-1.3L21 7H6"/></svg></a>
+      <button class="nav-burger" id="navBurger" aria-label="Menu openen" aria-expanded="false" style="display:none;flex-direction:column;gap:4px;background:none;border:none;padding:8px;cursor:pointer"><span style="width:20px;height:2px;background:#1A2E4A;display:block"></span><span style="width:20px;height:2px;background:#1A2E4A;display:block"></span><span style="width:20px;height:2px;background:#1A2E4A;display:block"></span></button>
     </div>
   </div>
 </nav>
@@ -554,9 +559,9 @@
 
 <footer data-section="footer" style="background:#0F1E28;color:rgba(255,255,255,.7);padding:64px 0 28px;font-family:'Inter',-apple-system,sans-serif">
   <div style="max-width:1180px;margin:0 auto;padding:0 32px">
-    <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px;margin-bottom:44px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:40px;margin-bottom:44px">
       <div>
-        <a href="/" style="display:block;margin-bottom:14px"><img src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/logo-wordmark.png" alt="STROOMLIJN" style="height:36px;width:auto;display:block"></a>
+        <a href="/" style="display:block;margin-bottom:14px"><img src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/logo-wordmark.png" alt="STROOMLIJN" style="height:36px;width:auto;display:block;max-width:100%;object-fit:contain"></a>
         <p style="font-size:.88rem;max-width:32ch;color:rgba(255,255,255,.55);margin:0 0 18px">AI-strategie, training en implementatie. Menselijk, praktisch, op maat. Vanuit Lemmer, voor heel Nederland.</p>
         <div style="display:flex;gap:10px">
           <a href="https://www.linkedin.com/in/tjimka/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" style="width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="color:#fff"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-.9 1.8-1.9 3.7-1.9 4 0 4.7 2.6 4.7 6v6.2h-4v-5.5c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21H9z"/></svg></a>
@@ -584,7 +589,7 @@
     </div>
     <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:.8rem;color:rgba(255,255,255,.45)">
       <div>&copy; 2026 STROOMLIJN - Tjimka Bakker &middot; KvK 57904561 &middot; BTW NL001434241B82</div>
-      <div style="display:flex;gap:18px">
+      <div style="display:flex;gap:18px;flex-wrap:wrap">
         <a href="/privacy-policy/" style="color:rgba(255,255,255,.45);text-decoration:none">Privacy Policy</a>
         <a href="/terms-and-conditions/" style="color:rgba(255,255,255,.45);text-decoration:none">Algemene Voorwaarden</a>
         <a href="/transparantie-ai-disclaimer-ai-gebruik/" style="color:rgba(255,255,255,.45);text-decoration:none">Transparantie &amp; AI-disclaimer</a>
@@ -592,6 +597,8 @@
     </div>
   </div>
 </footer>
+  <script src="script.js"></script>
+
   <script src="script.js"></script>
 </body>
 </html>
