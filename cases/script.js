@@ -1,3 +1,8 @@
+var revealEls = document.querySelectorAll('.reveal');
+var io = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+},{threshold:.12});
+revealEls.forEach(function(el){ io.observe(el); });
 (function(){
   var nav=document.getElementById('siteNav'),links=document.getElementById('navLinks'),burger=document.getElementById('navBurger');
   if(!nav||!links||!burger)return;
