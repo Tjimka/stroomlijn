@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://stroomlijn.nu/aanbod/</loc>
+    <lastmod>2026-08-01T15:36:22.866Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/ai-wise-start/</loc>
+    <lastmod>2026-08-01T08:15:58.780Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/implementatie/</loc>
+    <lastmod>2026-07-31T19:01:21.572Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://stroomlijn.nu/cases/</loc>
     <lastmod>2026-07-31T18:53:45.695Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -11,16 +26,6 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://stroomlijn.nu/ai-wise-start/</loc>
-    <lastmod>2026-07-31T18:37:08.838Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/implementatie/</loc>
-    <lastmod>2026-07-31T18:32:28.873Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://stroomlijn.nu/training/</loc>
     <lastmod>2026-07-31T18:30:15.465Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -28,11 +33,6 @@
   <url>
     <loc>https://stroomlijn.nu/kennis/</loc>
     <lastmod>2026-07-31T18:27:59.657Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/aanbod/</loc>
-    <lastmod>2026-07-31T18:21:57.234Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
