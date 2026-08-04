@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://stroomlijn.nu/cases/</loc>
+    <lastmod>2026-08-04T13:21:05.096Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/ai-wise-start/</loc>
+    <lastmod>2026-08-04T13:19:56.975Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/kennis/</loc>
+    <lastmod>2026-08-04T13:18:48.047Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/aanbod/</loc>
+    <lastmod>2026-08-04T13:18:27.827Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/stroomlijn-scan/</loc>
+    <lastmod>2026-08-04T13:17:46.781Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://stroomlijn.nu/</loc>
     <lastmod>2026-08-04T10:27:17.327Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -8,31 +33,6 @@
   <url>
     <loc>https://stroomlijn.nu/consent/</loc>
     <lastmod>2026-08-04T10:24:22.496Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/cases/</loc>
-    <lastmod>2026-08-04T09:37:49.303Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/stroomlijn-scan/</loc>
-    <lastmod>2026-08-02T13:30:51.789Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/aanbod/</loc>
-    <lastmod>2026-08-02T07:34:36.386Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/kennis/</loc>
-    <lastmod>2026-08-02T07:34:32.470Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/ai-wise-start/</loc>
-    <lastmod>2026-08-02T06:30:27.868Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
