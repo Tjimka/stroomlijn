@@ -1,6 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://stroomlijn.nu/kennis/waarom-ai-ons-juist-scherper-laat-nadenken/</loc>
+    <lastmod>2026-08-04T13:50:36.322Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/kennis/ai-op-de-werkvloer-kansen-grijpen-zonder-de-menselijke-maat-te-verliezen/</loc>
+    <lastmod>2026-08-04T13:50:29.039Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/kennis/ai-voor-ondernemers-3-snelle-tips/</loc>
+    <lastmod>2026-08-04T13:50:04.705Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/kennis/echter-dan-echt/</loc>
+    <lastmod>2026-08-04T13:49:41.241Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/kennis/podcast-01-slim-werken-met-ai/</loc>
+    <lastmod>2026-08-04T13:49:15.700Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/kennis/podcast-02-ai-als-sparringpartner/</loc>
+    <lastmod>2026-08-04T13:48:51.310Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/kennis/podcast-03-optimaliseer-je-week-met-ai/</loc>
+    <lastmod>2026-08-04T13:48:25.422Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/kennis/podcast-04-chatgpt-agent-modus/</loc>
+    <lastmod>2026-08-04T13:31:01.878Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/kennis/podcast-05-ai-geletterdheid/</loc>
+    <lastmod>2026-08-04T13:30:31.351Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/kennis/waarom-ai-niet-begint-bij-de-werkvloer-maar-in-de-bestuurskamer/</loc>
+    <lastmod>2026-08-04T13:30:06.214Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://stroomlijn.nu/privacy-policy/</loc>
     <lastmod>2026-08-04T13:29:14.926Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -63,56 +113,6 @@
   <url>
     <loc>https://stroomlijn.nu/consent/</loc>
     <lastmod>2026-08-04T10:24:22.496Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/kennis/waarom-ai-ons-juist-scherper-laat-nadenken/</loc>
-    <lastmod>2026-07-28T09:03:23.365Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/kennis/waarom-ai-niet-begint-bij-de-werkvloer-maar-in-de-bestuurskamer/</loc>
-    <lastmod>2026-07-28T09:03:19.257Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/kennis/podcast-05-ai-geletterdheid/</loc>
-    <lastmod>2026-07-28T09:03:15.151Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/kennis/podcast-04-chatgpt-agent-modus/</loc>
-    <lastmod>2026-07-28T09:03:11.142Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/kennis/podcast-03-optimaliseer-je-week-met-ai/</loc>
-    <lastmod>2026-07-28T09:03:07.181Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/kennis/podcast-02-ai-als-sparringpartner/</loc>
-    <lastmod>2026-07-28T09:03:03.118Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/kennis/podcast-01-slim-werken-met-ai/</loc>
-    <lastmod>2026-07-28T09:02:58.577Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/kennis/echter-dan-echt/</loc>
-    <lastmod>2026-07-28T09:02:54.652Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/kennis/ai-voor-ondernemers-3-snelle-tips/</loc>
-    <lastmod>2026-07-28T09:02:50.559Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/kennis/ai-op-de-werkvloer-kansen-grijpen-zonder-de-menselijke-maat-te-verliezen/</loc>
-    <lastmod>2026-07-28T09:02:46.568Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
