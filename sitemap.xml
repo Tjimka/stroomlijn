@@ -1,33 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://stroomlijn.nu/kennis/waarom-ai-ons-juist-scherper-laat-nadenken/</loc>
+    <lastmod>2026-08-05T12:52:54.206Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/</loc>
+    <lastmod>2026-08-05T04:21:43.055Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/aanbod/</loc>
+    <lastmod>2026-08-05T03:27:10.488Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/tools/</loc>
+    <lastmod>2026-08-05T03:21:55.835Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/cases/</loc>
+    <lastmod>2026-08-05T03:00:47.535Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/kennis/</loc>
+    <lastmod>2026-08-05T03:00:45.287Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://stroomlijn.nu/ai-wise-start/</loc>
     <lastmod>2026-08-04T20:51:40.287Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://stroomlijn.nu/tools/</loc>
-    <lastmod>2026-08-04T20:47:46.283Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/</loc>
-    <lastmod>2026-08-04T20:47:29.454Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://stroomlijn.nu/stroomlijn-scan/</loc>
     <lastmod>2026-08-04T20:46:24.193Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/kennis/</loc>
-    <lastmod>2026-08-04T20:44:16.840Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/cases/</loc>
-    <lastmod>2026-08-04T20:43:21.078Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -48,11 +58,6 @@
   <url>
     <loc>https://stroomlijn.nu/zelf-aan-de-slag/</loc>
     <lastmod>2026-08-04T20:36:44.921Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/aanbod/</loc>
-    <lastmod>2026-08-04T20:33:22.500Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -108,11 +113,6 @@
   <url>
     <loc>https://stroomlijn.nu/kennis/waarom-ai-niet-begint-bij-de-werkvloer-maar-in-de-bestuurskamer/</loc>
     <lastmod>2026-08-04T13:50:43.656Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/kennis/waarom-ai-ons-juist-scherper-laat-nadenken/</loc>
-    <lastmod>2026-08-04T13:50:36.322Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
