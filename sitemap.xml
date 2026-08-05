@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://stroomlijn.nu/terms-and-conditions/</loc>
+    <lastmod>2026-08-05T13:08:42.438Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://stroomlijn.nu/kennis/podcast-02-ai-als-sparringpartner/</loc>
     <lastmod>2026-08-05T13:08:22.693Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -23,11 +28,6 @@
   <url>
     <loc>https://stroomlijn.nu/transparantie-ai-disclaimer-ai-gebruik/</loc>
     <lastmod>2026-08-05T13:03:23.200Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/terms-and-conditions/</loc>
-    <lastmod>2026-08-05T13:02:34.895Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
