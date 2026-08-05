@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://stroomlijn.nu/privacy-policy/</loc>
+    <lastmod>2026-08-05T13:01:44.853Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://stroomlijn.nu/kennis/echter-dan-echt/</loc>
     <lastmod>2026-08-05T13:00:43.580Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -113,11 +118,6 @@
   <url>
     <loc>https://stroomlijn.nu/aanpak/</loc>
     <lastmod>2026-08-04T20:29:04.748Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/privacy-policy/</loc>
-    <lastmod>2026-08-04T13:29:14.926Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
