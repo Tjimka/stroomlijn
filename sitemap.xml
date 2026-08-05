@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://stroomlijn.nu/aanpak/</loc>
+    <lastmod>2026-08-05T17:11:23.979Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://stroomlijn.nu/stroomlijn-scan/</loc>
     <lastmod>2026-08-05T17:11:16.056Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -38,11 +43,6 @@
   <url>
     <loc>https://stroomlijn.nu/over-tjimka/</loc>
     <lastmod>2026-08-05T17:09:38.681Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/aanpak/</loc>
-    <lastmod>2026-08-05T17:08:46.690Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
