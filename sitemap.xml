@@ -1,6 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://stroomlijn.nu/aanbod/</loc>
+    <lastmod>2026-08-05T17:10:40.411Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/zelf-aan-de-slag/</loc>
+    <lastmod>2026-08-05T17:10:31.712Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/over-tjimka/</loc>
+    <lastmod>2026-08-05T17:09:38.681Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/aanpak/</loc>
+    <lastmod>2026-08-05T17:08:46.690Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/stroomlijn-scan/</loc>
+    <lastmod>2026-08-05T17:07:05.443Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/implementatie/</loc>
+    <lastmod>2026-08-05T17:06:15.227Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/training/</loc>
+    <lastmod>2026-08-05T17:05:24.215Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/kennis/</loc>
+    <lastmod>2026-08-05T17:04:35.063Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/cases/</loc>
+    <lastmod>2026-08-05T17:03:44.518Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://stroomlijn.nu/</loc>
     <lastmod>2026-08-05T17:01:38.717Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -71,23 +116,8 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://stroomlijn.nu/aanbod/</loc>
-    <lastmod>2026-08-05T03:27:10.488Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://stroomlijn.nu/tools/</loc>
     <lastmod>2026-08-05T03:21:55.835Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/cases/</loc>
-    <lastmod>2026-08-05T03:00:47.535Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/kennis/</loc>
-    <lastmod>2026-08-05T03:00:45.287Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -96,38 +126,8 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://stroomlijn.nu/stroomlijn-scan/</loc>
-    <lastmod>2026-08-04T20:46:24.193Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/implementatie/</loc>
-    <lastmod>2026-08-04T20:42:24.869Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/training/</loc>
-    <lastmod>2026-08-04T20:41:28.063Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://stroomlijn.nu/platform/</loc>
     <lastmod>2026-08-04T20:38:47.787Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/zelf-aan-de-slag/</loc>
-    <lastmod>2026-08-04T20:36:44.921Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/over-tjimka/</loc>
-    <lastmod>2026-08-04T20:31:17.443Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/aanpak/</loc>
-    <lastmod>2026-08-04T20:29:04.748Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
