@@ -316,18 +316,20 @@
 </script>  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<nav class="nav" data-section="navbar">
-  <div class="container-wide nav-inner">
-    <a class="nav-logo" href="/"><img src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/logo-wordmark.png" alt="STROOMLIJN"></a>
-    <div class="nav-links">
-      <a class="nav-link" href="/aanbod/">Aanbod</a>
-      <a class="nav-link" href="/cases/">In de praktijk</a>
-      <a class="nav-link" href="/tools/">Gratis AI-tools</a>
-      <a class="nav-link" href="/kennis/">Kennis en media</a>
-      <a class="nav-link" href="/#over">Over Tjimka</a>
+<nav class="nav" id="siteNav" data-section="navbar" style="position:sticky;top:0;z-index:100;background:rgba(251,250,247,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(26,46,74,.08)">
+  <div class="container-wide nav-inner" style="max-width:1180px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:72px">
+    <a class="nav-logo" href="/" aria-label="Stroomlijn home" style="display:flex;align-items:center;min-width:0"><img id="navLogoImg" src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/logo-wordmark.png" alt="STROOMLIJN" width="1261" height="218" style="height:42px;width:auto;display:block;max-width:60vw;object-fit:contain"></a>
+    <div class="nav-links" id="navLinks" style="display:flex;gap:6px;align-items:center">
+      <a class="nav-link" href="/aanpak/" style="padding:8px 14px;font-size:14.5px;font-weight:500;color:#1A2E4A;border-radius:10px;text-decoration:none;white-space:nowrap">Aanpak</a>
+      <a class="nav-link" href="/stroomlijn-scan/" style="padding:8px 14px;font-size:14.5px;font-weight:500;color:#1A2E4A;border-radius:10px;text-decoration:none;white-space:nowrap">Stroomlijn Scan</a>
+      <a class="nav-link" href="/aanbod/" style="padding:8px 14px;font-size:14.5px;font-weight:500;color:#1A2E4A;border-radius:10px;text-decoration:none;white-space:nowrap">Oplossingen</a>
+      <a class="nav-link" href="/cases/" style="padding:8px 14px;font-size:14.5px;font-weight:500;color:#1A2E4A;border-radius:10px;text-decoration:none;white-space:nowrap">In de praktijk</a>
+      <a class="nav-link" href="/over-tjimka/" style="padding:8px 14px;font-size:14.5px;font-weight:500;color:#1A2E4A;border-radius:10px;text-decoration:none;white-space:nowrap">Over Tjimka</a>
+      <a class="nav-link" href="/kennis/" style="padding:8px 14px;font-size:14.5px;font-weight:500;color:#1A2E4A;border-radius:10px;text-decoration:none;white-space:nowrap">Kennis en media</a>
     </div>
-    <div class="nav-cta">
-      <a class="btn btn-primary btn-sm" href="https://app.stroomlijn.nu/book/stroomlijnsessie" target="_blank" rel="noopener noreferrer">Plan een gesprek</a>
+    <div class="nav-cta" style="display:flex;align-items:center;gap:10px">
+      <a class="btn btn-primary btn-sm" id="navCtaBtn" href="https://app.stroomlijn.nu/book/stroomlijnsessie" target="_blank" rel="noopener noreferrer" style="background:#4899A7;color:#fff;padding:9px 18px;font-size:14px;font-weight:600;border-radius:10px;text-decoration:none;white-space:nowrap;display:inline-flex;align-items:center">Plan een kennismaking</a>
+      <button class="nav-burger" id="navBurger" aria-label="Menu openen" aria-expanded="false" style="display:none;flex-direction:column;gap:4px;background:none;border:none;padding:8px;cursor:pointer"><span style="width:20px;height:2px;background:#1A2E4A;display:block"></span><span style="width:20px;height:2px;background:#1A2E4A;display:block"></span><span style="width:20px;height:2px;background:#1A2E4A;display:block"></span></button>
     </div>
   </div>
 </nav>
@@ -368,6 +370,23 @@
         <a href="/#over">Over Tjimka</a>
       </div>
       <a class="btn btn-primary" href="https://app.stroomlijn.nu/book/stroomlijnsessie" style="margin-left:auto">Plan een gesprek</a>
+      <div>
+        <h5 style="color:#fff;font-size:.85rem;margin:0 0 14px">Menu</h5>
+        <a href="/aanpak/" style="display:block;font-size:.86rem;color:rgba(255,255,255,.6);margin-bottom:10px;text-decoration:none">Aanpak</a>
+        <a href="/stroomlijn-scan/" style="display:block;font-size:.86rem;color:rgba(255,255,255,.6);margin-bottom:10px;text-decoration:none">Stroomlijn Scan</a>
+        <a href="/aanbod/" style="display:block;font-size:.86rem;color:rgba(255,255,255,.6);margin-bottom:10px;text-decoration:none">Oplossingen</a>
+        <a href="/cases/" style="display:block;font-size:.86rem;color:rgba(255,255,255,.6);margin-bottom:10px;text-decoration:none">In de praktijk</a>
+        <a href="/over-tjimka/" style="display:block;font-size:.86rem;color:rgba(255,255,255,.6);margin-bottom:10px;text-decoration:none">Over Tjimka</a>
+        <a href="/kennis/" style="display:block;font-size:.86rem;color:rgba(255,255,255,.6);margin-bottom:10px;text-decoration:none">Kennis en media</a>
+      </div>
+      <div>
+        <h5 style="color:#fff;font-size:.85rem;margin:0 0 14px">Meer</h5>
+        <a href="/zelf-aan-de-slag/" style="display:block;font-size:.86rem;color:rgba(255,255,255,.6);margin-bottom:10px;text-decoration:none">Zelf aan de slag</a>
+        <a href="/platform/" style="display:block;font-size:.86rem;color:rgba(255,255,255,.6);margin-bottom:10px;text-decoration:none">Platform</a>
+        <a href="/ai-wise-start/" style="display:block;font-size:.86rem;color:rgba(255,255,255,.6);margin-bottom:10px;text-decoration:none">AI-WISE</a>
+        <a href="/training/" style="display:block;font-size:.86rem;color:rgba(255,255,255,.6);margin-bottom:10px;text-decoration:none">Training</a>
+        <a href="/implementatie/" style="display:block;font-size:.86rem;color:rgba(255,255,255,.6);margin-bottom:10px;text-decoration:none">Implementatie</a>
+      </div>
     </div>
     <div class="footer-bottom">&copy; 2026 Stroomlijn - Tjimka Bakker &middot; KvK 57904561 &middot; BTW NL001434241B82 &middot; info@tjimka.nl</div>
     <div class="footer-legal">
