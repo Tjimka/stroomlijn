@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://stroomlijn.nu/</loc>
+    <lastmod>2026-08-05T17:01:38.717Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://stroomlijn.nu/terms-and-conditions/</loc>
     <lastmod>2026-08-05T13:08:42.438Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -63,11 +68,6 @@
   <url>
     <loc>https://stroomlijn.nu/kennis/ai-op-de-werkvloer-kansen-grijpen-zonder-de-menselijke-maat-te-verliezen/</loc>
     <lastmod>2026-08-05T12:54:36.382Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/</loc>
-    <lastmod>2026-08-05T04:21:43.055Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
