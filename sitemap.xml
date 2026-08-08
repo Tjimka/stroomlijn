@@ -2,7 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://stroomlijn.nu/zelf-aan-de-slag/</loc>
-    <lastmod>2026-08-05T17:11:41.078Z</lastmod>
+    <lastmod>2026-08-08T12:24:27.107Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/ai-wise-start/</loc>
+    <lastmod>2026-08-07T19:23:27.740Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/kennis/</loc>
+    <lastmod>2026-08-07T16:47:57.402Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/tools/</loc>
+    <lastmod>2026-08-07T16:07:49.547Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/aanbod/</loc>
+    <lastmod>2026-08-07T13:39:27.893Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/</loc>
+    <lastmod>2026-08-06T22:37:24.891Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/cases/</loc>
+    <lastmod>2026-08-06T22:33:20.822Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -28,26 +58,6 @@
   <url>
     <loc>https://stroomlijn.nu/training/</loc>
     <lastmod>2026-08-05T17:11:00.841Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/kennis/</loc>
-    <lastmod>2026-08-05T17:10:54.334Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/cases/</loc>
-    <lastmod>2026-08-05T17:10:47.012Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/aanbod/</loc>
-    <lastmod>2026-08-05T17:10:40.411Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/</loc>
-    <lastmod>2026-08-05T17:01:38.717Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -113,16 +123,6 @@
   <url>
     <loc>https://stroomlijn.nu/kennis/ai-op-de-werkvloer-kansen-grijpen-zonder-de-menselijke-maat-te-verliezen/</loc>
     <lastmod>2026-08-05T12:54:36.382Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/tools/</loc>
-    <lastmod>2026-08-05T03:21:55.835Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/ai-wise-start/</loc>
-    <lastmod>2026-08-04T20:51:40.287Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
