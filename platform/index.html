@@ -47,7 +47,7 @@
   var u=new URL(location.href);var found=null;var changed=false;
   var PINP=true;
   if(!PINP){try{localStorage.removeItem('lp_pin_'+slug);if(SITEK)localStorage.removeItem(SITEK);}catch(e){}}
-  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{if(PINP||p!=='pin_access_token'){localStorage.setItem(map[p]+slug,v);if(SITEK&&p==='pin_access_token')localStorage.setItem(SITEK,v);}}catch(e){}u.searchParams.delete(p);changed=true;}});
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{if(PINP||p!=='pin_access_token'){localStorage.setItem(map[p]+slug,v);if(SITEK&&p==='pin_access_token')localStorage.setItem(SITEK,v);}}catch(e){}if(p==='pin_access_token'){try{sessionStorage.setItem('lp_fresh_'+slug,'1');}catch(e){}}u.searchParams.delete(p);changed=true;}});
   if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
   else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
   if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
@@ -349,8 +349,8 @@
 <section class="hero" data-section="hero">
   <div class="container-wide">
     <span class="eyebrow">Platform</span>
-    <h1>E&eacute;n omgeving voor AI, klantcontact en automatisering</h1>
-    <p>app.stroomlijn.nu is het platform waarmee je AI-agents, chatbots, flows en automatiseringen bouwt en beheert. Assistent, CRM, communicatie en automatisering in &eacute;&eacute;n omgeving, ingericht op jouw werkwijze.</p>
+    <h1>Eigen AI-systemen bouwen en verkopen, zonder developer nodig</h1>
+    <p>app.stroomlijn.nu is de omgeving waarin je zelf een AI-assistent, chatbot of automatisering bouwt, beheert en onder je eigen naam aan klanten aanbiedt.</p>
     <div class="hero-cta">
       <a class="btn btn-primary btn-lg" style="background:#fff;color:var(--navy)" href="https://app.stroomlijn.nu/book/stroomlijnsessie">Plan een kennismaking <svg class="icn-inline" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
@@ -361,10 +361,12 @@
   <div class="container-wide">
     <div class="sec-head">
       <span class="eyebrow">Welk probleem het oplost</span>
-      <h2 class="sec-title">Losse tools, losse abonnementen, losse data</h2>
+      <h2 class="sec-title">Losse tools, losse facturen, niets om te verkopen</h2>
     </div>
     <div class="prose">
-      <p>Veel bedrijven verzamelen in korte tijd een stapel losse AI-tools en abonnementen. Een chatbot hier, een mailtool daar, een apart systeem voor afspraken. Elk werkt op zich, samen werken ze niet. Het platform brengt dat in &eacute;&eacute;n omgeving samen, een AI-assistent op je eigen kennis, klantbeheer, geautomatiseerde flows en communicatie via de kanalen die je al gebruikt.</p>
+      <p>Een klant vraagt om een chatbot op de site. Een concurrent adverteert al met AI-gestuurde dienstverlening. Een developer inhuren voor &eacute;&eacute;n functie voelt overdreven, een losse chatbot-tool erbij voelt als een pleister op iets dat groter moet worden aangepakt.</p>
+      <p>Zo stapelen zelfstandigen en kleine bureaus losse abonnementen op, een tool voor de chatbot, een voor de mail, een voor de planning. Niets praat met elkaar. En zodra je het aan een klant wilt aanbieden onder je eigen naam, blijkt geen van die tools daarvoor gebouwd.</p>
+      <p>app.stroomlijn.nu is dat wel. &Eacute;&eacute;n omgeving waarin je een AI-assistent bouwt op je eigen kennis, een klantflow opzet, een automatisering inricht, en het resultaat onder je eigen naam aan klanten verkoopt. Bouwen wat je nodig hebt, niet wachten tot iemand anders het voor je maakt.</p>
     </div>
   </div>
 </section>
