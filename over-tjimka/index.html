@@ -12,15 +12,6 @@
 <link rel="canonical" href="https://stroomlijn.nu/over-tjimka/" />
 <meta property="og:url" content="https://stroomlijn.nu/over-tjimka/" />
 
-
-
-
-
-
-
-
-
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -51,14 +42,18 @@
 <script data-lp-token-hydrate>
 (function(){try{
   var slug="lp-msf09g4v-2sdea";
+  var SITEK="";
   var SK='lp_access_'+slug;
   var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  function siteTok(){try{return SITEK?localStorage.getItem(SITEK):null;}catch(e){return null;}}
   var u=new URL(location.href);var found=null;var changed=false;
-  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{localStorage.setItem(map[p]+slug,v);}catch(e){}u.searchParams.delete(p);changed=true;}});
+  var PINP=true;
+  if(!PINP){try{localStorage.removeItem('lp_pin_'+slug);if(SITEK)localStorage.removeItem(SITEK);}catch(e){}}
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{if(PINP||p!=='pin_access_token'){localStorage.setItem(map[p]+slug,v);if(SITEK&&p==='pin_access_token')localStorage.setItem(SITEK,v);}}catch(e){}if(p==='pin_access_token'){try{sessionStorage.setItem('lp_fresh_'+slug,'1');}catch(e){}}u.searchParams.delete(p);changed=true;}});
   if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
-  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
   if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
-  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);}catch(e){return null;}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();}catch(e){return null;}}
   function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
   if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
   if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
@@ -329,8 +324,7 @@
     }
   });
 })();
-</script>  <link rel="stylesheet" href="styles.css">
-</head>
+</script></head>
 <body>
 
 <nav class="nav" id="siteNav" data-section="navbar" style="position:sticky;top:0;z-index:100;background:rgba(251,250,247,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(26,46,74,.08)">
@@ -408,14 +402,158 @@
   </div>
 </section>
 
-<section class="section" data-section="persoonlijk">
+<section class="section" id="verhaal" data-section="mijn-verhaal">
   <div class="container-wide">
     <div class="sec-head">
-      <span class="eyebrow">Persoonlijk</span>
-      <h2 class="sec-title">En verder</h2>
+      <span class="eyebrow">Van toen naar nu</span>
+      <h2 class="sec-title">Verbinding maken zat er al vroeg in.</h2>
+      <p class="sec-lead">Van een telefoon in de jaren zeventig tot AI-agents in 2026. De techniek veranderde in elke fase, de vraag bleef dezelfde. Hoe breng je mensen en systemen bij elkaar.</p>
     </div>
-    <div class="prose">
-      <p>Ik zeilde ooit solo naar Scandinavi&euml; op de SVEA. Die tocht leerde me dat je een grote onderneming aankunt als je hem opdeelt in overzichtelijke stukken, goed voorbereid bent en rustig blijft als het weer omslaat. Dat is dezelfde aanpak die ik meeneem naar organisaties die met AI aan de slag gaan.</p>
+    <div class="verhaal" style="position:relative;padding-left:44px">
+      <span class="verhaal-lijn" aria-hidden="true" style="position:absolute;left:12px;top:0;bottom:0;width:2px;background:rgba(26,46,74,.1)"></span>
+      <span class="verhaal-lijn-actief" aria-hidden="true" style="position:absolute;left:12px;top:0;bottom:0;width:2px;background:var(--gold);transform-origin:top center"></span>
+<article class="verhaal-hoofdstuk" data-hoofdstuk style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:36px 64px;align-items:center;padding:52px 0;direction:ltr">
+  <span class="verhaal-punt" aria-hidden="true" style="position:absolute;left:-38px;top:50%;width:14px;height:14px;margin-top:-7px;border-radius:50%;background:#FBFAF7;border:2px solid rgba(26,46,74,.25);box-sizing:border-box;direction:ltr"></span>
+  <span class="verhaal-jaar" aria-hidden="true" style="position:absolute;right:-8px;top:-6px;font-family:var(--ff-display);font-weight:700;font-size:clamp(4rem,13vw,10rem);line-height:1;letter-spacing:-.02em;color:rgba(26,46,74,.055);pointer-events:none;user-select:none;direction:ltr;z-index:0">1970</span>
+  <div class="verhaal-tekst" style="position:relative;z-index:1;direction:ltr;max-width:52ch">
+    <span style="display:block;font-size:.82rem;font-weight:600;color:var(--teal-dk);margin-bottom:10px">Emmen en Tijnje, 1970 tot 1988</span>
+    <h3 style="font-size:clamp(1.45rem,2.4vw,1.9rem);margin:0 0 14px">Roots</h3>
+    <p style="margin:0;font-size:1.03rem;color:var(--ink)">Geboren in Emmen, met een pony in de tuin. Op mijn 4e naar Tijnje, een Friestalig dorp. Nederlandstalig, aan de rand. Je past je aan aan een omgeving die niet op je wacht. Dat leer je vroeg, of niet.</p>
+  </div>
+  <figure class="verhaal-foto" style="position:relative;z-index:1;margin:0;direction:ltr;max-width:520px;width:100%;justify-self:end;transform:rotate(-2.2deg)">
+    <span aria-hidden="true" style="position:absolute;inset:0;transform:translate(14px,14px);border:1px solid rgba(189,151,102,.55);border-radius:14px;pointer-events:none"></span>
+    <img src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/foto%27s/Emmen%20-%201e%20pony%20in%20tuin.jpeg" alt="Tjimka als kind met haar eerste pony in de tuin in Emmen" loading="eager" decoding="async" style="position:relative;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;box-shadow:0 22px 50px rgba(26,46,74,.18);background:#E3DECE">
+  </figure>
+</article>
+<article class="verhaal-hoofdstuk" data-hoofdstuk style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:36px 64px;align-items:center;padding:52px 0;direction:rtl">
+  <span class="verhaal-punt" aria-hidden="true" style="position:absolute;left:-38px;top:50%;width:14px;height:14px;margin-top:-7px;border-radius:50%;background:#FBFAF7;border:2px solid rgba(26,46,74,.25);box-sizing:border-box;direction:ltr"></span>
+  <span class="verhaal-jaar" aria-hidden="true" style="position:absolute;left:-8px;top:-6px;font-family:var(--ff-display);font-weight:700;font-size:clamp(4rem,13vw,10rem);line-height:1;letter-spacing:-.02em;color:rgba(26,46,74,.055);pointer-events:none;user-select:none;direction:ltr;z-index:0">1975</span>
+  <div class="verhaal-tekst" style="position:relative;z-index:1;direction:ltr;max-width:52ch">
+    <span style="display:block;font-size:.82rem;font-weight:600;color:var(--teal-dk);margin-bottom:10px">5 jaar oud</span>
+    <h3 style="font-size:clamp(1.45rem,2.4vw,1.9rem);margin:0 0 14px">Toen</h3>
+    <p style="margin:0;font-size:1.03rem;color:var(--ink)">Al vroeg aan de telefoon. Verbinding maken zit er lang in, alleen de technologie veranderde.</p>
+  </div>
+  <figure class="verhaal-foto" style="position:relative;z-index:1;margin:0;direction:ltr;max-width:520px;width:100%;justify-self:end;transform:rotate(2.2deg)">
+    <span aria-hidden="true" style="position:absolute;inset:0;transform:translate(14px,14px);border:1px solid rgba(189,151,102,.55);border-radius:14px;pointer-events:none"></span>
+    <img src="https://app.stroomlijn.nu/objects/quick-uploads/82/7ae7a028174dac20.png" alt="Tjimka als kind aan de telefoon" loading="lazy" decoding="async" style="position:relative;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;box-shadow:0 22px 50px rgba(26,46,74,.18);background:#E3DECE">
+  </figure>
+</article>
+<article class="verhaal-hoofdstuk" data-hoofdstuk style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:36px 64px;align-items:center;padding:52px 0;direction:ltr">
+  <span class="verhaal-punt" aria-hidden="true" style="position:absolute;left:-38px;top:50%;width:14px;height:14px;margin-top:-7px;border-radius:50%;background:#FBFAF7;border:2px solid rgba(26,46,74,.25);box-sizing:border-box;direction:ltr"></span>
+  <span class="verhaal-jaar" aria-hidden="true" style="position:absolute;right:-8px;top:-6px;font-family:var(--ff-display);font-weight:700;font-size:clamp(4rem,13vw,10rem);line-height:1;letter-spacing:-.02em;color:rgba(26,46,74,.055);pointer-events:none;user-select:none;direction:ltr;z-index:0">1988</span>
+  <div class="verhaal-tekst" style="position:relative;z-index:1;direction:ltr;max-width:52ch">
+    <span style="display:block;font-size:.82rem;font-weight:600;color:var(--teal-dk);margin-bottom:10px">1988 tot 1990</span>
+    <h3 style="font-size:clamp(1.45rem,2.4vw,1.9rem);margin:0 0 14px">Parijs en Frankrijk</h3>
+    <p style="margin:0;font-size:1.03rem;color:var(--ink)">Au-pair in Parijs op 17,5 jaar. Geen netwerk, geen plan, wel nieuwsgierigheid. Vloeiend Engels en Frans geleerd in de praktijk. Daarna Chalon-sur-Saône, waar ik het motorrijden en de vrijheid op twee wielen ontdekte.</p>
+  </div>
+  <figure class="verhaal-foto" style="position:relative;z-index:1;margin:0;direction:ltr;max-width:520px;width:100%;justify-self:end;transform:rotate(-2.2deg)">
+    <span aria-hidden="true" style="position:absolute;inset:0;transform:translate(14px,14px);border:1px solid rgba(189,151,102,.55);border-radius:14px;pointer-events:none"></span>
+    <img src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/foto%27s/Parijs%20-%20au-pair.jpeg" alt="Tjimka als au-pair in Parijs, 1988" loading="lazy" decoding="async" style="position:relative;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;box-shadow:0 22px 50px rgba(26,46,74,.18);background:#E3DECE">
+  </figure>
+</article>
+<article class="verhaal-hoofdstuk" data-hoofdstuk style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:36px 64px;align-items:center;padding:52px 0;direction:rtl">
+  <span class="verhaal-punt" aria-hidden="true" style="position:absolute;left:-38px;top:50%;width:14px;height:14px;margin-top:-7px;border-radius:50%;background:#FBFAF7;border:2px solid rgba(26,46,74,.25);box-sizing:border-box;direction:ltr"></span>
+  <span class="verhaal-jaar" aria-hidden="true" style="position:absolute;left:-8px;top:-6px;font-family:var(--ff-display);font-weight:700;font-size:clamp(4rem,13vw,10rem);line-height:1;letter-spacing:-.02em;color:rgba(26,46,74,.055);pointer-events:none;user-select:none;direction:ltr;z-index:0">1995</span>
+  <div class="verhaal-tekst" style="position:relative;z-index:1;direction:ltr;max-width:52ch">
+    <span style="display:block;font-size:.82rem;font-weight:600;color:var(--teal-dk);margin-bottom:10px">1995 tot 2006</span>
+    <h3 style="font-size:clamp(1.45rem,2.4vw,1.9rem);margin:0 0 14px">KLM</h3>
+    <p style="margin:0;font-size:1.03rem;color:var(--ink)">Elf jaar KLM. Releases voor 70 landen, de Zwaanzinnige Aanbiedingen live op teletekst, internet van nieuw fenomeen naar digitaal platform. De schakel tussen marketing, IT en de eindgebruiker.</p>
+  </div>
+  <figure class="verhaal-foto" style="position:relative;z-index:1;margin:0;direction:ltr;max-width:520px;width:100%;justify-self:end;transform:rotate(2.2deg)">
+    <span aria-hidden="true" style="position:absolute;inset:0;transform:translate(14px,14px);border:1px solid rgba(189,151,102,.55);border-radius:14px;pointer-events:none"></span>
+    <img src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/foto%27s/KLM%20Website.jpeg" alt="De KLM-website waaraan Tjimka meebouwde" loading="lazy" decoding="async" style="position:relative;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;box-shadow:0 22px 50px rgba(26,46,74,.18);background:#E3DECE">
+  </figure>
+</article>
+<article class="verhaal-hoofdstuk" data-hoofdstuk style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:36px 64px;align-items:center;padding:52px 0;direction:ltr">
+  <span class="verhaal-punt" aria-hidden="true" style="position:absolute;left:-38px;top:50%;width:14px;height:14px;margin-top:-7px;border-radius:50%;background:#FBFAF7;border:2px solid rgba(26,46,74,.25);box-sizing:border-box;direction:ltr"></span>
+  <span class="verhaal-jaar" aria-hidden="true" style="position:absolute;right:-8px;top:-6px;font-family:var(--ff-display);font-weight:700;font-size:clamp(4rem,13vw,10rem);line-height:1;letter-spacing:-.02em;color:rgba(26,46,74,.055);pointer-events:none;user-select:none;direction:ltr;z-index:0">2001</span>
+  <div class="verhaal-tekst" style="position:relative;z-index:1;direction:ltr;max-width:52ch">
+    <span style="display:block;font-size:.82rem;font-weight:600;color:var(--teal-dk);margin-bottom:10px">2001 tot 2002</span>
+    <h3 style="font-size:clamp(1.45rem,2.4vw,1.9rem);margin:0 0 14px">De SVEA</h3>
+    <p style="margin:0;font-size:1.03rem;color:var(--ink)">Een sabbatical midden in de KLM-jaren. Solo naar Scandinavië op de SVEA, gefilmd door Sunny Bergman voor &#x27;Echter dan Echt&#x27;. Op zee heb je geen gelijk, je past aan, of je vergaat.</p>
+  </div>
+  <figure class="verhaal-foto" style="position:relative;z-index:1;margin:0;direction:ltr;max-width:520px;width:100%;justify-self:end;transform:rotate(-2.2deg)">
+    <span aria-hidden="true" style="position:absolute;inset:0;transform:translate(14px,14px);border:1px solid rgba(189,151,102,.55);border-radius:14px;pointer-events:none"></span>
+    <img src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/foto%27s/Svea%20Solo%20reis%20-%20hier%20in%20Noorwegen.jpeg" alt="De SVEA tijdens de solozeilreis, hier in Noorwegen" loading="lazy" decoding="async" style="position:relative;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;box-shadow:0 22px 50px rgba(26,46,74,.18);background:#E3DECE">
+  </figure>
+</article>
+<article class="verhaal-hoofdstuk" data-hoofdstuk style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:36px 64px;align-items:center;padding:52px 0;direction:rtl">
+  <span class="verhaal-punt" aria-hidden="true" style="position:absolute;left:-38px;top:50%;width:14px;height:14px;margin-top:-7px;border-radius:50%;background:#FBFAF7;border:2px solid rgba(26,46,74,.25);box-sizing:border-box;direction:ltr"></span>
+  <span class="verhaal-jaar" aria-hidden="true" style="position:absolute;left:-8px;top:-6px;font-family:var(--ff-display);font-weight:700;font-size:clamp(4rem,13vw,10rem);line-height:1;letter-spacing:-.02em;color:rgba(26,46,74,.055);pointer-events:none;user-select:none;direction:ltr;z-index:0">2006</span>
+  <div class="verhaal-tekst" style="position:relative;z-index:1;direction:ltr;max-width:52ch">
+    <span style="display:block;font-size:.82rem;font-weight:600;color:var(--teal-dk);margin-bottom:10px">2006 tot 2012</span>
+    <h3 style="font-size:clamp(1.45rem,2.4vw,1.9rem);margin:0 0 14px">Superjachten</h3>
+    <p style="margin:0;font-size:1.03rem;color:var(--ink)">Van Holland Jachtbouw en Hoek Brokerage tot Feadship Aftersales. Bootshows in Monaco en Fort Lauderdale, regatta&#x27;s in St. Barth. Hoge verwachtingen, discretie, de vertaalslag van systeem naar mens en terug.</p>
+  </div>
+  <figure class="verhaal-foto" style="position:relative;z-index:1;margin:0;direction:ltr;max-width:520px;width:100%;justify-self:end;transform:rotate(2.2deg)">
+    <span aria-hidden="true" style="position:absolute;inset:0;transform:translate(14px,14px);border:1px solid rgba(189,151,102,.55);border-radius:14px;pointer-events:none"></span>
+    <img src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/foto%27s/Superjacht%20werken%20aan%20boord%20als%20Stewardess.jpeg" alt="Tjimka aan boord van een superjacht" loading="lazy" decoding="async" style="position:relative;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;box-shadow:0 22px 50px rgba(26,46,74,.18);background:#E3DECE">
+  </figure>
+</article>
+<article class="verhaal-hoofdstuk" data-hoofdstuk style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:36px 64px;align-items:center;padding:52px 0;direction:ltr">
+  <span class="verhaal-punt" aria-hidden="true" style="position:absolute;left:-38px;top:50%;width:14px;height:14px;margin-top:-7px;border-radius:50%;background:#FBFAF7;border:2px solid rgba(26,46,74,.25);box-sizing:border-box;direction:ltr"></span>
+  <span class="verhaal-jaar" aria-hidden="true" style="position:absolute;right:-8px;top:-6px;font-family:var(--ff-display);font-weight:700;font-size:clamp(4rem,13vw,10rem);line-height:1;letter-spacing:-.02em;color:rgba(26,46,74,.055);pointer-events:none;user-select:none;direction:ltr;z-index:0">2008</span>
+  <div class="verhaal-tekst" style="position:relative;z-index:1;direction:ltr;max-width:52ch">
+    <span style="display:block;font-size:.82rem;font-weight:600;color:var(--teal-dk);margin-bottom:10px">2008</span>
+    <h3 style="font-size:clamp(1.45rem,2.4vw,1.9rem);margin:0 0 14px">In de lucht</h3>
+    <p style="margin:0;font-size:1.03rem;color:var(--ink)">Marketing en PR voor de Dutch Hawker Hunter Foundation. Zelf meegevlogen naar Engeland en naar airshows in Zwitserland. Avontuur en techniek, dicht op elkaar.</p>
+  </div>
+  <figure class="verhaal-foto" style="position:relative;z-index:1;margin:0;direction:ltr;max-width:520px;width:100%;justify-self:end;transform:rotate(-2.2deg)">
+    <span aria-hidden="true" style="position:absolute;inset:0;transform:translate(14px,14px);border:1px solid rgba(189,151,102,.55);border-radius:14px;pointer-events:none"></span>
+    <img src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/foto%27s/Vlucht%20in%20Dutch%20Hawker%20Hunter.jpeg" alt="Tjimka bij een vlucht in de Dutch Hawker Hunter" loading="lazy" decoding="async" style="position:relative;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;box-shadow:0 22px 50px rgba(26,46,74,.18);background:#E3DECE">
+  </figure>
+</article>
+<article class="verhaal-hoofdstuk" data-hoofdstuk style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:36px 64px;align-items:center;padding:52px 0;direction:rtl">
+  <span class="verhaal-punt" aria-hidden="true" style="position:absolute;left:-38px;top:50%;width:14px;height:14px;margin-top:-7px;border-radius:50%;background:#FBFAF7;border:2px solid rgba(26,46,74,.25);box-sizing:border-box;direction:ltr"></span>
+  <span class="verhaal-jaar" aria-hidden="true" style="position:absolute;left:-8px;top:-6px;font-family:var(--ff-display);font-weight:700;font-size:clamp(4rem,13vw,10rem);line-height:1;letter-spacing:-.02em;color:rgba(26,46,74,.055);pointer-events:none;user-select:none;direction:ltr;z-index:0">2020</span>
+  <div class="verhaal-tekst" style="position:relative;z-index:1;direction:ltr;max-width:52ch">
+    <span style="display:block;font-size:.82rem;font-weight:600;color:var(--teal-dk);margin-bottom:10px">2020 tot 2023</span>
+    <h3 style="font-size:clamp(1.45rem,2.4vw,1.9rem);margin:0 0 14px">Innovatiecluster Drachten</h3>
+    <p style="margin:0;font-size:1.03rem;color:var(--ink)">Drie jaar in de kern van de Noord-Nederlandse maakindustrie. 24 hightechbedrijven, Robotica, Big Data, 3D Printing. Het digitale domein van het cluster vormgegeven en de zichtbaarheid vergroot.</p>
+  </div>
+  <figure class="verhaal-foto" style="position:relative;z-index:1;margin:0;direction:ltr;max-width:520px;width:100%;justify-self:end;transform:rotate(2.2deg)">
+    <span aria-hidden="true" style="position:absolute;inset:0;transform:translate(14px,14px);border:1px solid rgba(189,151,102,.55);border-radius:14px;pointer-events:none"></span>
+    <img src="https://app.stroomlijn.nu/objects/quick-uploads/82/e1033131d68e1347.jpg" alt="Tjimka bij Innovatiecluster Drachten" loading="lazy" decoding="async" style="position:relative;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;box-shadow:0 22px 50px rgba(26,46,74,.18);background:#E3DECE">
+  </figure>
+</article>
+<article class="verhaal-hoofdstuk" data-hoofdstuk style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:36px 64px;align-items:center;padding:52px 0;direction:ltr">
+  <span class="verhaal-punt" aria-hidden="true" style="position:absolute;left:-38px;top:50%;width:14px;height:14px;margin-top:-7px;border-radius:50%;background:#FBFAF7;border:2px solid rgba(26,46,74,.25);box-sizing:border-box;direction:ltr"></span>
+  <span class="verhaal-jaar" aria-hidden="true" style="position:absolute;right:-8px;top:-6px;font-family:var(--ff-display);font-weight:700;font-size:clamp(4rem,13vw,10rem);line-height:1;letter-spacing:-.02em;color:rgba(26,46,74,.055);pointer-events:none;user-select:none;direction:ltr;z-index:0">2022</span>
+  <div class="verhaal-tekst" style="position:relative;z-index:1;direction:ltr;max-width:52ch">
+    <span style="display:block;font-size:.82rem;font-weight:600;color:var(--teal-dk);margin-bottom:10px">Zelfstandig sinds 2013, AI sinds 2022</span>
+    <h3 style="font-size:clamp(1.45rem,2.4vw,1.9rem);margin:0 0 14px">AI en STROOMLIJN</h3>
+    <p style="margin:0;font-size:1.03rem;color:var(--ink)">Sinds 2013 zelfstandig vanuit Lemmer. In 2022 dezelfde fascinatie als bij de eerste KLM-websites, nu met ChatGPT. STROOMLIJN werd de logische volgende stap, inmiddels met een eigen platform dat alle grote taalmodellen ondersteunt en werkt via API&#x27;s en MCP-koppelingen, niet gebonden aan één tool.</p>
+  </div>
+  <figure class="verhaal-foto" style="position:relative;z-index:1;margin:0;direction:ltr;max-width:520px;width:100%;justify-self:end;transform:rotate(-2.2deg)">
+    <span aria-hidden="true" style="position:absolute;inset:0;transform:translate(14px,14px);border:1px solid rgba(189,151,102,.55);border-radius:14px;pointer-events:none"></span>
+    <img src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/assets/photos/tjimka-presentatie-2.jpg" alt="Tjimka geeft een presentatie over werken met AI" loading="lazy" decoding="async" style="position:relative;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;box-shadow:0 22px 50px rgba(26,46,74,.18);background:#E3DECE">
+  </figure>
+</article>
+<article class="verhaal-hoofdstuk" data-hoofdstuk style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:36px 64px;align-items:center;padding:52px 0;direction:rtl">
+  <span class="verhaal-punt" aria-hidden="true" style="position:absolute;left:-38px;top:50%;width:14px;height:14px;margin-top:-7px;border-radius:50%;background:#FBFAF7;border:2px solid rgba(26,46,74,.25);box-sizing:border-box;direction:ltr"></span>
+  <span class="verhaal-jaar" aria-hidden="true" style="position:absolute;left:-8px;top:-6px;font-family:var(--ff-display);font-weight:700;font-size:clamp(4rem,13vw,10rem);line-height:1;letter-spacing:-.02em;color:rgba(26,46,74,.055);pointer-events:none;user-select:none;direction:ltr;z-index:0">Nu</span>
+  <div class="verhaal-tekst" style="position:relative;z-index:1;direction:ltr;max-width:52ch">
+    <span style="display:block;font-size:.82rem;font-weight:600;color:var(--teal-dk);margin-bottom:10px">Vandaag</span>
+    <h3 style="font-size:clamp(1.45rem,2.4vw,1.9rem);margin:0 0 14px">Nu</h3>
+    <p style="margin:0;font-size:1.03rem;color:var(--ink)">De telefoon is compacter en slimmer geworden, het gesprek is nog net zo menselijk. Zo sta ik ook mijn klanten te woord. De technologie verandert, het persoonlijke contact blijft.</p>
+  </div>
+  <figure class="verhaal-foto" style="position:relative;z-index:1;margin:0;direction:ltr;max-width:520px;width:100%;justify-self:end;transform:rotate(2.2deg)">
+    <span aria-hidden="true" style="position:absolute;inset:0;transform:translate(14px,14px);border:1px solid rgba(189,151,102,.55);border-radius:14px;pointer-events:none"></span>
+    <img src="https://app.stroomlijn.nu/objects/quick-uploads/82/00be201fc8561b93.jpg" alt="Tjimka nu aan de telefoon" loading="lazy" decoding="async" style="position:relative;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;box-shadow:0 22px 50px rgba(26,46,74,.18);background:#E3DECE">
+  </figure>
+</article>
+    </div>
+    <div style="margin-top:72px;padding-top:56px;border-top:1px solid rgba(26,46,74,.1)">
+      <h3 style="font-size:1.35rem;margin:0 0 8px">Naast het werk</h3>
+      <p style="color:var(--mute);margin:0 0 28px;max-width:60ch">Rust vinden buiten het scherm hoort net zo bij mijn werk als de AI zelf.</p>
+      <div class="verhaal-naast" style="display:flex;flex-wrap:wrap;gap:24px">
+      <figure style="margin:0;flex:1 1 280px;max-width:380px"><img src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/foto%27s/Tjimka%20op%20motor.jpg" alt="Tjimka op haar motor" loading="lazy" decoding="async" style="width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:14px;box-shadow:0 16px 36px rgba(26,46,74,.14);background:#E3DECE"><figcaption style="font-size:.88rem;color:var(--mute);margin-top:10px">Motorrijden, sinds Frankrijk in 1989</figcaption></figure>
+      <figure style="margin:0;flex:1 1 280px;max-width:380px"><img src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/foto%27s/KLM%20Drakenbootrace.jpg" alt="Het KLM-drakenbootteam tijdens een race" loading="lazy" decoding="async" style="width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:14px;box-shadow:0 16px 36px rgba(26,46,74,.14);background:#E3DECE"><figcaption style="font-size:.88rem;color:var(--mute);margin-top:10px">De Dutch Dragons, het drakenbootteam van KLM</figcaption></figure>
+      <figure style="margin:0;flex:1 1 280px;max-width:380px"><img src="https://raw.githubusercontent.com/Tjimka/stroomlijn/main/foto%27s/Formule%201%20Zandvoort.jpeg" alt="Tjimka bij het Formule 1-circuit van Zandvoort" loading="lazy" decoding="async" style="width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:14px;box-shadow:0 16px 36px rgba(26,46,74,.14);background:#E3DECE"><figcaption style="font-size:.88rem;color:var(--mute);margin-top:10px">Formule 1 in Zandvoort, zeilen op het IJsselmeer, het Pieterpad</figcaption></figure>
+      </div>
+    </div>
+    <div class="prose" style="margin-top:56px">
+      <p>De solotocht op de SVEA leerde me dat je een grote onderneming aankunt als je hem opdeelt in overzichtelijke stukken, goed voorbereid bent en rustig blijft als het weer omslaat. Dat is dezelfde aanpak die ik meeneem naar organisaties die met AI aan de slag gaan.</p>
       <p>Wil je het hele verhaal, lees dan <a href="/kennis/echter-dan-echt/">Echter dan echt</a>, over mijn route naar dit vak.</p>
     </div>
   </div>
@@ -500,7 +638,9 @@
 </footer>
 
 
-<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
   <script src="script.js"></script>
 </body>
 </html>
