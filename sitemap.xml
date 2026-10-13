@@ -1,38 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://stroomlijn.nu/over-tjimka/</loc>
-    <lastmod>2026-09-02T14:50:16.740Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/</loc>
-    <lastmod>2026-09-02T12:45:06.398Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/cases/</loc>
-    <lastmod>2026-09-01T18:42:05.405Z</lastmod>
+    <loc>https://stroomlijn.nu/ribrentals/</loc>
+    <lastmod>2026-10-13T14:38:22.688Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://stroomlijn.nu/tools/</loc>
-    <lastmod>2026-09-01T18:28:55.318Z</lastmod>
+    <lastmod>2026-10-13T03:47:09.462Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://stroomlijn.nu/kennis/</loc>
-    <lastmod>2026-08-30T19:03:10.896Z</lastmod>
+    <loc>https://stroomlijn.nu/</loc>
+    <lastmod>2026-10-13T03:46:22.398Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://stroomlijn.nu/aanbod/</loc>
-    <lastmod>2026-08-29T22:03:53.541Z</lastmod>
+    <lastmod>2026-10-13T03:46:06.878Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/cases/</loc>
+    <lastmod>2026-10-13T03:45:19.964Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/kennis/</loc>
+    <lastmod>2026-10-13T03:44:49.181Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://stroomlijn.nu/ai-wise-start/</loc>
-    <lastmod>2026-08-27T21:43:19.161Z</lastmod>
+    <lastmod>2026-10-13T03:44:18.132Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/stroomlijn-scan/</loc>
+    <lastmod>2026-09-23T13:27:37.148Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://stroomlijn.nu/over-tjimka/</loc>
+    <lastmod>2026-09-02T14:50:16.740Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -43,11 +53,6 @@
   <url>
     <loc>https://stroomlijn.nu/consent/</loc>
     <lastmod>2026-08-21T11:47:19.441Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://stroomlijn.nu/stroomlijn-scan/</loc>
-    <lastmod>2026-08-08T15:01:15.739Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
