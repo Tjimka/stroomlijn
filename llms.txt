@@ -1,0 +1,36 @@
+# STROOMLIJN
+
+> STROOMLIJN is het bedrijf van Tjimka Bakker, Strategisch AI & Procesarchitect in Lemmer, Friesland. STROOMLIJN helpt MKB-ondernemers, professionals en teams in Noord-Nederland en online door heel Nederland om praktisch en menselijk met AI te werken, via AI-strategie, training en implementatie. Uitgangspunt: AI regeert niet, de mens houdt de regie.
+
+## Diensten
+
+- [Aanpak](https://stroomlijn.nu/aanpak/): hoe een traject verloopt, van kennismaking tot uitvoering
+- [Stroomlijn Scan](https://stroomlijn.nu/stroomlijn-scan/): eerste betaalde analyse met een adviesdocument als resultaat
+- [Aanbod](https://stroomlijn.nu/aanbod/): AI-strategie, training en workshops, agents en automatisering
+- [Training](https://stroomlijn.nu/training/): AI-training en kennissessies voor teams en netwerkorganisaties
+- [Implementatie](https://stroomlijn.nu/implementatie/): AI-agents, chatbots, kennisbanken en workflow-automatisering
+- [AI-WISE, EU AI Act en AI-geletterdheid](https://stroomlijn.nu/ai-wise-start/)
+- [Zelf aan de slag](https://stroomlijn.nu/zelf-aan-de-slag/): tools en materialen om zelf te starten
+- [Platform](https://stroomlijn.nu/platform/): app.stroomlijn.nu voor het zelf bouwen van AI-agents, chatbots en flows
+
+## Over en bewijs
+
+- [In de praktijk](https://stroomlijn.nu/cases/): klantcases, onder andere Innovatiecluster Drachten, Mavasol en TechnicNoord
+- [Over Tjimka](https://stroomlijn.nu/over-tjimka/): achtergrond en werkwijze
+- [Veelgestelde vragen](https://stroomlijn.nu/veelgestelde-vragen/): korte antwoorden over starten, gegevens, systemen en eigenaarschap
+
+## Kennis
+
+- [Kennis en media](https://stroomlijn.nu/kennis/): blogartikelen en de podcast Fris in je oren - AI zonder ruis
+- [Waarom AI niet begint bij de werkvloer maar in de bestuurskamer](https://stroomlijn.nu/kennis/waarom-ai-niet-begint-bij-de-werkvloer-maar-in-de-bestuurskamer/)
+- [Waarom AI ons juist scherper laat nadenken](https://stroomlijn.nu/kennis/waarom-ai-ons-juist-scherper-laat-nadenken/)
+- [AI op de werkvloer: kansen grijpen zonder de menselijke maat te verliezen](https://stroomlijn.nu/kennis/ai-op-de-werkvloer-kansen-grijpen-zonder-de-menselijke-maat-te-verliezen/)
+- [AI voor ondernemers: 3 snelle tips](https://stroomlijn.nu/kennis/ai-voor-ondernemers-3-snelle-tips/)
+- [Echter dan echt](https://stroomlijn.nu/kennis/echter-dan-echt/)
+
+## Contact en juridisch
+
+- [Contact](https://stroomlijn.nu/contact/): info@tjimka.nl, Lemmer, Friesland
+- [Privacy Policy](https://stroomlijn.nu/privacy-policy/)
+- [Algemene Voorwaarden](https://stroomlijn.nu/terms-and-conditions/)
+- [Transparantie en AI-disclaimer](https://stroomlijn.nu/transparantie-ai-disclaimer-ai-gebruik/)
