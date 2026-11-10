@@ -1061,7 +1061,7 @@ setInterval(function(){ if(!overPaused){ overActive=(overActive+1)%chapters.leng
   if(!nav||!links||!burger)return;
   var open=false;
   function layout(){
-    var mobile=window.matchMedia('(max-width:900px)').matches;
+    var mobile=window.matchMedia('(max-width:1180px)').matches;
     var faq=document.getElementById('navFaqIcon'),cart=document.getElementById('navCartIcon'),cta=document.getElementById('navCtaBtn'),logo=document.getElementById('navLogoImg');
     if(mobile){
       burger.style.display='flex';
