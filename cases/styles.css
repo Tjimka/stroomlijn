@@ -9,6 +9,7 @@
   --ff-display:'DM Sans', Georgia, serif;
   --ff-body:'Inter', -apple-system, sans-serif;
 }
+.open-note{display:inline;background:#F3EAE0;border-left:3px solid #BD9766;padding:2px 8px;border-radius:6px}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;font-family:var(--ff-body);color:var(--ink);background:var(--canvas);line-height:1.6;-webkit-font-smoothing:antialiased}
