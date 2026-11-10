@@ -148,14 +148,14 @@ var io = new IntersectionObserver(function(entries){
 },{threshold:.12});
 revealEls.forEach(function(el){ io.observe(el); });
 var faqItems = [
-  {q:"Hoe snel kan ik AI in mijn bedrijf gebruiken?", a:"Sneller dan je denkt. Een eerste werkende oplossing, bijvoorbeeld een AI-assistent voor klantvragen of interne kennis, staat vaak binnen twee tot vier weken. Een gratis kennismaking duurt 30 minuten."},
-  {q:"Wat kost het om te starten?", a:"Elk traject is maatwerk. Na een gratis kennismaking en een korte intake brengt STROOMLIJN in kaart wat je nodig hebt, en ontvang je een voorstel dat daarbij past. Een quickscan kost 975 euro excl. btw, analyse en advies op aanvraag."},
+  {q:"Hoe snel kan ik AI in mijn bedrijf gebruiken?", a:"De AI Kansensessie duurt 90 minuten, met een schriftelijke terugkoppeling binnen 3 werkdagen. De Processcan levert binnen 5 werkdagen een overzicht en een plan. Implementatie is op maat na de processcan."},
+  {q:"Wat kost het om te starten?", a:"De AI Kansensessie kost €495 excl. btw. De Processcan is vanaf €1.950 excl. btw. De Bedrijfsscan op locatie is op aanvraag; reiskosten staan apart. Implementatie is op maat na de processcan. Het platform is vanaf €49 per maand excl. btw. De AI Praktijktraining is vanaf €750 excl. btw."},
   {q:"Wat als ik geen technische kennis heb?", a:"Dan ben je aan het juiste adres. STROOMLIJN legt AI uit in normale taal en zorgt dat je het zelf snapt en kunt sturen. Geen jargon, geen technologische push."},
   {q:"Waar is STROOMLIJN gevestigd?", a:"In Lemmer, Friesland. STROOMLIJN werkt met klanten in heel Noord-Nederland en online of fysiek door heel Nederland. Op aanvraag ook in EU-landen, in het Engels."},
   {q:"Werk je alleen of met een team?", a:"STROOMLIJN werkt als zelfstandig ondernemer. Voor grotere projecten worden experts uit het netwerk erbij getrokken, developers, vormgevers, specialisten, en daar nauw mee samengewerkt. Zo blijft de kwaliteit hoog en blijf jij één aanspreekpunt houden."},
   {q:"Hoe zit het met de EU AI-Act?", a:"De EU AI-Act stelt eisen aan AI-gebruik in bedrijven. STROOMLIJN helpt compliant te werken, denk aan transparantie, risico-classificatie en datagebruik."},
   {q:"Wat is een AI-strateeg?", a:"Een AI-strateeg kijkt welke processen in een bedrijf geschikt zijn voor AI, welke tools daarbij passen en hoe je dat verantwoord invoert."},
-  {q:"Kun je ook helpen om gevonden te worden door AI-zoekmachines?", a:"Ja. Naast klassieke zoekmachine-optimalisatie werkt STROOMLIJN aan GEO, generative engine optimization, zodat AI-modellen zoals ChatGPT en Claude het bedrijf vinden en aanbevelen."}
+  {q:"Kan ik ook zelf aan de slag?", a:"Ja. Op app.stroomlijn.nu bouw en beheer je zelf, voor zzp en voor MKB. Dat kan ook onder je eigen naam. Het platform is vanaf €49 per maand excl. btw."}
 ];
 var faqListEl = document.getElementById('faqList');
 faqItems.forEach(function(item, i){
@@ -235,7 +235,7 @@ setInterval(function(){ if(!overPaused){ overActive=(overActive+1)%chapters.leng
   if(!nav||!links||!burger)return;
   var open=false;
   function layout(){
-    var mobile=window.matchMedia('(max-width:900px)').matches;
+    var mobile=window.matchMedia('(max-width:1180px)').matches;
     var faq=document.getElementById('navFaqIcon'),cart=document.getElementById('navCartIcon'),cta=document.getElementById('navCtaBtn'),logo=document.getElementById('navLogoImg');
     if(mobile){
       burger.style.display='flex';
@@ -249,7 +249,7 @@ setInterval(function(){ if(!overPaused){ overActive=(overActive+1)%chapters.leng
     }else{
       burger.style.display='none';open=false;
       if(faq)faq.style.display='inline-flex';
-      if(cart)cart.style.display='inline-flex';
+      if(cart)cart.style.display='none';
       if(logo)logo.style.height='42px';
       if(cta){cta.style.padding='9px 18px';cta.style.fontSize='14px';}
       links.style.display='flex';links.style.flexDirection='row';links.style.alignItems='center';links.style.position='static';links.style.background='transparent';links.style.padding='0';links.style.borderBottom='none';links.style.gap='6px';links.style.boxShadow='none';links.querySelectorAll('.nav-link-extra').forEach(function(e){e.style.display='none';});
