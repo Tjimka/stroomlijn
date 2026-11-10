@@ -3,7 +3,7 @@
   if(!nav||!links||!burger)return;
   var open=false;
   function layout(){
-    var mobile=window.matchMedia('(max-width:900px)').matches;
+    var mobile=window.matchMedia('(max-width:1180px)').matches;
     var faq=document.getElementById('navFaqIcon'),cart=document.getElementById('navCartIcon'),cta=document.getElementById('navCtaBtn'),logo=document.getElementById('navLogoImg');
     if(mobile){
       burger.style.display='flex';
@@ -17,7 +17,7 @@
     }else{
       burger.style.display='none';open=false;
       if(faq)faq.style.display='inline-flex';
-      if(cart)cart.style.display='inline-flex';
+      if(cart)cart.style.display='none';
       if(logo)logo.style.height='42px';
       if(cta){cta.style.padding='9px 18px';cta.style.fontSize='14px';}
       links.style.display='flex';links.style.flexDirection='row';links.style.alignItems='center';links.style.position='static';links.style.background='transparent';links.style.padding='0';links.style.borderBottom='none';links.style.gap='6px';links.style.boxShadow='none';links.querySelectorAll('.nav-link-extra').forEach(function(e){e.style.display='none';});
