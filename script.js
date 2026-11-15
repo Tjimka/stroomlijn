@@ -148,8 +148,8 @@ var io = new IntersectionObserver(function(entries){
 },{threshold:.12});
 revealEls.forEach(function(el){ io.observe(el); });
 var faqItems = [
-  {q:"Hoe snel kan ik AI in mijn bedrijf gebruiken?", a:"Sneller dan je denkt. Een eerste werkende oplossing, bijvoorbeeld een AI-assistent voor klantvragen of interne kennis, staat vaak binnen twee tot vier weken. Een gratis kennismaking duurt 30 minuten."},
-  {q:"Wat kost het om te starten?", a:"Elk traject is maatwerk. Na een gratis kennismaking en een korte intake brengt STROOMLIJN in kaart wat je nodig hebt, en ontvang je een voorstel dat daarbij past. Een quickscan kost 975 euro excl. btw, analyse en advies op aanvraag."},
+  {q:"Hoe snel kan ik AI in mijn bedrijf gebruiken?", a:"Dat hangt af van de vraag. In de kennismaking bepalen we welke stap past. Uitvoering is op maat na de Processcan. Een gratis kennismaking duurt 30 minuten."},
+  {q:"Wat kost het om te starten?", a:"Een kennismaking is gratis. De AI Kansensessie kost €495 excl. btw. De Processcan kost vanaf €1.950 excl. btw. Bij meer dan twee interviews of een tweede proces volgt een offerte. De Bedrijfsscan is op aanvraag. Uitvoering en implementatie zijn op maat na de Processcan."},
   {q:"Wat als ik geen technische kennis heb?", a:"Dan ben je aan het juiste adres. STROOMLIJN legt AI uit in normale taal en zorgt dat je het zelf snapt en kunt sturen. Geen jargon, geen technologische push."},
   {q:"Waar is STROOMLIJN gevestigd?", a:"In Lemmer, Friesland. STROOMLIJN werkt met klanten in heel Noord-Nederland en online of fysiek door heel Nederland. Op aanvraag ook in EU-landen, in het Engels."},
   {q:"Werk je alleen of met een team?", a:"STROOMLIJN werkt als zelfstandig ondernemer. Voor grotere projecten worden experts uit het netwerk erbij getrokken, developers, vormgevers, specialisten, en daar nauw mee samengewerkt. Zo blijft de kwaliteit hoog en blijf jij één aanspreekpunt houden."},
