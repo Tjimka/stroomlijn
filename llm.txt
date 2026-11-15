@@ -10,7 +10,7 @@
 
 ## Zelf doen
 
-- [Platform](https://stroomlijn.nu/platform/): app.stroomlijn.nu, vanaf €49 per maand, voor zzp en MKB, ook als whitelabel onder eigen naam.
+- [Platform](https://stroomlijn.nu/platform/): een eigen abonnement op App Stroomlijn (app.stroomlijn.nu), vanaf €49 per maand, voor zzp en MKB.
 - [Training](https://stroomlijn.nu/training/): AI Praktijktraining vanaf €750. Oefenen met eigen werk in ChatGPT, Claude en Gemini. Aanvulling, geen derde hoofdroute.
 
 ## Bewijs en over

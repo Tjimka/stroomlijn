@@ -155,7 +155,7 @@ var faqItems = [
   {q:"Werk je alleen of met een team?", a:"STROOMLIJN werkt als zelfstandig ondernemer. Voor grotere projecten worden experts uit het netwerk erbij getrokken, developers, vormgevers, specialisten, en daar nauw mee samengewerkt. Zo blijft de kwaliteit hoog en blijf jij één aanspreekpunt houden."},
   {q:"Hoe zit het met de EU AI-Act?", a:"De EU AI-Act stelt eisen aan AI-gebruik in bedrijven. STROOMLIJN helpt compliant te werken, denk aan transparantie, risico-classificatie en datagebruik."},
   {q:"Wat is een AI-strateeg?", a:"Een AI-strateeg kijkt welke processen in een bedrijf geschikt zijn voor AI, welke tools daarbij passen en hoe je dat verantwoord invoert."},
-  {q:"Kan ik ook zelf aan de slag?", a:"Ja. Op app.stroomlijn.nu bouw en beheer je zelf, voor zzp en voor MKB. Dat kan ook onder je eigen naam. Het platform is vanaf €49 per maand excl. btw."}
+  {q:"Kan ik ook zelf aan de slag?", a:"Ja. Je neemt een eigen abonnement op App Stroomlijn (app.stroomlijn.nu), voor zzp en MKB. Vanaf €49 per maand excl. btw."}
 ];
 var faqListEl = document.getElementById('faqList');
 faqItems.forEach(function(item, i){
