@@ -145,3 +145,9 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}body{overflow-x:hidden}
 @media(max-width:800px){.brand img{width:210px}.navlinks{top:100%}.hero-grid,.content-cards,.detail-split,.contact-grid,.about-grid,.method-layout{min-width:0}.hero-copy,.step-copy,.feature-story,.module-overview{min-width:0}html{scroll-padding-top:110px}.legacy-about .verhaal-hoofdstuk{grid-template-columns:1fr!important}.legacy-about .verhaal-foto{max-width:100%!important}}
 @media(max-width:480px){.nav>.btn{display:none}.nav{gap:10px}.menu{margin-left:auto}.cookie-banner{padding:21px}.cookie-banner p{font-size:14px}.cookie-banner button{font-size:13px}.full-footer .footer-grid{font-size:14px}.footer-bottom{font-size:13px}.eyebrow{line-height:1.7}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Social links in footer */
+.full-footer .footer-social{display:flex;gap:12px;margin-top:20px}
+.full-footer .footer-social a{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;margin:0;border:1px solid var(--line);border-radius:50%;color:var(--ink);background:transparent;transition:background .2s,color .2s,border-color .2s,transform .2s}
+.full-footer .footer-social a:hover{background:var(--teal);border-color:var(--teal);color:#fff;transform:translateY(-2px)}
+.full-footer .footer-social svg{display:block}
