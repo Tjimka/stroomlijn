@@ -260,4 +260,52 @@ setInterval(function(){ if(!overPaused){ overActive=(overActive+1)%chapters.leng
   links.addEventListener('click',function(ev){if(open&&ev.target.closest('a,button')){open=false;layout();}});
   window.addEventListener('resize',layout);
   layout();
+
+  <script>
+(function() {
+  // 1. Rechtsklikmenu uitschakelen
+  document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+  });
+
+  // 3. Belangrijkste devtools-sneltoetsen afvangen
+  document.addEventListener('keydown', function(e) {
+    // F12
+    if (e.key === 'F12') {
+      e.preventDefault();
+    }
+    // Ctrl+Shift+I / Ctrl+Shift+J (devtools, console)
+    if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) {
+      e.preventDefault();
+    }
+    // Ctrl+U (bekijk paginabron)
+    if (e.ctrlKey && e.key === 'u') {
+      e.preventDefault();
+    }
+    // Ctrl+S (pagina opslaan)
+    if (e.ctrlKey && e.key === 's') {
+      e.preventDefault();
+    }
+  });
+})();
+</script>
+
+<style>
+  /* 2. Tekstselectie blokkeren */
+  body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Uitzondering: velden waar bezoekers wel moeten kunnen selecteren,
+     bijvoorbeeld formuliervelden of een eventuele zoekbalk */
+  input, textarea {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+  }
+</style>
 })();
