@@ -39,7 +39,7 @@ function Nav({ current, onNav }) {
     <nav className="nav" ref={navRef}>
       <div className="container-wide nav-inner">
         <div className="nav-logo" onClick={() => handleNav("home")} role="button" aria-label="Stroomlijn home">
-          <img src="/assets/logo-wordmark.png" alt="Stroomlijn" />
+          <img src="/assets/logo-wordmark.png?v=2" alt="Stroomlijn" />
         </div>
 
         <div className="nav-links">
