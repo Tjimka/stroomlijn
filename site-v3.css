@@ -151,3 +151,7 @@ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}body{overflow-x:hidden}
 .full-footer .footer-social a{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;margin:0;border:1px solid var(--line);border-radius:50%;color:var(--ink);background:transparent;transition:background .2s,color .2s,border-color .2s,transform .2s}
 .full-footer .footer-social a:hover{background:var(--teal);border-color:var(--teal);color:#fff;transform:translateY(-2px)}
 .full-footer .footer-social svg{display:block}
+
+/* Over Tjimka: header-foto helderder en zacht overlopend in de achtergrond */
+.legacy-about .hero .hero-photo{position:relative}
+.legacy-about .hero .hero-photo img{border-radius:0;mix-blend-mode:multiply;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 16%,#000 84%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 10%,#000 76%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0,#000 16%,#000 84%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 10%,#000 76%,transparent 100%);mask-composite:intersect}
